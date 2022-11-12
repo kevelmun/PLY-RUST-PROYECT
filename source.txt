@@ -1,0 +1,10 @@
+let a = 4;
+x
+Y
+x
+_10
+variable
+Variable
+vArIaBlE
+_x_
+variable_ideal
