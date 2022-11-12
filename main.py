@@ -99,7 +99,20 @@ tokens = (
     'SEMI', 
     'COLON',            
     ## KEVIN ELIHAN MUNOZ
-    
+
+    ## DANIEL GUERRERO RODRIGUEZ
+    # Caracteres
+    'DBQUOTE',
+    'QUOTE',
+    'DOT',
+
+    # Asignacion
+    'ANDE',
+    'ORE',
+    'OREXE',
+
+    # Numeros
+    'INTEGER',
 )+tuple(reserved.values())
 
 
@@ -145,7 +158,16 @@ t_SEMI              = r';'
 t_COLON             = r':'
 ## KEVIN ELIHAN MUNOZ
 
+## DANIEL GUERRERO RODRIGUEZ
+# Caracteres
+t_DBQUOTE           = r'"'
+t_QUOTE             = r'\''
+t_DOT               = r'\.'
 
+# Asignacion
+t_ANDE              = r'&='
+t_ORE               = r'\|='
+t_OREXE             = r'\^='
 
 
 
@@ -159,7 +181,12 @@ def t_VARIABLE(t):
   r'[a-zA-Z_]+[a-zA-Z\d]*'
   t.type = reserved.get(t.value, 'VARIABLE')
   return t
-
+## DANIEL GUERRERO RODRIGUEZ
+#ENTERO
+def t_INTEGER(t):
+    r'([1-9]\d*)|0'
+    t.value = int(t.value) 
+    return t
 #Conteo de lineas
 def t_newline(t):
         r'\n+'
@@ -185,7 +212,7 @@ def getTokens(lexer):
 
 
 #Lea el archivo source.txt y retorne los tokens
-with open("source.txt") as archivo:
+with open("source2.txt") as archivo:
     linea = archivo.read()
     lexer.input(linea)
     getTokens(lexer)

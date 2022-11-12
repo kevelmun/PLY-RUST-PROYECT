@@ -1,0 +1,10 @@
+fn main() {
+    let array = [0100, 27, 0.3, 4, 5];
+
+    for an item in array {
+        ^=
+        &=
+        |=
+        println!('{}",item);
+    }
+}
