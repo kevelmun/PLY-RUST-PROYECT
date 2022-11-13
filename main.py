@@ -57,11 +57,43 @@ reserved = {
     "union": 'KW_UNION',
     "'static": 'KW_STATICLIFETIME',
 ## KEVIN ELIHAN MUNOZ
+
+## LOBERLLY SALAZAR ASPIAZU
+    "i8": 'SIG_INT_8',
+    "i16": 'SIG_INT_16',
+    "i32": 'SIG_INT_32',
+    "i64": 'SIG_INT_64',
+    "i128": 'SIG_INT_128',
+
+    "u8": 'UNSIG_INT_8',
+    "u16": 'UNSIG_INT_16',
+    "u32": 'UNSIG_INT_32',
+    "u64": 'UNSIG_INT_64',
+    "u128": 'UNSIG_INT_128',
+
+    "f32": 'FLOAT_32',
+    "f64": 'FLOAT_64',
+
+    "bool": 'BOOLEAN',
+    "char": 'CHARACTER',
 }
 
 
 
 tokens = ( 
+    ## LOBERLLY SALAZAR ASPIAZU
+    # Tipos de dato
+    'FLOAT',
+    'CHAR',
+    
+    # Símbolos
+    'HASH',
+    'QMARK',
+    'AND',
+
+    # Comentarios
+    'COMMENT',
+
     ## KEVIN ELIHAN MUNOZ
     'VARIABLE',
     # Operadores
@@ -80,7 +112,7 @@ tokens = (
     'EQ', 
     'NE',
 
-    # Asignacion
+    # Asignación
     'EQUALS',
     'TIMESEQUAL', 
     'DIVEQUAL', 
@@ -106,12 +138,12 @@ tokens = (
     'QUOTE',
     'DOT',
 
-    # Asignacion
+    # Asignación
     'ANDE',
     'ORE',
     'OREXE',
 
-    # Numeros
+    # Números
     'INTEGER',
 )+tuple(reserved.values())
 
@@ -169,29 +201,48 @@ t_ANDE              = r'&='
 t_ORE               = r'\|='
 t_OREXE             = r'\^='
 
+## LOBERLLY SALAZAR ASPIAZU
+t_HASH              = r'\#'
+t_QMARK             = r'\?'
+t_AND               = r'\&'
 
 
+## LOBERLLY SALAZAR ASPIAZU
+# FLOTANTE
+def t_FLOAT(t):
+  r'\-?[\d]+\.[\d]+'
+  t.value = float(t.value) 
+  return t 
 
+#CHARACTER
+def t_CHAR(t):
+  r'\'[\w\W]{1}\''
+  return t
 
+# COMMENTS
+def t_COMMENT(t):
+  r'\/\/.+'
+  pass
 
 ## KEVIN ELIHAN MUNOZ
 #VARIABLE
 ## MEJORABLE
 def t_VARIABLE(t):
-  r'[a-zA-Z_]+[a-zA-Z\d]*'
+  r'[a-zA-Z_]+[\w]*'
   t.type = reserved.get(t.value, 'VARIABLE')
   return t
+
 ## DANIEL GUERRERO RODRIGUEZ
 #ENTERO
 def t_INTEGER(t):
-    r'([1-9]\d*)|0'
-    t.value = int(t.value) 
-    return t
+  r'(-?[1-9]\d*)|0'
+  t.value = int(t.value) 
+  return t
+
 #Conteo de lineas
 def t_newline(t):
-        r'\n+'
-        t.lexer.lineno += len(t.value)
-    
+  r'\n+'
+  t.lexer.lineno += len(t.value)
 
 #Token de ignorar
 t_ignore  = ' \t'
@@ -199,25 +250,28 @@ t_ignore  = ' \t'
 
 #Token de error
 def t_error(t):
-        print("Illegal character '%s'" % t.value[0])
-        t.lexer.skip(1)
+  print("Illegal character '%s'" % t.value[0])
+  t.lexer.skip(1)
     
 
 #Construccion del lexer
 lexer = lex.lex()
 
 def getTokens(lexer):
-    for tok in lexer:
-        print(tok)
+  for tok in lexer:
+    print(tok)
 
 
 #Lea el archivo source.txt y retorne los tokens
-with open("source2.txt") as archivo:
+files = ["source.txt", "source2.txt", "source3.txt", ]
+for file in files:
+  with open(file) as archivo:
     linea = archivo.read()
     lexer.input(linea)
     getTokens(lexer)
+  print("#DONE " + file + "\n\n")
 
-print("#DONE")
+print("COMPLETED")
 
 
 ## KEVIN ELIHAN MUNOZ
