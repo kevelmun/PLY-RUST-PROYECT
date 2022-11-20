@@ -77,6 +77,12 @@ reserved = {
     "bool": 'KW_BOOLEAN',
     "char": 'KW_CHARACTER',
 
+    "LinkedList": 'KW_LINKEDLIST',
+    "new": 'KW_NEW',
+    "from": 'KW_FROM',
+    "push_back": 'PUSH',
+    "remove": 'REMOVE',
+
     #Daniel Guerrero
     "println": 'KW_PRINT',
 }

@@ -19,7 +19,13 @@ def p_father_rule(p):
     | variables
     | control_str
     | expression
-    | void'''
+    | void
+    | linkedlist
+    | push
+    | remove
+    | if
+    | else
+    | else_if'''
 
 #KEVIN MUÑOZ
 
@@ -39,6 +45,21 @@ def p_number(p):
     | FLOAT
     | VARIABLE'''
 
+# LOBERLLY SALAZAR
+def p_dataType(p):
+    '''dataType : UNSIG_INT_8
+                | UNSIG_INT_16
+                | UNSIG_INT_32
+                | UNSIG_INT_64
+                | UNSIG_INT_128
+                | SIG_INT_8
+                | SIG_INT_16
+                | SIG_INT_32
+                | SIG_INT_64
+                | SIG_INT_128
+                | FLOAT_32
+                | FLOAT_64
+                | KW_BOOLEAN'''
 
 #DANIEL GUERRERO
 def p_data(p):
@@ -123,7 +144,36 @@ def p_void(p):
     '''void : '''
     pass
 
- # Error rule for syntax errors
+# LOBERLLY SALAZAR if, funcion con retorno, arraylist
+
+## Arraylist
+
+def p_linkedlist_empty(p):
+    '''linkedlist : KW_LET VARIABLE COLON KW_LINKEDLIST LT dataType GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN SEMI
+                  | KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT dataType GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN SEMI'''
+
+def p_linkedlist_array(p):
+    '''linkedlist : KW_LET VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN SEMI
+                  | KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN SEMI'''
+
+def p_push(p):
+    'push : VARIABLE DOT PUSH LPAREN data RPAREN SEMI'
+
+def p_remove(p):
+    'remove : VARIABLE DOT REMOVE LPAREN INTEGER RPAREN SEMI'
+
+## if 
+
+def p_if(p):
+    'if : KW_IF conditional LBRACE father_rule RBRACE'
+
+def p_else(p):
+    'else : KW_ELSE LBRACE father_rule RBRACE'
+
+def p_else_if(p):
+    'else_if : KW_ELSE KW_IF conditional LBRACE father_rule RBRACE'
+
+# Error rule for syntax errors
 def p_error(p):
     print("Syntax error in input!")
 
