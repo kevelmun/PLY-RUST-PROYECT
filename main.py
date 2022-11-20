@@ -74,8 +74,11 @@ reserved = {
     "f32": 'FLOAT_32',
     "f64": 'FLOAT_64',
 
-    "bool": 'BOOLEAN',
-    "char": 'CHARACTER',
+    "bool": 'KW_BOOLEAN',
+    "char": 'KW_CHARACTER',
+
+    #Daniel Guerrero
+    "println": 'KW_PRINT',
 }
 
 
@@ -134,7 +137,6 @@ tokens = (
 
     ## DANIEL GUERRERO RODRIGUEZ
     # Caracteres
-    'DBQUOTE',
     'QUOTE',
     'DOT',
 
@@ -143,8 +145,10 @@ tokens = (
     'ORE',
     'OREXE',
 
-    # Números
+    # Datos
     'INTEGER',
+    'CADENA',
+    
 )+tuple(reserved.values())
 
 
@@ -192,7 +196,6 @@ t_COLON             = r':'
 
 ## DANIEL GUERRERO RODRIGUEZ
 # Caracteres
-t_DBQUOTE           = r'"'
 t_QUOTE             = r'\''
 t_DOT               = r'\.'
 
@@ -239,6 +242,10 @@ def t_INTEGER(t):
   t.value = int(t.value) 
   return t
 
+def t_CADENA(t):
+  r'".*"'
+  return t
+
 #Conteo de lineas
 def t_newline(t):
   r'\n+'
@@ -257,7 +264,7 @@ def t_error(t):
 #Construccion del lexer
 lexer = lex.lex()
 
-def getTokens(lexer):
+'''def getTokens(lexer):
   for tok in lexer:
     print(tok)
 
@@ -271,7 +278,7 @@ for file in files:
     getTokens(lexer)
   print("#DONE " + file + "\n\n")
 
-print("COMPLETED")
+print("COMPLETED")'''
 
 
 ## KEVIN ELIHAN MUNOZ

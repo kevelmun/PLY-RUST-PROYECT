@@ -1,0 +1,290 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Unused terminals:
+
+    AND
+    ANDE
+    CHAR
+    COLON
+    COMMA
+    COMMENT
+    DIVEQUAL
+    DIVIDE
+    DOT
+    EQ
+    EQUALS
+    FLOAT
+    FLOAT_32
+    FLOAT_64
+    GE
+    GT
+    HASH
+    INTEGER
+    KW_ABSTRACT
+    KW_AS
+    KW_ASYNC
+    KW_AWAIT
+    KW_BECOME
+    KW_BOOLEAN
+    KW_BOX
+    KW_BREAK
+    KW_CHARACTER
+    KW_CONST
+    KW_CONTINUE
+    KW_CRATE
+    KW_DO
+    KW_DYN
+    KW_ELSE
+    KW_ENUM
+    KW_EXTERN
+    KW_FALSE
+    KW_FINAL
+    KW_FOR
+    KW_IF
+    KW_IMPL
+    KW_IN
+    KW_LOOP
+    KW_MACRO
+    KW_MATCH
+    KW_MOD
+    KW_MOVE
+    KW_MUT
+    KW_OVERRIDE
+    KW_PRIV
+    KW_PUB
+    KW_REF
+    KW_RETURN
+    KW_SELFTYPE
+    KW_SELFVALUE
+    KW_STATIC
+    KW_STATICLIFETIME
+    KW_STRUCT
+    KW_SUPER
+    KW_TRAIT
+    KW_TRUE
+    KW_TRY
+    KW_TYPE
+    KW_TYPEOF
+    KW_UNION
+    KW_UNSAFE
+    KW_UNSIZED
+    KW_USE
+    KW_VIRTUAL
+    KW_WHERE
+    KW_WHILE
+    KW_YIELD
+    LAND
+    LBRACE
+    LE
+    LNOT
+    LOR
+    LT
+    MINUS
+    MINUSEQUAL
+    MODULUS
+    MODULUSEQUAL
+    NE
+    ORE
+    OREXE
+    PLUS
+    PLUSEQUAL
+    QMARK
+    QUOTE
+    RBRACE
+    SIG_INT_128
+    SIG_INT_16
+    SIG_INT_32
+    SIG_INT_64
+    SIG_INT_8
+    TIMES
+    TIMESEQUAL
+    UNSIG_INT_128
+    UNSIG_INT_16
+    UNSIG_INT_32
+    UNSIG_INT_64
+    UNSIG_INT_8
+
+Grammar
+
+Rule 0     S' -> IMPRIMIR
+Rule 1     IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI
+Rule 2     DVARIABLE -> KW_LET VARIABLE SEMI
+Rule 3     ARRAY -> LBRACKET RBRACKET
+Rule 4     VARIABLES -> VARIABLE
+Rule 5     VARIABLES -> VARIABLE VARIABLES
+Rule 6     FUNCION -> KW_FN VARIABLE LPAREN VARIABLES RPAREN LBRACKET IMPRIMIR RBRACKET
+
+Terminals, with rules where they appear
+
+AND                  : 
+ANDE                 : 
+CADENA               : 1
+CHAR                 : 
+COLON                : 
+COMMA                : 
+COMMENT              : 
+DIVEQUAL             : 
+DIVIDE               : 
+DOT                  : 
+EQ                   : 
+EQUALS               : 
+FLOAT                : 
+FLOAT_32             : 
+FLOAT_64             : 
+GE                   : 
+GT                   : 
+HASH                 : 
+INTEGER              : 
+KW_ABSTRACT          : 
+KW_AS                : 
+KW_ASYNC             : 
+KW_AWAIT             : 
+KW_BECOME            : 
+KW_BOOLEAN           : 
+KW_BOX               : 
+KW_BREAK             : 
+KW_CHARACTER         : 
+KW_CONST             : 
+KW_CONTINUE          : 
+KW_CRATE             : 
+KW_DO                : 
+KW_DYN               : 
+KW_ELSE              : 
+KW_ENUM              : 
+KW_EXTERN            : 
+KW_FALSE             : 
+KW_FINAL             : 
+KW_FN                : 6
+KW_FOR               : 
+KW_IF                : 
+KW_IMPL              : 
+KW_IN                : 
+KW_LET               : 2
+KW_LOOP              : 
+KW_MACRO             : 
+KW_MATCH             : 
+KW_MOD               : 
+KW_MOVE              : 
+KW_MUT               : 
+KW_OVERRIDE          : 
+KW_PRINT             : 1
+KW_PRIV              : 
+KW_PUB               : 
+KW_REF               : 
+KW_RETURN            : 
+KW_SELFTYPE          : 
+KW_SELFVALUE         : 
+KW_STATIC            : 
+KW_STATICLIFETIME    : 
+KW_STRUCT            : 
+KW_SUPER             : 
+KW_TRAIT             : 
+KW_TRUE              : 
+KW_TRY               : 
+KW_TYPE              : 
+KW_TYPEOF            : 
+KW_UNION             : 
+KW_UNSAFE            : 
+KW_UNSIZED           : 
+KW_USE               : 
+KW_VIRTUAL           : 
+KW_WHERE             : 
+KW_WHILE             : 
+KW_YIELD             : 
+LAND                 : 
+LBRACE               : 
+LBRACKET             : 3 6
+LE                   : 
+LNOT                 : 
+LOR                  : 
+LPAREN               : 1 6
+LT                   : 
+MINUS                : 
+MINUSEQUAL           : 
+MODULUS              : 
+MODULUSEQUAL         : 
+NE                   : 
+ORE                  : 
+OREXE                : 
+PLUS                 : 
+PLUSEQUAL            : 
+QMARK                : 
+QUOTE                : 
+RBRACE               : 
+RBRACKET             : 3 6
+RPAREN               : 1 6
+SEMI                 : 1 2
+SIG_INT_128          : 
+SIG_INT_16           : 
+SIG_INT_32           : 
+SIG_INT_64           : 
+SIG_INT_8            : 
+TIMES                : 
+TIMESEQUAL           : 
+UNSIG_INT_128        : 
+UNSIG_INT_16         : 
+UNSIG_INT_32         : 
+UNSIG_INT_64         : 
+UNSIG_INT_8          : 
+VARIABLE             : 2 4 5 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+ARRAY                : 
+DVARIABLE            : 
+FUNCION              : 
+IMPRIMIR             : 6 0
+VARIABLES            : 5 6
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . IMPRIMIR
+    (1) IMPRIMIR -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+
+    KW_PRINT        shift and go to state 2
+
+    IMPRIMIR                       shift and go to state 1
+
+state 1
+
+    (0) S' -> IMPRIMIR .
+
+
+
+state 2
+
+    (1) IMPRIMIR -> KW_PRINT . LPAREN CADENA RPAREN SEMI
+
+    LPAREN          shift and go to state 3
+
+
+state 3
+
+    (1) IMPRIMIR -> KW_PRINT LPAREN . CADENA RPAREN SEMI
+
+    CADENA          shift and go to state 4
+
+
+state 4
+
+    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA . RPAREN SEMI
+
+    RPAREN          shift and go to state 5
+
+
+state 5
+
+    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN . SEMI
+
+    SEMI            shift and go to state 6
+
+
+state 6
+
+    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI .
+
+    $end            reduce using rule 1 (IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+
