@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'AND ANDE CADENA CHAR COLON COMMA COMMENT DIVEQUAL DIVIDE DOT EQ EQUALS FLOAT FLOAT_32 FLOAT_64 GE GT HASH INTEGER KW_ABSTRACT KW_AS KW_ASYNC KW_AWAIT KW_BECOME KW_BOOLEAN KW_BOX KW_BREAK KW_CHARACTER KW_CONST KW_CONTINUE KW_CRATE KW_DO KW_DYN KW_ELSE KW_ENUM KW_EXTERN KW_FALSE KW_FINAL KW_FN KW_FOR KW_IF KW_IMPL KW_IN KW_LET KW_LOOP KW_MACRO KW_MATCH KW_MOD KW_MOVE KW_MUT KW_OVERRIDE KW_PRINT KW_PRIV KW_PUB KW_REF KW_RETURN KW_SELFTYPE KW_SELFVALUE KW_STATIC KW_STATICLIFETIME KW_STRUCT KW_SUPER KW_TRAIT KW_TRUE KW_TRY KW_TYPE KW_TYPEOF KW_UNION KW_UNSAFE KW_UNSIZED KW_USE KW_VIRTUAL KW_WHERE KW_WHILE KW_YIELD LAND LBRACE LBRACKET LE LNOT LOR LPAREN LT MINUS MINUSEQUAL MODULUS MODULUSEQUAL NE ORE OREXE PLUS PLUSEQUAL QMARK QUOTE RBRACE RBRACKET RPAREN SEMI SIG_INT_128 SIG_INT_16 SIG_INT_32 SIG_INT_64 SIG_INT_8 TIMES TIMESEQUAL UNSIG_INT_128 UNSIG_INT_16 UNSIG_INT_32 UNSIG_INT_64 UNSIG_INT_8 VARIABLEIMPRIMIR : KW_PRINT LPAREN CADENA RPAREN SEMIDVARIABLE : KW_LET VARIABLE SEMIARRAY : LBRACKET RBRACKETVARIABLES : VARIABLE \n    | VARIABLE VARIABLESFUNCION : KW_FN VARIABLE LPAREN VARIABLES RPAREN LBRACKET IMPRIMIR RBRACKET'
+_lr_signature = 'AND ANDE CADENA CHAR COLON COMMA COMMENT DIVEQUAL DIVIDE DOT EQ EQUALS FLOAT FLOAT_32 FLOAT_64 GE GT HASH INTEGER KW_ABSTRACT KW_AS KW_ASYNC KW_AWAIT KW_BECOME KW_BOOLEAN KW_BOX KW_BREAK KW_CHARACTER KW_CONST KW_CONTINUE KW_CRATE KW_DO KW_DYN KW_ELSE KW_ENUM KW_EXTERN KW_FALSE KW_FINAL KW_FN KW_FOR KW_IF KW_IMPL KW_IN KW_LET KW_LOOP KW_MACRO KW_MATCH KW_MOD KW_MOVE KW_MUT KW_OVERRIDE KW_PRINT KW_PRIV KW_PUB KW_REF KW_RETURN KW_SELFTYPE KW_SELFVALUE KW_STATIC KW_STATICLIFETIME KW_STRUCT KW_SUPER KW_TRAIT KW_TRUE KW_TRY KW_TYPE KW_TYPEOF KW_UNION KW_UNSAFE KW_UNSIZED KW_USE KW_VIRTUAL KW_WHERE KW_WHILE KW_YIELD LAND LBRACE LBRACKET LE LNOT LOR LPAREN LT MINUS MINUSEQUAL MODULUS MODULUSEQUAL NE ORE OREXE PLUS PLUSEQUAL QMARK QUOTE RBRACE RBRACKET RPAREN SEMI SIG_INT_128 SIG_INT_16 SIG_INT_32 SIG_INT_64 SIG_INT_8 TIMES TIMESEQUAL UNSIG_INT_128 UNSIG_INT_16 UNSIG_INT_32 UNSIG_INT_64 UNSIG_INT_8 VARIABLEmain_rule : expression\n    | expression main_ruleexpression : print\n    | dvariable\n    | array\n    | function_argument\n    | function\n    | variables\n    | voidprint : KW_PRINT LPAREN CADENA RPAREN SEMIdvariable : KW_LET VARIABLE SEMIarray : LBRACKET RBRACKETvariables : VARIABLE \n    | VARIABLE COMMA variablesfunction : KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKETfunction_argument : KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKETvoid : '
     
-_lr_action_items = {'KW_PRINT':([0,],[2,]),'$end':([1,6,],[0,-1,]),'LPAREN':([2,],[3,]),'CADENA':([3,],[4,]),'RPAREN':([4,],[5,]),'SEMI':([5,],[6,]),}
+_lr_action_items = {'KW_PRINT':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[10,10,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,10,10,-15,-16,]),'KW_LET':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[11,11,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,11,11,-15,-16,]),'LBRACKET':([0,2,3,4,5,6,7,8,9,12,19,22,23,27,28,29,30,31,34,35,],[13,13,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,30,-10,31,13,13,-15,-16,]),'KW_FN':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[14,14,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,14,14,-15,-16,]),'VARIABLE':([0,2,3,4,5,6,7,8,9,11,12,14,18,19,22,23,24,28,30,31,34,35,],[12,12,-3,-4,-5,-6,-7,-8,-9,17,-13,20,12,-12,-11,-14,12,-10,12,12,-15,-16,]),'$end':([0,1,2,3,4,5,6,7,8,9,12,15,19,22,23,28,34,35,],[-17,0,-1,-3,-4,-5,-6,-7,-8,-9,-13,-2,-12,-11,-14,-10,-15,-16,]),'RBRACKET':([3,4,5,6,7,8,9,12,13,19,22,23,28,30,31,32,33,34,35,],[-3,-4,-5,-6,-7,-8,-9,-13,19,-12,-11,-14,-10,-17,-17,34,35,-15,-16,]),'LPAREN':([10,20,],[16,24,]),'RPAREN':([12,21,23,24,26,],[-13,25,-14,27,29,]),'COMMA':([12,],[18,]),'CADENA':([16,],[21,]),'SEMI':([17,25,],[22,28,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'IMPRIMIR':([0,],[1,]),}
+_lr_goto_items = {'main_rule':([0,2,],[1,15,]),'expression':([0,2,30,31,],[2,2,32,33,]),'print':([0,2,30,31,],[3,3,3,3,]),'dvariable':([0,2,30,31,],[4,4,4,4,]),'array':([0,2,30,31,],[5,5,5,5,]),'function_argument':([0,2,30,31,],[6,6,6,6,]),'function':([0,2,30,31,],[7,7,7,7,]),'variables':([0,2,18,24,30,31,],[8,8,23,26,8,8,]),'void':([0,2,30,31,],[9,9,9,9,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -26,11 +26,22 @@ for _k, _v in _lr_goto_items.items():
        _lr_goto[_x][_k] = _y
 del _lr_goto_items
 _lr_productions = [
-  ("S' -> IMPRIMIR","S'",1,None,None,None),
-  ('IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI','IMPRIMIR',5,'p_print','pyacc.py',6),
-  ('DVARIABLE -> KW_LET VARIABLE SEMI','DVARIABLE',3,'p_declare_variable','pyacc.py',9),
-  ('ARRAY -> LBRACKET RBRACKET','ARRAY',2,'p_array','pyacc.py',12),
-  ('VARIABLES -> VARIABLE','VARIABLES',1,'p_variables','pyacc.py',15),
-  ('VARIABLES -> VARIABLE VARIABLES','VARIABLES',2,'p_variables','pyacc.py',16),
-  ('FUNCION -> KW_FN VARIABLE LPAREN VARIABLES RPAREN LBRACKET IMPRIMIR RBRACKET','FUNCION',8,'p_function','pyacc.py',19),
+  ("S' -> main_rule","S'",1,None,None,None),
+  ('main_rule -> expression','main_rule',1,'p_main_rule','pyacc.py',9),
+  ('main_rule -> expression main_rule','main_rule',2,'p_main_rule','pyacc.py',10),
+  ('expression -> print','expression',1,'p_expression','pyacc.py',15),
+  ('expression -> dvariable','expression',1,'p_expression','pyacc.py',16),
+  ('expression -> array','expression',1,'p_expression','pyacc.py',17),
+  ('expression -> function_argument','expression',1,'p_expression','pyacc.py',18),
+  ('expression -> function','expression',1,'p_expression','pyacc.py',19),
+  ('expression -> variables','expression',1,'p_expression','pyacc.py',20),
+  ('expression -> void','expression',1,'p_expression','pyacc.py',21),
+  ('print -> KW_PRINT LPAREN CADENA RPAREN SEMI','print',5,'p_print','pyacc.py',25),
+  ('dvariable -> KW_LET VARIABLE SEMI','dvariable',3,'p_declare_variable','pyacc.py',28),
+  ('array -> LBRACKET RBRACKET','array',2,'p_array','pyacc.py',31),
+  ('variables -> VARIABLE','variables',1,'p_variables','pyacc.py',34),
+  ('variables -> VARIABLE COMMA variables','variables',3,'p_variables','pyacc.py',35),
+  ('function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET','function',7,'p_function','pyacc.py',41),
+  ('function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET','function_argument',8,'p_function_argument','pyacc.py',44),
+  ('void -> <empty>','void',0,'p_void','pyacc.py',52),
 ]

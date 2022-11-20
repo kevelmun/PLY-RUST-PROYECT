@@ -6,7 +6,6 @@ Unused terminals:
     ANDE
     CHAR
     COLON
-    COMMA
     COMMENT
     DIVEQUAL
     DIVIDE
@@ -106,22 +105,33 @@ Unused terminals:
 
 Grammar
 
-Rule 0     S' -> IMPRIMIR
-Rule 1     IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI
-Rule 2     DVARIABLE -> KW_LET VARIABLE SEMI
-Rule 3     ARRAY -> LBRACKET RBRACKET
-Rule 4     VARIABLES -> VARIABLE
-Rule 5     VARIABLES -> VARIABLE VARIABLES
-Rule 6     FUNCION -> KW_FN VARIABLE LPAREN VARIABLES RPAREN LBRACKET IMPRIMIR RBRACKET
+Rule 0     S' -> main_rule
+Rule 1     main_rule -> expression
+Rule 2     main_rule -> expression main_rule
+Rule 3     expression -> print
+Rule 4     expression -> dvariable
+Rule 5     expression -> array
+Rule 6     expression -> function_argument
+Rule 7     expression -> function
+Rule 8     expression -> variables
+Rule 9     expression -> void
+Rule 10    print -> KW_PRINT LPAREN CADENA RPAREN SEMI
+Rule 11    dvariable -> KW_LET VARIABLE SEMI
+Rule 12    array -> LBRACKET RBRACKET
+Rule 13    variables -> VARIABLE
+Rule 14    variables -> VARIABLE COMMA variables
+Rule 15    function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+Rule 16    function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+Rule 17    void -> <empty>
 
 Terminals, with rules where they appear
 
 AND                  : 
 ANDE                 : 
-CADENA               : 1
+CADENA               : 10
 CHAR                 : 
 COLON                : 
-COMMA                : 
+COMMA                : 14
 COMMENT              : 
 DIVEQUAL             : 
 DIVIDE               : 
@@ -154,12 +164,12 @@ KW_ENUM              :
 KW_EXTERN            : 
 KW_FALSE             : 
 KW_FINAL             : 
-KW_FN                : 6
+KW_FN                : 15 16
 KW_FOR               : 
 KW_IF                : 
 KW_IMPL              : 
 KW_IN                : 
-KW_LET               : 2
+KW_LET               : 11
 KW_LOOP              : 
 KW_MACRO             : 
 KW_MATCH             : 
@@ -167,7 +177,7 @@ KW_MOD               :
 KW_MOVE              : 
 KW_MUT               : 
 KW_OVERRIDE          : 
-KW_PRINT             : 1
+KW_PRINT             : 10
 KW_PRIV              : 
 KW_PUB               : 
 KW_REF               : 
@@ -193,11 +203,11 @@ KW_WHILE             :
 KW_YIELD             : 
 LAND                 : 
 LBRACE               : 
-LBRACKET             : 3 6
+LBRACKET             : 12 15 16
 LE                   : 
 LNOT                 : 
 LOR                  : 
-LPAREN               : 1 6
+LPAREN               : 10 15 16
 LT                   : 
 MINUS                : 
 MINUSEQUAL           : 
@@ -211,9 +221,9 @@ PLUSEQUAL            :
 QMARK                : 
 QUOTE                : 
 RBRACE               : 
-RBRACKET             : 3 6
-RPAREN               : 1 6
-SEMI                 : 1 2
+RBRACKET             : 12 15 16
+RPAREN               : 10 15 16
+SEMI                 : 10 11
 SIG_INT_128          : 
 SIG_INT_16           : 
 SIG_INT_32           : 
@@ -226,65 +236,526 @@ UNSIG_INT_16         :
 UNSIG_INT_32         : 
 UNSIG_INT_64         : 
 UNSIG_INT_8          : 
-VARIABLE             : 2 4 5 6
+VARIABLE             : 11 13 14 15 16
 error                : 
 
 Nonterminals, with rules where they appear
 
-ARRAY                : 
-DVARIABLE            : 
-FUNCION              : 
-IMPRIMIR             : 6 0
-VARIABLES            : 5 6
+array                : 5
+dvariable            : 4
+expression           : 1 2 15 16
+function             : 7
+function_argument    : 6
+main_rule            : 2 0
+print                : 3
+variables            : 8 14 16
+void                 : 9
 
 Parsing method: LALR
 
 state 0
 
-    (0) S' -> . IMPRIMIR
-    (1) IMPRIMIR -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+    (0) S' -> . main_rule
+    (1) main_rule -> . expression
+    (2) main_rule -> . expression main_rule
+    (3) expression -> . print
+    (4) expression -> . dvariable
+    (5) expression -> . array
+    (6) expression -> . function_argument
+    (7) expression -> . function
+    (8) expression -> . variables
+    (9) expression -> . void
+    (10) print -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+    (11) dvariable -> . KW_LET VARIABLE SEMI
+    (12) array -> . LBRACKET RBRACKET
+    (16) function_argument -> . KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> . KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+    (17) void -> .
 
-    KW_PRINT        shift and go to state 2
+  ! shift/reduce conflict for KW_PRINT resolved as shift
+  ! shift/reduce conflict for KW_LET resolved as shift
+  ! shift/reduce conflict for LBRACKET resolved as shift
+  ! shift/reduce conflict for KW_FN resolved as shift
+  ! shift/reduce conflict for VARIABLE resolved as shift
+    KW_PRINT        shift and go to state 10
+    KW_LET          shift and go to state 11
+    LBRACKET        shift and go to state 13
+    KW_FN           shift and go to state 14
+    VARIABLE        shift and go to state 12
+    $end            reduce using rule 17 (void -> .)
 
-    IMPRIMIR                       shift and go to state 1
+  ! KW_PRINT        [ reduce using rule 17 (void -> .) ]
+  ! KW_LET          [ reduce using rule 17 (void -> .) ]
+  ! LBRACKET        [ reduce using rule 17 (void -> .) ]
+  ! KW_FN           [ reduce using rule 17 (void -> .) ]
+  ! VARIABLE        [ reduce using rule 17 (void -> .) ]
+
+    main_rule                      shift and go to state 1
+    expression                     shift and go to state 2
+    print                          shift and go to state 3
+    dvariable                      shift and go to state 4
+    array                          shift and go to state 5
+    function_argument              shift and go to state 6
+    function                       shift and go to state 7
+    variables                      shift and go to state 8
+    void                           shift and go to state 9
 
 state 1
 
-    (0) S' -> IMPRIMIR .
+    (0) S' -> main_rule .
 
 
 
 state 2
 
-    (1) IMPRIMIR -> KW_PRINT . LPAREN CADENA RPAREN SEMI
+    (1) main_rule -> expression .
+    (2) main_rule -> expression . main_rule
+    (1) main_rule -> . expression
+    (2) main_rule -> . expression main_rule
+    (3) expression -> . print
+    (4) expression -> . dvariable
+    (5) expression -> . array
+    (6) expression -> . function_argument
+    (7) expression -> . function
+    (8) expression -> . variables
+    (9) expression -> . void
+    (10) print -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+    (11) dvariable -> . KW_LET VARIABLE SEMI
+    (12) array -> . LBRACKET RBRACKET
+    (16) function_argument -> . KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> . KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+    (17) void -> .
 
-    LPAREN          shift and go to state 3
+  ! shift/reduce conflict for KW_PRINT resolved as shift
+  ! shift/reduce conflict for KW_LET resolved as shift
+  ! shift/reduce conflict for LBRACKET resolved as shift
+  ! shift/reduce conflict for KW_FN resolved as shift
+  ! shift/reduce conflict for VARIABLE resolved as shift
+  ! reduce/reduce conflict for $end resolved using rule 1 (main_rule -> expression .)
+    $end            reduce using rule 1 (main_rule -> expression .)
+    KW_PRINT        shift and go to state 10
+    KW_LET          shift and go to state 11
+    LBRACKET        shift and go to state 13
+    KW_FN           shift and go to state 14
+    VARIABLE        shift and go to state 12
 
+  ! KW_PRINT        [ reduce using rule 17 (void -> .) ]
+  ! KW_LET          [ reduce using rule 17 (void -> .) ]
+  ! LBRACKET        [ reduce using rule 17 (void -> .) ]
+  ! KW_FN           [ reduce using rule 17 (void -> .) ]
+  ! VARIABLE        [ reduce using rule 17 (void -> .) ]
+  ! $end            [ reduce using rule 17 (void -> .) ]
+
+    expression                     shift and go to state 2
+    main_rule                      shift and go to state 15
+    print                          shift and go to state 3
+    dvariable                      shift and go to state 4
+    array                          shift and go to state 5
+    function_argument              shift and go to state 6
+    function                       shift and go to state 7
+    variables                      shift and go to state 8
+    void                           shift and go to state 9
 
 state 3
 
-    (1) IMPRIMIR -> KW_PRINT LPAREN . CADENA RPAREN SEMI
+    (3) expression -> print .
 
-    CADENA          shift and go to state 4
+    KW_PRINT        reduce using rule 3 (expression -> print .)
+    KW_LET          reduce using rule 3 (expression -> print .)
+    LBRACKET        reduce using rule 3 (expression -> print .)
+    KW_FN           reduce using rule 3 (expression -> print .)
+    VARIABLE        reduce using rule 3 (expression -> print .)
+    $end            reduce using rule 3 (expression -> print .)
+    RBRACKET        reduce using rule 3 (expression -> print .)
 
 
 state 4
 
-    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA . RPAREN SEMI
+    (4) expression -> dvariable .
 
-    RPAREN          shift and go to state 5
+    KW_PRINT        reduce using rule 4 (expression -> dvariable .)
+    KW_LET          reduce using rule 4 (expression -> dvariable .)
+    LBRACKET        reduce using rule 4 (expression -> dvariable .)
+    KW_FN           reduce using rule 4 (expression -> dvariable .)
+    VARIABLE        reduce using rule 4 (expression -> dvariable .)
+    $end            reduce using rule 4 (expression -> dvariable .)
+    RBRACKET        reduce using rule 4 (expression -> dvariable .)
 
 
 state 5
 
-    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN . SEMI
+    (5) expression -> array .
 
-    SEMI            shift and go to state 6
+    KW_PRINT        reduce using rule 5 (expression -> array .)
+    KW_LET          reduce using rule 5 (expression -> array .)
+    LBRACKET        reduce using rule 5 (expression -> array .)
+    KW_FN           reduce using rule 5 (expression -> array .)
+    VARIABLE        reduce using rule 5 (expression -> array .)
+    $end            reduce using rule 5 (expression -> array .)
+    RBRACKET        reduce using rule 5 (expression -> array .)
 
 
 state 6
 
-    (1) IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI .
+    (6) expression -> function_argument .
 
-    $end            reduce using rule 1 (IMPRIMIR -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    KW_PRINT        reduce using rule 6 (expression -> function_argument .)
+    KW_LET          reduce using rule 6 (expression -> function_argument .)
+    LBRACKET        reduce using rule 6 (expression -> function_argument .)
+    KW_FN           reduce using rule 6 (expression -> function_argument .)
+    VARIABLE        reduce using rule 6 (expression -> function_argument .)
+    $end            reduce using rule 6 (expression -> function_argument .)
+    RBRACKET        reduce using rule 6 (expression -> function_argument .)
 
+
+state 7
+
+    (7) expression -> function .
+
+    KW_PRINT        reduce using rule 7 (expression -> function .)
+    KW_LET          reduce using rule 7 (expression -> function .)
+    LBRACKET        reduce using rule 7 (expression -> function .)
+    KW_FN           reduce using rule 7 (expression -> function .)
+    VARIABLE        reduce using rule 7 (expression -> function .)
+    $end            reduce using rule 7 (expression -> function .)
+    RBRACKET        reduce using rule 7 (expression -> function .)
+
+
+state 8
+
+    (8) expression -> variables .
+
+    KW_PRINT        reduce using rule 8 (expression -> variables .)
+    KW_LET          reduce using rule 8 (expression -> variables .)
+    LBRACKET        reduce using rule 8 (expression -> variables .)
+    KW_FN           reduce using rule 8 (expression -> variables .)
+    VARIABLE        reduce using rule 8 (expression -> variables .)
+    $end            reduce using rule 8 (expression -> variables .)
+    RBRACKET        reduce using rule 8 (expression -> variables .)
+
+
+state 9
+
+    (9) expression -> void .
+
+    KW_PRINT        reduce using rule 9 (expression -> void .)
+    KW_LET          reduce using rule 9 (expression -> void .)
+    LBRACKET        reduce using rule 9 (expression -> void .)
+    KW_FN           reduce using rule 9 (expression -> void .)
+    VARIABLE        reduce using rule 9 (expression -> void .)
+    $end            reduce using rule 9 (expression -> void .)
+    RBRACKET        reduce using rule 9 (expression -> void .)
+
+
+state 10
+
+    (10) print -> KW_PRINT . LPAREN CADENA RPAREN SEMI
+
+    LPAREN          shift and go to state 16
+
+
+state 11
+
+    (11) dvariable -> KW_LET . VARIABLE SEMI
+
+    VARIABLE        shift and go to state 17
+
+
+state 12
+
+    (13) variables -> VARIABLE .
+    (14) variables -> VARIABLE . COMMA variables
+
+    KW_PRINT        reduce using rule 13 (variables -> VARIABLE .)
+    KW_LET          reduce using rule 13 (variables -> VARIABLE .)
+    LBRACKET        reduce using rule 13 (variables -> VARIABLE .)
+    KW_FN           reduce using rule 13 (variables -> VARIABLE .)
+    VARIABLE        reduce using rule 13 (variables -> VARIABLE .)
+    $end            reduce using rule 13 (variables -> VARIABLE .)
+    RPAREN          reduce using rule 13 (variables -> VARIABLE .)
+    RBRACKET        reduce using rule 13 (variables -> VARIABLE .)
+    COMMA           shift and go to state 18
+
+
+state 13
+
+    (12) array -> LBRACKET . RBRACKET
+
+    RBRACKET        shift and go to state 19
+
+
+state 14
+
+    (16) function_argument -> KW_FN . VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> KW_FN . VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+
+    VARIABLE        shift and go to state 20
+
+
+state 15
+
+    (2) main_rule -> expression main_rule .
+
+    $end            reduce using rule 2 (main_rule -> expression main_rule .)
+
+
+state 16
+
+    (10) print -> KW_PRINT LPAREN . CADENA RPAREN SEMI
+
+    CADENA          shift and go to state 21
+
+
+state 17
+
+    (11) dvariable -> KW_LET VARIABLE . SEMI
+
+    SEMI            shift and go to state 22
+
+
+state 18
+
+    (14) variables -> VARIABLE COMMA . variables
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+
+    VARIABLE        shift and go to state 12
+
+    variables                      shift and go to state 23
+
+state 19
+
+    (12) array -> LBRACKET RBRACKET .
+
+    KW_PRINT        reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    KW_LET          reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    LBRACKET        reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    KW_FN           reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    VARIABLE        reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    $end            reduce using rule 12 (array -> LBRACKET RBRACKET .)
+    RBRACKET        reduce using rule 12 (array -> LBRACKET RBRACKET .)
+
+
+state 20
+
+    (16) function_argument -> KW_FN VARIABLE . LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> KW_FN VARIABLE . LPAREN RPAREN LBRACKET expression RBRACKET
+
+    LPAREN          shift and go to state 24
+
+
+state 21
+
+    (10) print -> KW_PRINT LPAREN CADENA . RPAREN SEMI
+
+    RPAREN          shift and go to state 25
+
+
+state 22
+
+    (11) dvariable -> KW_LET VARIABLE SEMI .
+
+    KW_PRINT        reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    KW_LET          reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    LBRACKET        reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    KW_FN           reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    VARIABLE        reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    $end            reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+    RBRACKET        reduce using rule 11 (dvariable -> KW_LET VARIABLE SEMI .)
+
+
+state 23
+
+    (14) variables -> VARIABLE COMMA variables .
+
+    KW_PRINT        reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    KW_LET          reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    LBRACKET        reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    KW_FN           reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    VARIABLE        reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    $end            reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    RPAREN          reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+    RBRACKET        reduce using rule 14 (variables -> VARIABLE COMMA variables .)
+
+
+state 24
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN . variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> KW_FN VARIABLE LPAREN . RPAREN LBRACKET expression RBRACKET
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+
+    RPAREN          shift and go to state 27
+    VARIABLE        shift and go to state 12
+
+    variables                      shift and go to state 26
+
+state 25
+
+    (10) print -> KW_PRINT LPAREN CADENA RPAREN . SEMI
+
+    SEMI            shift and go to state 28
+
+
+state 26
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN variables . RPAREN LBRACKET expression RBRACKET
+
+    RPAREN          shift and go to state 29
+
+
+state 27
+
+    (15) function -> KW_FN VARIABLE LPAREN RPAREN . LBRACKET expression RBRACKET
+
+    LBRACKET        shift and go to state 30
+
+
+state 28
+
+    (10) print -> KW_PRINT LPAREN CADENA RPAREN SEMI .
+
+    KW_PRINT        reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    KW_LET          reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    LBRACKET        reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    KW_FN           reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    VARIABLE        reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    $end            reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+    RBRACKET        reduce using rule 10 (print -> KW_PRINT LPAREN CADENA RPAREN SEMI .)
+
+
+state 29
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN variables RPAREN . LBRACKET expression RBRACKET
+
+    LBRACKET        shift and go to state 31
+
+
+state 30
+
+    (15) function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET . expression RBRACKET
+    (3) expression -> . print
+    (4) expression -> . dvariable
+    (5) expression -> . array
+    (6) expression -> . function_argument
+    (7) expression -> . function
+    (8) expression -> . variables
+    (9) expression -> . void
+    (10) print -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+    (11) dvariable -> . KW_LET VARIABLE SEMI
+    (12) array -> . LBRACKET RBRACKET
+    (16) function_argument -> . KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> . KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+    (17) void -> .
+
+    KW_PRINT        shift and go to state 10
+    KW_LET          shift and go to state 11
+    LBRACKET        shift and go to state 13
+    KW_FN           shift and go to state 14
+    VARIABLE        shift and go to state 12
+    RBRACKET        reduce using rule 17 (void -> .)
+
+    expression                     shift and go to state 32
+    print                          shift and go to state 3
+    dvariable                      shift and go to state 4
+    array                          shift and go to state 5
+    function_argument              shift and go to state 6
+    function                       shift and go to state 7
+    variables                      shift and go to state 8
+    void                           shift and go to state 9
+
+state 31
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET . expression RBRACKET
+    (3) expression -> . print
+    (4) expression -> . dvariable
+    (5) expression -> . array
+    (6) expression -> . function_argument
+    (7) expression -> . function
+    (8) expression -> . variables
+    (9) expression -> . void
+    (10) print -> . KW_PRINT LPAREN CADENA RPAREN SEMI
+    (11) dvariable -> . KW_LET VARIABLE SEMI
+    (12) array -> . LBRACKET RBRACKET
+    (16) function_argument -> . KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET
+    (15) function -> . KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET
+    (13) variables -> . VARIABLE
+    (14) variables -> . VARIABLE COMMA variables
+    (17) void -> .
+
+    KW_PRINT        shift and go to state 10
+    KW_LET          shift and go to state 11
+    LBRACKET        shift and go to state 13
+    KW_FN           shift and go to state 14
+    VARIABLE        shift and go to state 12
+    RBRACKET        reduce using rule 17 (void -> .)
+
+    variables                      shift and go to state 8
+    expression                     shift and go to state 33
+    print                          shift and go to state 3
+    dvariable                      shift and go to state 4
+    array                          shift and go to state 5
+    function_argument              shift and go to state 6
+    function                       shift and go to state 7
+    void                           shift and go to state 9
+
+state 32
+
+    (15) function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression . RBRACKET
+
+    RBRACKET        shift and go to state 34
+
+
+state 33
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression . RBRACKET
+
+    RBRACKET        shift and go to state 35
+
+
+state 34
+
+    (15) function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .
+
+    KW_PRINT        reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    KW_LET          reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    LBRACKET        reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    KW_FN           reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    VARIABLE        reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    $end            reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+    RBRACKET        reduce using rule 15 (function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET .)
+
+
+state 35
+
+    (16) function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .
+
+    KW_PRINT        reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    KW_LET          reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    LBRACKET        reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    KW_FN           reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    VARIABLE        reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    $end            reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+    RBRACKET        reduce using rule 16 (function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET .)
+
+WARNING: 
+WARNING: Conflicts:
+WARNING: 
+WARNING: shift/reduce conflict for KW_PRINT in state 0 resolved as shift
+WARNING: shift/reduce conflict for KW_LET in state 0 resolved as shift
+WARNING: shift/reduce conflict for LBRACKET in state 0 resolved as shift
+WARNING: shift/reduce conflict for KW_FN in state 0 resolved as shift
+WARNING: shift/reduce conflict for VARIABLE in state 0 resolved as shift
+WARNING: shift/reduce conflict for KW_PRINT in state 2 resolved as shift
+WARNING: shift/reduce conflict for KW_LET in state 2 resolved as shift
+WARNING: shift/reduce conflict for LBRACKET in state 2 resolved as shift
+WARNING: shift/reduce conflict for KW_FN in state 2 resolved as shift
+WARNING: shift/reduce conflict for VARIABLE in state 2 resolved as shift
+WARNING: reduce/reduce conflict in state 2 resolved using rule (main_rule -> expression)
+WARNING: rejected rule (void -> <empty>) in state 2
