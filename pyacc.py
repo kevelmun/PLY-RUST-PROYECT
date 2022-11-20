@@ -79,7 +79,8 @@ def p_declare_variable(p):
     'dvariable : KW_LET VARIABLE SEMI'
 
 def p_array(p):
-    'array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET'
+    '''array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET
+    | LBRACKET mdata RBRACKET'''
 
 def p_variables(p):
     '''variables : VARIABLE 
