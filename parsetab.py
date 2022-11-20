@@ -6,9 +6,9 @@ _tabversion = '3.10'
 
 _lr_method = 'LALR'
 
-_lr_signature = 'AND ANDE CADENA CHAR COLON COMMA COMMENT DIVEQUAL DIVIDE DOT EQ EQUALS FLOAT FLOAT_32 FLOAT_64 GE GT HASH INTEGER KW_ABSTRACT KW_AS KW_ASYNC KW_AWAIT KW_BECOME KW_BOOLEAN KW_BOX KW_BREAK KW_CHARACTER KW_CONST KW_CONTINUE KW_CRATE KW_DO KW_DYN KW_ELSE KW_ENUM KW_EXTERN KW_FALSE KW_FINAL KW_FN KW_FOR KW_IF KW_IMPL KW_IN KW_LET KW_LOOP KW_MACRO KW_MATCH KW_MOD KW_MOVE KW_MUT KW_OVERRIDE KW_PRINT KW_PRIV KW_PUB KW_REF KW_RETURN KW_SELFTYPE KW_SELFVALUE KW_STATIC KW_STATICLIFETIME KW_STRUCT KW_SUPER KW_TRAIT KW_TRUE KW_TRY KW_TYPE KW_TYPEOF KW_UNION KW_UNSAFE KW_UNSIZED KW_USE KW_VIRTUAL KW_WHERE KW_WHILE KW_YIELD LAND LBRACE LBRACKET LE LNOT LOR LPAREN LT MINUS MINUSEQUAL MODULUS MODULUSEQUAL NE ORE OREXE PLUS PLUSEQUAL QMARK QUOTE RBRACE RBRACKET RPAREN SEMI SIG_INT_128 SIG_INT_16 SIG_INT_32 SIG_INT_64 SIG_INT_8 TIMES TIMESEQUAL UNSIG_INT_128 UNSIG_INT_16 UNSIG_INT_32 UNSIG_INT_64 UNSIG_INT_8 VARIABLEmain_rule : expression\n    | expression main_ruleexpression : print\n    | dvariable\n    | array\n    | function_argument\n    | function\n    | variables\n    | voidprint : KW_PRINT LPAREN CADENA RPAREN SEMIdvariable : KW_LET VARIABLE SEMIarray : LBRACKET RBRACKETvariables : VARIABLE \n    | VARIABLE COMMA variablesfunction : KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKETfunction_argument : KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKETvoid : '
+_lr_signature = 'AND ANDE CADENA CHAR COLON COMMA COMMENT DIVEQUAL DIVIDE DOT EQ EQUALS FLOAT FLOAT_32 FLOAT_64 GE GT HASH INTEGER KW_ABSTRACT KW_AS KW_ASYNC KW_AWAIT KW_BECOME KW_BOOLEAN KW_BOX KW_BREAK KW_CHARACTER KW_CONST KW_CONTINUE KW_CRATE KW_DO KW_DYN KW_ELSE KW_ENUM KW_EXTERN KW_FALSE KW_FINAL KW_FN KW_FOR KW_IF KW_IMPL KW_IN KW_LET KW_LOOP KW_MACRO KW_MATCH KW_MOD KW_MOVE KW_MUT KW_OVERRIDE KW_PRINT KW_PRIV KW_PUB KW_REF KW_RETURN KW_SELFTYPE KW_SELFVALUE KW_STATIC KW_STATICLIFETIME KW_STRUCT KW_SUPER KW_TRAIT KW_TRUE KW_TRY KW_TYPE KW_TYPEOF KW_UNION KW_UNSAFE KW_UNSIZED KW_USE KW_VIRTUAL KW_WHERE KW_WHILE KW_YIELD LAND LBRACE LBRACKET LE LNOT LOR LPAREN LT MINUS MINUSEQUAL MODULUS MODULUSEQUAL NE ORE OREXE PLUS PLUSEQUAL QMARK QUOTE RBRACE RBRACKET RPAREN SEMI SIG_INT_128 SIG_INT_16 SIG_INT_32 SIG_INT_64 SIG_INT_8 TIMES TIMESEQUAL UNSIG_INT_128 UNSIG_INT_16 UNSIG_INT_32 UNSIG_INT_64 UNSIG_INT_8 VARIABLEmain_rule : father_rule\n    | father_rule main_rulefather_rule : print\n    | dvariable\n    | array\n    | function\n    | variables\n    | control_str\n    | expression\n    | voidexpression : expression PLUS expression\n    | expression MINUS expression\n    | expression TIMES expression\n    | expression DIVIDE expression\n    | LPAREN expression RPAREN\n    | numbernumber : INTEGER\n    | FLOAT\n    | VARIABLEprint : KW_PRINT LPAREN CADENA RPAREN SEMIdvariable : KW_LET VARIABLE SEMIarray : LBRACKET RBRACKETvariables : VARIABLE \n    | VARIABLE COMMA variablesarguments : void\n    | variablesfunction : KW_FN VARIABLE LPAREN arguments RPAREN LBRACE father_rule RBRACEcontrol_str : for_str\n    | for_str_taggedfor_str : KW_FOR VARIABLE KW_IN range LBRACE father_rule RBRACE\n    | KW_FOR VARIABLE KW_IN VARIABLE LBRACE father_rule RBRACEfor_str_tagged : label COLON for_strrange : INTEGER DOT DOT INTEGER\n    | VARIABLE DOT DOT VARIABLElabel : QUOTE VARIABLEvoid : '
     
-_lr_action_items = {'KW_PRINT':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[10,10,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,10,10,-15,-16,]),'KW_LET':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[11,11,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,11,11,-15,-16,]),'LBRACKET':([0,2,3,4,5,6,7,8,9,12,19,22,23,27,28,29,30,31,34,35,],[13,13,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,30,-10,31,13,13,-15,-16,]),'KW_FN':([0,2,3,4,5,6,7,8,9,12,19,22,23,28,30,31,34,35,],[14,14,-3,-4,-5,-6,-7,-8,-9,-13,-12,-11,-14,-10,14,14,-15,-16,]),'VARIABLE':([0,2,3,4,5,6,7,8,9,11,12,14,18,19,22,23,24,28,30,31,34,35,],[12,12,-3,-4,-5,-6,-7,-8,-9,17,-13,20,12,-12,-11,-14,12,-10,12,12,-15,-16,]),'$end':([0,1,2,3,4,5,6,7,8,9,12,15,19,22,23,28,34,35,],[-17,0,-1,-3,-4,-5,-6,-7,-8,-9,-13,-2,-12,-11,-14,-10,-15,-16,]),'RBRACKET':([3,4,5,6,7,8,9,12,13,19,22,23,28,30,31,32,33,34,35,],[-3,-4,-5,-6,-7,-8,-9,-13,19,-12,-11,-14,-10,-17,-17,34,35,-15,-16,]),'LPAREN':([10,20,],[16,24,]),'RPAREN':([12,21,23,24,26,],[-13,25,-14,27,29,]),'COMMA':([12,],[18,]),'CADENA':([16,],[21,]),'SEMI':([17,25,],[22,28,]),}
+_lr_action_items = {'KW_PRINT':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[11,11,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,11,11,11,-31,-30,-27,]),'KW_LET':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[13,13,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,13,13,13,-31,-30,-27,]),'LBRACKET':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[15,15,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,15,15,15,-31,-30,-27,]),'KW_FN':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[16,16,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,16,16,16,-31,-30,-27,]),'VARIABLE':([0,2,3,4,5,6,7,8,9,10,12,13,14,16,17,18,19,20,22,23,24,26,27,28,29,32,34,35,40,41,42,43,45,46,47,48,49,50,51,59,61,63,65,67,71,73,75,],[14,14,-3,-4,-5,-6,-7,-8,-9,-10,32,33,-19,36,-28,-29,-16,37,-17,-18,39,32,32,32,32,-19,47,-22,-11,-12,-13,-14,-15,-21,-23,-24,47,56,-32,-20,14,14,14,72,-31,-30,-27,]),'LPAREN':([0,2,3,4,5,6,7,8,9,10,11,12,14,17,18,19,22,23,26,27,28,29,32,35,36,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[12,12,-3,-4,-5,-6,-7,-8,-9,-10,30,12,-19,-28,-29,-16,-17,-18,12,12,12,12,-19,-22,49,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,12,12,12,-31,-30,-27,]),'KW_FOR':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,38,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[20,20,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,20,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,20,20,20,-31,-30,-27,]),'INTEGER':([0,2,3,4,5,6,7,8,9,10,12,14,17,18,19,22,23,26,27,28,29,32,35,40,41,42,43,45,46,47,48,50,51,59,61,63,65,69,71,73,75,],[22,22,-3,-4,-5,-6,-7,-8,-9,-10,22,-19,-28,-29,-16,-17,-18,22,22,22,22,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,58,-32,-20,22,22,22,74,-31,-30,-27,]),'FLOAT':([0,2,3,4,5,6,7,8,9,10,12,14,17,18,19,22,23,26,27,28,29,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[23,23,-3,-4,-5,-6,-7,-8,-9,-10,23,-19,-28,-29,-16,-17,-18,23,23,23,23,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,23,23,23,-31,-30,-27,]),'QUOTE':([0,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,71,73,75,],[24,24,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,24,24,24,-31,-30,-27,]),'$end':([0,1,2,3,4,5,6,7,8,9,10,14,17,18,19,22,23,25,32,35,40,41,42,43,45,46,47,48,51,59,71,73,75,],[-36,0,-1,-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-2,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,-31,-30,-27,]),'RBRACE':([3,4,5,6,7,8,9,10,14,17,18,19,22,23,32,35,40,41,42,43,45,46,47,48,51,59,61,63,65,66,68,70,71,73,75,],[-3,-4,-5,-6,-7,-8,-9,-10,-19,-28,-29,-16,-17,-18,-19,-22,-11,-12,-13,-14,-15,-21,-23,-24,-32,-20,-36,-36,-36,71,73,75,-31,-30,-27,]),'PLUS':([9,14,19,22,23,31,32,40,41,42,43,45,],[26,-19,-16,-17,-18,26,-19,26,26,26,26,-15,]),'MINUS':([9,14,19,22,23,31,32,40,41,42,43,45,],[27,-19,-16,-17,-18,27,-19,27,27,27,27,-15,]),'TIMES':([9,14,19,22,23,31,32,40,41,42,43,45,],[28,-19,-16,-17,-18,28,-19,28,28,28,28,-15,]),'DIVIDE':([9,14,19,22,23,31,32,40,41,42,43,45,],[29,-19,-16,-17,-18,29,-19,29,29,29,29,-15,]),'COMMA':([14,47,],[34,34,]),'RBRACKET':([15,],[35,]),'RPAREN':([19,22,23,31,32,40,41,42,43,44,45,47,48,49,53,54,55,],[-16,-17,-18,45,-19,-11,-12,-13,-14,52,-15,-23,-24,-36,60,-25,-26,]),'COLON':([21,39,],[38,-35,]),'CADENA':([30,],[44,]),'SEMI':([33,52,],[46,59,]),'KW_IN':([37,],[50,]),'LBRACE':([56,57,60,72,74,],[61,63,65,-34,-33,]),'DOT':([56,58,62,64,],[62,64,67,69,]),}
 
 _lr_action = {}
 for _k, _v in _lr_action_items.items():
@@ -17,7 +17,7 @@ for _k, _v in _lr_action_items.items():
       _lr_action[_x][_k] = _y
 del _lr_action_items
 
-_lr_goto_items = {'main_rule':([0,2,],[1,15,]),'expression':([0,2,30,31,],[2,2,32,33,]),'print':([0,2,30,31,],[3,3,3,3,]),'dvariable':([0,2,30,31,],[4,4,4,4,]),'array':([0,2,30,31,],[5,5,5,5,]),'function_argument':([0,2,30,31,],[6,6,6,6,]),'function':([0,2,30,31,],[7,7,7,7,]),'variables':([0,2,18,24,30,31,],[8,8,23,26,8,8,]),'void':([0,2,30,31,],[9,9,9,9,]),}
+_lr_goto_items = {'main_rule':([0,2,],[1,25,]),'father_rule':([0,2,61,63,65,],[2,2,66,68,70,]),'print':([0,2,61,63,65,],[3,3,3,3,3,]),'dvariable':([0,2,61,63,65,],[4,4,4,4,4,]),'array':([0,2,61,63,65,],[5,5,5,5,5,]),'function':([0,2,61,63,65,],[6,6,6,6,6,]),'variables':([0,2,34,49,61,63,65,],[7,7,48,55,7,7,7,]),'control_str':([0,2,61,63,65,],[8,8,8,8,8,]),'expression':([0,2,12,26,27,28,29,61,63,65,],[9,9,31,40,41,42,43,9,9,9,]),'void':([0,2,49,61,63,65,],[10,10,54,10,10,10,]),'for_str':([0,2,38,61,63,65,],[17,17,51,17,17,17,]),'for_str_tagged':([0,2,61,63,65,],[18,18,18,18,18,]),'number':([0,2,12,26,27,28,29,61,63,65,],[19,19,19,19,19,19,19,19,19,19,]),'label':([0,2,61,63,65,],[21,21,21,21,21,]),'arguments':([49,],[53,]),'range':([50,],[57,]),}
 
 _lr_goto = {}
 for _k, _v in _lr_goto_items.items():
@@ -27,21 +27,40 @@ for _k, _v in _lr_goto_items.items():
 del _lr_goto_items
 _lr_productions = [
   ("S' -> main_rule","S'",1,None,None,None),
-  ('main_rule -> expression','main_rule',1,'p_main_rule','pyacc.py',9),
-  ('main_rule -> expression main_rule','main_rule',2,'p_main_rule','pyacc.py',10),
-  ('expression -> print','expression',1,'p_expression','pyacc.py',15),
-  ('expression -> dvariable','expression',1,'p_expression','pyacc.py',16),
-  ('expression -> array','expression',1,'p_expression','pyacc.py',17),
-  ('expression -> function_argument','expression',1,'p_expression','pyacc.py',18),
-  ('expression -> function','expression',1,'p_expression','pyacc.py',19),
-  ('expression -> variables','expression',1,'p_expression','pyacc.py',20),
-  ('expression -> void','expression',1,'p_expression','pyacc.py',21),
-  ('print -> KW_PRINT LPAREN CADENA RPAREN SEMI','print',5,'p_print','pyacc.py',25),
-  ('dvariable -> KW_LET VARIABLE SEMI','dvariable',3,'p_declare_variable','pyacc.py',28),
-  ('array -> LBRACKET RBRACKET','array',2,'p_array','pyacc.py',31),
-  ('variables -> VARIABLE','variables',1,'p_variables','pyacc.py',34),
-  ('variables -> VARIABLE COMMA variables','variables',3,'p_variables','pyacc.py',35),
-  ('function -> KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET','function',7,'p_function','pyacc.py',41),
-  ('function_argument -> KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET','function_argument',8,'p_function_argument','pyacc.py',44),
-  ('void -> <empty>','void',0,'p_void','pyacc.py',52),
+  ('main_rule -> father_rule','main_rule',1,'p_main_rule','pyacc.py',9),
+  ('main_rule -> father_rule main_rule','main_rule',2,'p_main_rule','pyacc.py',10),
+  ('father_rule -> print','father_rule',1,'p_father_rule','pyacc.py',15),
+  ('father_rule -> dvariable','father_rule',1,'p_father_rule','pyacc.py',16),
+  ('father_rule -> array','father_rule',1,'p_father_rule','pyacc.py',17),
+  ('father_rule -> function','father_rule',1,'p_father_rule','pyacc.py',18),
+  ('father_rule -> variables','father_rule',1,'p_father_rule','pyacc.py',19),
+  ('father_rule -> control_str','father_rule',1,'p_father_rule','pyacc.py',20),
+  ('father_rule -> expression','father_rule',1,'p_father_rule','pyacc.py',21),
+  ('father_rule -> void','father_rule',1,'p_father_rule','pyacc.py',22),
+  ('expression -> expression PLUS expression','expression',3,'p_expression','pyacc.py',28),
+  ('expression -> expression MINUS expression','expression',3,'p_expression','pyacc.py',29),
+  ('expression -> expression TIMES expression','expression',3,'p_expression','pyacc.py',30),
+  ('expression -> expression DIVIDE expression','expression',3,'p_expression','pyacc.py',31),
+  ('expression -> LPAREN expression RPAREN','expression',3,'p_expression','pyacc.py',32),
+  ('expression -> number','expression',1,'p_expression','pyacc.py',33),
+  ('number -> INTEGER','number',1,'p_number','pyacc.py',38),
+  ('number -> FLOAT','number',1,'p_number','pyacc.py',39),
+  ('number -> VARIABLE','number',1,'p_number','pyacc.py',40),
+  ('print -> KW_PRINT LPAREN CADENA RPAREN SEMI','print',5,'p_print','pyacc.py',45),
+  ('dvariable -> KW_LET VARIABLE SEMI','dvariable',3,'p_declare_variable','pyacc.py',48),
+  ('array -> LBRACKET RBRACKET','array',2,'p_array','pyacc.py',51),
+  ('variables -> VARIABLE','variables',1,'p_variables','pyacc.py',54),
+  ('variables -> VARIABLE COMMA variables','variables',3,'p_variables','pyacc.py',55),
+  ('arguments -> void','arguments',1,'p_arguments','pyacc.py',64),
+  ('arguments -> variables','arguments',1,'p_arguments','pyacc.py',65),
+  ('function -> KW_FN VARIABLE LPAREN arguments RPAREN LBRACE father_rule RBRACE','function',8,'p_function','pyacc.py',69),
+  ('control_str -> for_str','control_str',1,'p_control_str','pyacc.py',73),
+  ('control_str -> for_str_tagged','control_str',1,'p_control_str','pyacc.py',74),
+  ('for_str -> KW_FOR VARIABLE KW_IN range LBRACE father_rule RBRACE','for_str',7,'p_for_str','pyacc.py',77),
+  ('for_str -> KW_FOR VARIABLE KW_IN VARIABLE LBRACE father_rule RBRACE','for_str',7,'p_for_str','pyacc.py',78),
+  ('for_str_tagged -> label COLON for_str','for_str_tagged',3,'p_for_str_tagged','pyacc.py',81),
+  ('range -> INTEGER DOT DOT INTEGER','range',4,'p_range','pyacc.py',84),
+  ('range -> VARIABLE DOT DOT VARIABLE','range',4,'p_range','pyacc.py',85),
+  ('label -> QUOTE VARIABLE','label',2,'p_label','pyacc.py',88),
+  ('void -> <empty>','void',0,'p_void','pyacc.py',92),
 ]

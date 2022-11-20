@@ -6,19 +6,39 @@ from main import tokens
 
 # GENERAL RULE
 def p_main_rule(p):
-    '''main_rule : expression
-    | expression main_rule'''
+    '''main_rule : father_rule
+    | father_rule main_rule'''
     
 
 # RULE WITH ALL THE OPTIONS TO MAKE
-def p_expression(p):
-    '''expression : print
+def p_father_rule(p):
+    '''father_rule : print
     | dvariable
     | array
-    | function_argument
     | function
     | variables
+    | control_str
+    | expression
     | void'''
+
+#KEVIN MUÑOZ
+
+# Rule for the different number expression
+def p_expression(p):
+    '''expression : expression PLUS expression
+    | expression MINUS expression
+    | expression TIMES expression
+    | expression DIVIDE expression
+    | LPAREN expression RPAREN
+    | number'''
+
+
+# Types of numbers
+def p_number(p):
+    '''number : INTEGER
+    | FLOAT
+    | VARIABLE'''
+
 
 #DANIEL GUERRERO
 def p_print(p):
@@ -34,18 +54,36 @@ def p_variables(p):
     '''variables : VARIABLE 
     | VARIABLE COMMA variables'''
 
+
 # KEVIN MUÑOZ
+
+# Arguments for functions
+def p_arguments(p):
+    '''arguments : void
+    | variables'''
 
 # Function without arguments   
 def p_function(p):
-    'function : KW_FN VARIABLE LPAREN RPAREN LBRACKET expression RBRACKET'
-
-def p_function_argument(p):
-    'function_argument : KW_FN VARIABLE LPAREN variables RPAREN LBRACKET expression RBRACKET'
+    'function : KW_FN VARIABLE LPAREN arguments RPAREN LBRACE father_rule RBRACE'
 
 
+def p_control_str(p):
+    '''control_str : for_str
+    | for_str_tagged'''
 
+def p_for_str(p):
+    '''for_str : KW_FOR VARIABLE KW_IN range LBRACE father_rule RBRACE
+    | KW_FOR VARIABLE KW_IN VARIABLE LBRACE father_rule RBRACE'''
 
+def p_for_str_tagged(p):
+    '''for_str_tagged : label COLON for_str'''
+
+def p_range(p):
+    '''range : INTEGER DOT DOT INTEGER
+    | VARIABLE DOT DOT VARIABLE'''
+
+def p_label(p):
+    'label : QUOTE VARIABLE'
 
 # Void rule productions
 def p_void(p):
