@@ -80,8 +80,8 @@ reserved = {
     "LinkedList": 'KW_LINKEDLIST',
     "new": 'KW_NEW',
     "from": 'KW_FROM',
-    "push_back": 'PUSH',
-    "remove": 'REMOVE',
+    "push_back": 'KW_PUSH_BACK',
+    "remove": 'KW_REMOVE',
     "String": 'KW_STRING',
     "stdin": 'KW_STDIN',
     "read_line": 'KW_READ_LINE',
@@ -90,6 +90,10 @@ reserved = {
 
     #Daniel Guerrero
     "println": 'KW_PRINT',
+
+    #KEVIN ELIHAN MUNOZ
+    "HashMap": 'KW_HASHMAP',
+    "insert": 'KW_INSERT',
 }
 
 

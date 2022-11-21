@@ -14,18 +14,16 @@ def p_main_rule(p):
 def p_father_rule(p):
     '''father_rule : print
     | dvariable
-    | array
     | function
     | variables
     | control_str
     | expression
     | void
-    | linkedlist
-    | push
-    | remove
-    | if
-    | else
-    | else_if'''
+    | data_str
+    | array
+    | linkedlist_methods
+    | hashmap_methods
+    | initialization'''
 
 #KEVIN MUÑOZ
 
@@ -46,8 +44,8 @@ def p_number(p):
     | VARIABLE'''
 
 # LOBERLLY SALAZAR
-def p_dataType(p):
-    '''dataType : UNSIG_INT_8
+def p_data_type(p):
+    '''data_type : UNSIG_INT_8
                 | UNSIG_INT_16
                 | UNSIG_INT_32
                 | UNSIG_INT_64
@@ -69,7 +67,8 @@ def p_data(p):
     | CHAR
     | FLOAT
     | KW_FALSE
-    | KW_TRUE'''
+    | KW_TRUE
+    | tuple'''
 
 def p_comparator(p):
     '''comparator :
@@ -113,6 +112,26 @@ def p_while(p):
     
 # KEVIN MUÑOZ
 
+# Initialization
+
+def p_tuple(p):
+    'tuple : LPAREN mdata RPAREN'
+
+
+def p_initialization(p):
+    '''initialization : let_initialization SEMI 
+    | const_initialization SEMI 
+    | data_str SEMI'''
+
+def p_let_initialization(p):
+    '''let_initialization : KW_LET VARIABLE EQUALS data
+    | KW_LET VARIABLE COLON data_type EQUALS data
+    | KW_LET KW_MUT VARIABLE EQUALS data
+    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS data'''
+
+def p_const_initialization(p):
+    'const_initialization : KW_CONST VARIABLE COLON data_type EQUALS data'
+
 # Arguments for functions
 def p_arguments(p):
     '''arguments : void
@@ -120,26 +139,60 @@ def p_arguments(p):
 
 # Function without arguments   
 def p_function(p):
-    'function : KW_FN VARIABLE LPAREN arguments RPAREN LBRACE father_rule RBRACE'
+    'function : KW_FN VARIABLE LPAREN arguments RPAREN LBRACE main_rule RBRACE'
 
-
+# Control structures
 def p_control_str(p):
     '''control_str : for_str
-    | for_str_tagged'''
+    | for_str_tagged
+    | if
+    | else
+    | else_if
+    | while'''
 
+# For structure
 def p_for_str(p):
-    '''for_str : KW_FOR VARIABLE KW_IN range LBRACE father_rule RBRACE
-    | KW_FOR VARIABLE KW_IN VARIABLE LBRACE father_rule RBRACE'''
+    '''for_str : KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
+    | KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE'''
 
+# For structure with label
 def p_for_str_tagged(p):
     '''for_str_tagged : label COLON for_str'''
 
+# Posible values to use a range 
 def p_range(p):
     '''range : INTEGER DOT DOT INTEGER
     | VARIABLE DOT DOT VARIABLE'''
 
+# Title tag to recognize a specific loop
 def p_label(p):
     'label : QUOTE VARIABLE'
+
+# Data structures
+def p_data_str(p):
+    '''data_str : array
+    | hashmap
+    | linkedlist'''
+
+# HashMap structure
+def p_hashmap(p):
+    '''hashmap : KW_LET VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
+    | KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
+    | KW_LET VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN
+    | KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN'''
+
+# HashMap methods
+def p_hashmap_methods(p):
+    '''hashmap_methods : VARIABLE hashmap_insert
+    | VARIABLE hashmap_remove'''
+
+# HashMap insert
+def p_hashmap_insert(p):
+    'hashmap_insert : DOT KW_INSERT LPAREN data RPAREN SEMI'
+
+# HashMap remove
+def p_hashmap_remove(p):
+    'hashmap_remove : DOT KW_REMOVE LPAREN AND data RPAREN SEMI'
 
 # Void rule productions
 def p_void(p):
@@ -151,18 +204,22 @@ def p_void(p):
 ## Arraylist
 
 def p_linkedlist_empty(p):
-    '''linkedlist : KW_LET VARIABLE COLON KW_LINKEDLIST LT dataType GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN SEMI
-                  | KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT dataType GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN SEMI'''
+    '''linkedlist : KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN
+                  | KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN'''
 
 def p_linkedlist_array(p):
-    '''linkedlist : KW_LET VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN SEMI
-                  | KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN SEMI'''
+    '''linkedlist : KW_LET VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN
+                  | KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN'''
 
-def p_push(p):
-    'push : VARIABLE DOT PUSH LPAREN data RPAREN SEMI'
+def p_linkedlist_methods(p):
+    '''linkedlist_methods : VARIABLE linkedlist_push
+    | VARIABLE linkedlist_remove'''
 
-def p_remove(p):
-    'remove : VARIABLE DOT REMOVE LPAREN INTEGER RPAREN SEMI'
+def p_linkedlist_push(p):
+    'linkedlist_push : DOT KW_PUSH_BACK LPAREN data RPAREN SEMI'
+
+def p_linkedlist_remove(p):
+    'linkedlist_remove : DOT KW_REMOVE LPAREN INTEGER RPAREN SEMI'
 
 ## if data structure
 
@@ -178,7 +235,7 @@ def p_else_if(p):
 ## Function with a return value
 
 def p_function_return(p):
-    '''function : KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT dataType LBRACE return RBRACE'''
+    '''function : KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE return RBRACE'''
 
 def p_expression_var(p):
     '''expression_var : expression
