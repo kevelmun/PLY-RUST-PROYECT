@@ -93,36 +93,42 @@ def p_comparator(p):
     | GT
     | LT'''
 
-def p_and(p):
-    'and : VARIABLE LAND VARIABLE'
+def p_logic(p):
+    '''logic : LOR
+    | LAND'''
+
+def p_logic_variable(p):
+    'lvariable : VARIABLE logic VARIABLE'
 
 def p_conditional(p):
     '''conditional : VARIABLE comparator data
-    | and comparator data'''
-
-def p_or(p):
-    'or : VARIABLE LOR VARIABLE'
+    | LPAREN lvariable RPAREN comparator data'''
 
 def p_mdata(p):
     '''mdata : data
     | data COMMA mdata'''
 
 def p_print(p):
-    'print : KW_PRINT LPAREN CADENA RPAREN SEMI'
+    '''print : KW_PRINT LNOT LPAREN CADENA RPAREN SEMI
+    | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE RPAREN SEMI
+    | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE COLON COLON LT data_type GT LPAREN RPAREN RPAREN SEMI'''
 
 def p_declare_variable(p):
     'dvariable : KW_LET VARIABLE SEMI'
 
 def p_array(p):
-    '''array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET
-    | LBRACKET mdata RBRACKET'''
+    '''array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET SEMI
+    | LBRACKET mdata RBRACKET
+    | LBRACKET data SEMI data RBRACKET
+    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET mdata RBRACKET SEMI
+    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET data SEMI data RBRACKET SEMI'''
 
 def p_variables(p):
     '''variables : VARIABLE 
     | VARIABLE COMMA variables'''
 
 def p_while(p):
-    'while : KW_WHILE LPAREN VARIABLE '
+    'while : KW_WHILE VARIABLE comparator data LBRACE main_rule RBRACE'
     
 # KEVIN MUÑOZ
 
