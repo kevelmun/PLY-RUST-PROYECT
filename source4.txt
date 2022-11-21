@@ -6,7 +6,15 @@ fn main(){
 
     fn test(a,b){
         const X:i32 = 4;
-        let a = X + 4;
-        
+        let a = X + 4; 
+    }
+
+    let list = [1, 2, 3, 5]
+
+    for x in 5..9{
+        let z;
+        for x in list{
+            let mut mutable = 4;
+        }
     }
 }

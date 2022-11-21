@@ -25,7 +25,10 @@ def p_father_rule(p):
     | array
     | linkedlist_methods
     | hashmap_methods
-    | initialization'''
+    | initialization
+    | input
+    | assignation
+    | declare_data_type'''
 
 #KEVIN MUÑOZ
 
@@ -61,6 +64,15 @@ def p_data_type(p):
                 | FLOAT_64
                 | KW_BOOLEAN
                 | KW_STRING'''
+
+# Asignation
+def p_assign_operators(p):
+    '''assign_operators : EQUALS
+                        | TIMESEQUAL 
+                        | DIVEQUAL
+                        | MODULUSEQUAL
+                        | PLUSEQUAL 
+                        | MINUSEQUAL'''
 
 #DANIEL GUERRERO
 def p_data(p):
@@ -123,7 +135,8 @@ def p_tuple(p):
 def p_initialization(p):
     '''initialization : let_initialization SEMI 
     | const_initialization SEMI 
-    | data_str SEMI'''
+    | data_str SEMI
+    | input_init SEMI'''
 
 # Let initializations possible options
 def p_let_initialization(p):
@@ -255,15 +268,28 @@ def p_return_statement(p):
 
 ## Input of data
 
+def p_input_init(p):
+    'input_init : KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN'
+
 def p_input(p):
-    ''
+    'input : VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI'
+
+## Assignation with operators
+
+def p_assignation(p):
+    'assignation : VARIABLE assign_operators number'
+
+## Declaration of variables 
+
+def p_declare_datat_type(p):
+    'declare_data_type : KW_LET VARIABLE COLON data_type SEMI'
 
 # Error rule for syntax errors
 def p_error(p):
     print("Syntax error in input!")
 
 
- # Build the parser
+# Build the parser
 parser = yacc.yacc()
  
 # while True:

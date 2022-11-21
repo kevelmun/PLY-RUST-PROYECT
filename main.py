@@ -86,6 +86,7 @@ reserved = {
     "stdin": 'KW_STDIN',
     "read_line": 'KW_READ_LINE',
     "expect": 'KW_EXPECT',
+    "io": 'KW_IO',
 
 
     #Daniel Guerrero
