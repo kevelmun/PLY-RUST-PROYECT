@@ -110,8 +110,7 @@ def p_mdata(p):
 
 def p_print(p):
     '''print : KW_PRINT LNOT LPAREN CADENA RPAREN SEMI
-    | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE RPAREN SEMI
-    | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE COLON COLON LT data_type GT LPAREN RPAREN RPAREN SEMI'''
+    | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE RPAREN SEMI'''
 
 def p_declare_variable(p):
     'dvariable : KW_LET VARIABLE SEMI'
@@ -120,18 +119,17 @@ def p_array(p):
     '''array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET SEMI
     | LBRACKET mdata RBRACKET
     | LBRACKET data SEMI data RBRACKET
-    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET mdata RBRACKET SEMI
-    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET data SEMI data RBRACKET SEMI'''
+    | KW_LET KW_MUT VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET mdata RBRACKET SEMI
+    | KW_LET KW_MUT VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET data SEMI data RBRACKET SEMI'''
 
 def p_variables(p):
     '''variables : VARIABLE 
     | VARIABLE COMMA variables'''
 
 def p_while(p):
-    'while : KW_WHILE VARIABLE comparator data LBRACE main_rule RBRACE'
+    'while : KW_WHILE conditional LBRACE main_rule RBRACE'
     
 # KEVIN MUÑOZ
-
 
 
 def p_tuple(p):
@@ -299,15 +297,15 @@ def p_error(p):
 # Build the parser
 parser = yacc.yacc()
  
-# while True:
-#     try:
-#         s = input('calc > ')
-#     except EOFError:
-#         break
-#     if not s: continue
-#     result = parser.parse(s)
-#     print(result)
-
+'''while True:
+    try:
+        s = input('calc > ')
+    except EOFError:
+     break
+    if not s: continue
+    result = parser.parse(s)
+    print(result)
+'''
 filew = open("log.txt","a")
 
 
@@ -321,4 +319,4 @@ for file in files:
     print(str(result), " ", str(timenow))
 
     filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Result:"+str(result) + " "  + "\n")
-        
+       
