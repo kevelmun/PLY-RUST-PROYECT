@@ -1,0 +1,20 @@
+fn main(){
+    let solar_distance = HashMap::from([("Mercury", 0.4),("Venus", 0.7),("Earth", 1.0),("Mars", 1.5)]);
+    let mut book_reviews = HashMap::new();
+
+    let a = 5;
+
+    fn test(a,b){
+        const X:i32 = 4;
+        let a = X + 4; 
+    }
+
+    let list = [1, 2, 3, 5]
+
+    for x in 5..9{
+        let z;
+        for x in list{
+            let mut mutable = 4;
+        }
+    }
+}

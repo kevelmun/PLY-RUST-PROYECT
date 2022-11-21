@@ -1,4 +1,6 @@
 import ply.yacc as yacc
+import datetime
+
 from main import tokens
 
 
@@ -124,24 +126,30 @@ def p_while(p):
     
 # KEVIN MUÑOZ
 
-# Initialization
+
 
 def p_tuple(p):
     'tuple : LPAREN mdata RPAREN'
 
-
+# Initialization full options
 def p_initialization(p):
     '''initialization : let_initialization SEMI 
     | const_initialization SEMI 
     | data_str SEMI
     | input_init SEMI'''
 
+# Let initializations possible options
 def p_let_initialization(p):
     '''let_initialization : KW_LET VARIABLE EQUALS data
     | KW_LET VARIABLE COLON data_type EQUALS data
     | KW_LET KW_MUT VARIABLE EQUALS data
-    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS data'''
+    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
+    | KW_LET VARIABLE EQUALS expression_var
+    | KW_LET VARIABLE COLON data_type EQUALS expression_var
+    | KW_LET KW_MUT VARIABLE EQUALS expression_var
+    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS expression_var'''
 
+# Const initialization possible options
 def p_const_initialization(p):
     'const_initialization : KW_CONST VARIABLE COLON data_type EQUALS data'
 
@@ -201,7 +209,7 @@ def p_hashmap_methods(p):
 
 # HashMap insert
 def p_hashmap_insert(p):
-    'hashmap_insert : DOT KW_INSERT LPAREN data RPAREN SEMI'
+    'hashmap_insert : DOT KW_INSERT LPAREN mdata RPAREN SEMI'
 
 # HashMap remove
 def p_hashmap_remove(p):
@@ -285,11 +293,26 @@ def p_error(p):
 # Build the parser
 parser = yacc.yacc()
  
-while True:
-    try:
-        s = input('calc > ')
-    except EOFError:
-        break
-    if not s: continue
-    result = parser.parse(s)
-    print(result)
+# while True:
+#     try:
+#         s = input('calc > ')
+#     except EOFError:
+#         break
+#     if not s: continue
+#     result = parser.parse(s)
+#     print(result)
+
+filew = open("log.txt","a")
+
+
+timenow = datetime.datetime.now()
+
+files = ["source4.txt"]
+for file in files:
+  with open(file) as archivo:
+    linea = archivo.read()
+    result = parser.parse(linea)
+    print(str(result), " ", str(timenow))
+
+    filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Result:"+str(result) + " "  + "\n")
+        

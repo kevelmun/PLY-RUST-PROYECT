@@ -1,10 +1,35 @@
-let a = 4;
-x
-Y
-x
-_10
-variable
-Variable
-vArIaBlE
-_x_
-variable_ideal
+fn main(){
+    let a = 4;
+    let x;
+    let Y;
+    let x;
+    let _10;
+    let variable;
+    let Variable;
+    let vArIaBlE;
+    let _x_;
+    let variable_ideal;
+
+
+    let mut book_reviews = HashMap::new();
+
+    // Review some books.
+    book_reviews.insert(
+        "Adventures of Huckleberry Finn",
+        "My favorite book."
+    );
+    book_reviews.insert(
+        "Grimms' Fairy Tales",
+        "Masterpiece."
+    );
+    book_reviews.insert(
+        "Pride and Prejudice",
+        "Very enjoyable."
+    );
+    book_reviews.insert(
+        "The Adventures of Sherlock Holmes",
+        "Eye lyked it alot."
+    );
+
+    //println!("{:?}", book_reviews);
+}
