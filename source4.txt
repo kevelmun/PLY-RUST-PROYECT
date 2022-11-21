@@ -9,7 +9,7 @@ fn main(){
         let a = X + 4; 
     }
 
-    let list = [1, 2, 3, 5]
+    let list = [1, 2, 3, 5];
 
     for x in 5..9{
         let z;

@@ -313,7 +313,7 @@ filew = open("log.txt","a")
 
 timenow = datetime.datetime.now()
 
-files = ["source4.txt"]
+files = ["source.txt","source2.txt","source3.txt","source4.txt"]
 for file in files:
   with open(file) as archivo:
     linea = archivo.read()

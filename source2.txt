@@ -1,13 +1,10 @@
 fn main() { 
     let variable_ideal = 4;
 
-    let array = [0100, 27, 0.3, 4, 5];
+    let array = [100, 27, 0.3, 4, 5];
     
-    for an item in array {
-        ^=
-        &=
-        |=
-        println!('{}",item);
+    for item in array {
+        println!("{}",item);
     }
 
 }
