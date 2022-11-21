@@ -252,10 +252,11 @@ def p_function_return(p):
 
 def p_expression_var(p):
     '''expression_var : expression
-                    | VARIABLE'''
+                      | data'''
 
 def p_return_statement(p):
     '''return : main_rule
+              | KW_RETURN expression_var SEMI
               | main_rule KW_RETURN expression_var SEMI'''
 
 ## Input of data

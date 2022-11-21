@@ -179,28 +179,29 @@ Rule 120   else -> KW_ELSE LBRACE main_rule RBRACE
 Rule 121   else_if -> KW_ELSE KW_IF conditional LBRACE main_rule RBRACE
 Rule 122   function -> KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE return RBRACE
 Rule 123   expression_var -> expression
-Rule 124   expression_var -> VARIABLE
+Rule 124   expression_var -> data
 Rule 125   return -> main_rule
-Rule 126   return -> main_rule KW_RETURN expression_var SEMI
-Rule 127   input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
-Rule 128   input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-Rule 129   assignation -> VARIABLE assign_operators number
-Rule 130   declare_data_type -> KW_LET VARIABLE COLON data_type SEMI
+Rule 126   return -> KW_RETURN expression_var SEMI
+Rule 127   return -> main_rule KW_RETURN expression_var SEMI
+Rule 128   input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+Rule 129   input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+Rule 130   assignation -> VARIABLE assign_operators number
+Rule 131   declare_data_type -> KW_LET VARIABLE COLON data_type SEMI
 
 Terminals, with rules where they appear
 
-AND                  : 109 128
+AND                  : 109 129
 ANDE                 : 
-CADENA               : 47 67 128
+CADENA               : 47 67 129
 CHAR                 : 49
-COLON                : 80 82 83 95 102 102 103 103 104 104 105 105 111 111 111 112 112 112 113 113 114 114 127 127 130
+COLON                : 80 82 83 95 102 102 103 103 104 104 105 105 111 111 111 112 112 112 113 113 114 114 128 128 131
 COMMA                : 66 72
 COMMENT              : 
 DIVEQUAL             : 43
 DIVIDE               : 21
-DOT                  : 96 96 97 97 108 109 117 118 128 128
+DOT                  : 96 96 97 97 108 109 117 118 129 129
 EQ                   : 55
-EQUALS               : 41 69 79 80 81 82 83 102 103 104 105 111 112 113 114 127
+EQUALS               : 41 69 79 80 81 82 83 102 103 104 105 111 112 113 114 128
 FLOAT                : 25 50
 FLOAT_32             : 37
 FLOAT_64             : 38
@@ -224,7 +225,7 @@ KW_DO                :
 KW_DYN               : 
 KW_ELSE              : 120 121
 KW_ENUM              : 
-KW_EXPECT            : 128
+KW_EXPECT            : 129
 KW_EXTERN            : 
 KW_FALSE             : 51
 KW_FINAL             : 
@@ -236,30 +237,30 @@ KW_IF                : 119 121
 KW_IMPL              : 
 KW_IN                : 93 94
 KW_INSERT            : 108
-KW_IO                : 127
-KW_LET               : 68 69 79 80 81 82 102 103 104 105 111 112 113 114 127 130
+KW_IO                : 128
+KW_LET               : 68 69 79 80 81 82 102 103 104 105 111 112 113 114 128 131
 KW_LINKEDLIST        : 111 111 112 112 113 114
 KW_LOOP              : 
 KW_MACRO             : 
 KW_MATCH             : 
 KW_MOD               : 
 KW_MOVE              : 
-KW_MUT               : 81 82 103 105 112 114 128
+KW_MUT               : 81 82 103 105 112 114 129
 KW_NEW               : 102 103 111 112
 KW_OVERRIDE          : 
 KW_PRINT             : 67
 KW_PRIV              : 
 KW_PUB               : 
 KW_PUSH_BACK         : 117
-KW_READ_LINE         : 128
+KW_READ_LINE         : 129
 KW_REF               : 
 KW_REMOVE            : 109 118
-KW_RETURN            : 126
+KW_RETURN            : 126 127
 KW_SELFTYPE          : 
 KW_SELFVALUE         : 
 KW_STATIC            : 
 KW_STATICLIFETIME    : 
-KW_STDIN             : 127
+KW_STDIN             : 128
 KW_STRING            : 40
 KW_STRUCT            : 
 KW_SUPER             : 
@@ -282,7 +283,7 @@ LBRACKET             : 69 70
 LE                   : 58
 LNOT                 : 
 LOR                  : 64
-LPAREN               : 22 67 73 74 86 102 103 104 105 108 109 111 112 113 114 117 118 122 127 128 128
+LPAREN               : 22 67 73 74 86 102 103 104 105 108 109 111 112 113 114 117 118 122 128 129 129
 LT                   : 60 111 112
 MINUS                : 19 122
 MINUSEQUAL           : 46
@@ -297,8 +298,8 @@ QMARK                :
 QUOTE                : 98
 RBRACE               : 86 93 94 119 120 121 122
 RBRACKET             : 69 70
-RPAREN               : 22 67 74 86 102 103 104 105 108 109 111 112 113 114 117 118 122 127 128 128
-SEMI                 : 67 68 75 76 77 78 108 109 117 118 126 128 130
+RPAREN               : 22 67 74 86 102 103 104 105 108 109 111 112 113 114 117 118 122 128 129 129
+SEMI                 : 67 68 75 76 77 78 108 109 117 118 126 127 129 131
 SIG_INT_128          : 36
 SIG_INT_16           : 33
 SIG_INT_32           : 34
@@ -311,7 +312,7 @@ UNSIG_INT_16         : 28
 UNSIG_INT_32         : 29
 UNSIG_INT_64         : 30
 UNSIG_INT_8          : 27
-VARIABLE             : 26 61 61 62 64 64 68 69 71 72 73 79 80 81 82 83 86 93 94 94 97 97 98 102 103 104 105 106 107 111 112 113 114 115 116 122 124 127 128 128 129 130
+VARIABLE             : 26 61 61 62 64 64 68 69 71 72 73 79 80 81 82 83 86 93 94 94 97 97 98 102 103 104 105 106 107 111 112 113 114 115 116 122 128 129 129 130 131
 error                : 
 
 Nonterminals, with rules where they appear
@@ -319,21 +320,21 @@ Nonterminals, with rules where they appear
 and                  : 63
 arguments            : 86 122
 array                : 11 99 104 105 113 114
-assign_operators     : 129
+assign_operators     : 130
 assignation          : 16
 comparator           : 62 63
 conditional          : 119 121
 const_initialization : 76
 control_str          : 7
-data                 : 62 63 65 66 79 80 81 82 83 108 109 117
+data                 : 62 63 65 66 79 80 81 82 83 108 109 117 124
 data_str             : 10 77
-data_type            : 80 82 83 111 112 122 130
+data_type            : 80 82 83 111 112 122 131
 declare_data_type    : 17
 dvariable            : 4
 else                 : 90
 else_if              : 91
 expression           : 8 18 18 19 19 20 20 21 21 22 123
-expression_var       : 126
+expression_var       : 126 127
 father_rule          : 1 2
 for_str              : 87 95
 for_str_tagged       : 88
@@ -352,9 +353,9 @@ linkedlist           : 101
 linkedlist_methods   : 12
 linkedlist_push      : 115
 linkedlist_remove    : 116
-main_rule            : 2 86 93 94 119 120 121 125 126 0
+main_rule            : 2 86 93 94 119 120 121 125 127 0
 mdata                : 66 69 70 74
-number               : 23 129
+number               : 23 130
 or                   : 
 print                : 3
 range                : 93
@@ -418,9 +419,9 @@ state 0
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -444,7 +445,7 @@ state 0
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -582,9 +583,9 @@ state 2
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -608,7 +609,7 @@ state 2
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -1119,7 +1120,7 @@ state 20
 
     (68) dvariable -> KW_LET . VARIABLE SEMI
     (69) array -> KW_LET . VARIABLE EQUALS LBRACKET mdata RBRACKET
-    (130) declare_data_type -> KW_LET . VARIABLE COLON data_type SEMI
+    (131) declare_data_type -> KW_LET . VARIABLE COLON data_type SEMI
     (102) hashmap -> KW_LET . VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
     (103) hashmap -> KW_LET . KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
     (104) hashmap -> KW_LET . VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN
@@ -1132,7 +1133,7 @@ state 20
     (80) let_initialization -> KW_LET . VARIABLE COLON data_type EQUALS data
     (81) let_initialization -> KW_LET . KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> KW_LET . KW_MUT VARIABLE COLON data_type EQUALS data
-    (127) input_init -> KW_LET . VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET . VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
 
     VARIABLE        shift and go to state 54
     KW_MUT          shift and go to state 55
@@ -1146,8 +1147,8 @@ state 21
     (116) linkedlist_methods -> VARIABLE . linkedlist_remove
     (106) hashmap_methods -> VARIABLE . hashmap_insert
     (107) hashmap_methods -> VARIABLE . hashmap_remove
-    (128) input -> VARIABLE . DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> VARIABLE . assign_operators number
+    (129) input -> VARIABLE . DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> VARIABLE . assign_operators number
     (26) number -> VARIABLE .
     (117) linkedlist_push -> . DOT KW_PUSH_BACK LPAREN data RPAREN SEMI
     (118) linkedlist_remove -> . DOT KW_REMOVE LPAREN INTEGER RPAREN SEMI
@@ -1787,14 +1788,14 @@ state 54
 
     (68) dvariable -> KW_LET VARIABLE . SEMI
     (69) array -> KW_LET VARIABLE . EQUALS LBRACKET mdata RBRACKET
-    (130) declare_data_type -> KW_LET VARIABLE . COLON data_type SEMI
+    (131) declare_data_type -> KW_LET VARIABLE . COLON data_type SEMI
     (102) hashmap -> KW_LET VARIABLE . EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
     (104) hashmap -> KW_LET VARIABLE . EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN
     (111) linkedlist -> KW_LET VARIABLE . COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN
     (113) linkedlist -> KW_LET VARIABLE . EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN
     (79) let_initialization -> KW_LET VARIABLE . EQUALS data
     (80) let_initialization -> KW_LET VARIABLE . COLON data_type EQUALS data
-    (127) input_init -> KW_LET VARIABLE . EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE . EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
 
     SEMI            shift and go to state 99
     EQUALS          shift and go to state 100
@@ -1917,7 +1918,7 @@ state 60
 
 state 61
 
-    (128) input -> VARIABLE DOT . KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT . KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
     (117) linkedlist_push -> DOT . KW_PUSH_BACK LPAREN data RPAREN SEMI
     (118) linkedlist_remove -> DOT . KW_REMOVE LPAREN INTEGER RPAREN SEMI
     (108) hashmap_insert -> DOT . KW_INSERT LPAREN data RPAREN SEMI
@@ -1931,7 +1932,7 @@ state 61
 
 state 62
 
-    (129) assignation -> VARIABLE assign_operators . number
+    (130) assignation -> VARIABLE assign_operators . number
     (24) number -> . INTEGER
     (25) number -> . FLOAT
     (26) number -> . VARIABLE
@@ -2326,9 +2327,9 @@ state 88
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -2352,7 +2353,7 @@ state 88
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -2698,7 +2699,7 @@ state 100
     (104) hashmap -> KW_LET VARIABLE EQUALS . KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN
     (113) linkedlist -> KW_LET VARIABLE EQUALS . KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN
     (79) let_initialization -> KW_LET VARIABLE EQUALS . data
-    (127) input_init -> KW_LET VARIABLE EQUALS . KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS . KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (47) data -> . CADENA
     (48) data -> . INTEGER
     (49) data -> . CHAR
@@ -2725,7 +2726,7 @@ state 100
 
 state 101
 
-    (130) declare_data_type -> KW_LET VARIABLE COLON . data_type SEMI
+    (131) declare_data_type -> KW_LET VARIABLE COLON . data_type SEMI
     (111) linkedlist -> KW_LET VARIABLE COLON . KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN
     (80) let_initialization -> KW_LET VARIABLE COLON . data_type EQUALS data
     (27) data_type -> . UNSIG_INT_8
@@ -2826,7 +2827,7 @@ state 104
 
 state 105
 
-    (128) input -> VARIABLE DOT KW_READ_LINE . LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE . LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     LPAREN          shift and go to state 154
 
@@ -2855,25 +2856,25 @@ state 108
 
 state 109
 
-    (129) assignation -> VARIABLE assign_operators number .
+    (130) assignation -> VARIABLE assign_operators number .
 
-    KW_PRINT        reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_LET          reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_FN           reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    VARIABLE        reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    LPAREN          reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    LBRACKET        reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_FOR          reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_IF           reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_ELSE         reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_WHILE        reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    INTEGER         reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    FLOAT           reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_CONST        reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    QUOTE           reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    $end            reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    RBRACE          reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
-    KW_RETURN       reduce using rule 129 (assignation -> VARIABLE assign_operators number .)
+    KW_PRINT        reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_LET          reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_FN           reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    VARIABLE        reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    LPAREN          reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    LBRACKET        reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_FOR          reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_IF           reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_ELSE         reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_WHILE        reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    INTEGER         reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    FLOAT           reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_CONST        reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    QUOTE           reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    $end            reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    RBRACE          reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
+    KW_RETURN       reduce using rule 130 (assignation -> VARIABLE assign_operators number .)
 
 
 state 110
@@ -3038,9 +3039,9 @@ state 116
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -3064,7 +3065,7 @@ state 116
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -3403,14 +3404,14 @@ state 134
 
 state 135
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO . COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO . COLON COLON KW_STDIN LPAREN RPAREN
 
     COLON           shift and go to state 177
 
 
 state 136
 
-    (130) declare_data_type -> KW_LET VARIABLE COLON data_type . SEMI
+    (131) declare_data_type -> KW_LET VARIABLE COLON data_type . SEMI
     (80) let_initialization -> KW_LET VARIABLE COLON data_type . EQUALS data
 
     SEMI            shift and go to state 178
@@ -3631,7 +3632,7 @@ state 153
 
 state 154
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN . AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN . AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     AND             shift and go to state 186
 
@@ -3870,9 +3871,9 @@ state 171
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -3896,7 +3897,7 @@ state 171
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -4029,32 +4030,32 @@ state 176
 
 state 177
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON . COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON . COLON KW_STDIN LPAREN RPAREN
 
     COLON           shift and go to state 202
 
 
 state 178
 
-    (130) declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .
+    (131) declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .
 
-    KW_PRINT        reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_LET          reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_FN           reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    VARIABLE        reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    LPAREN          reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    LBRACKET        reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_FOR          reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_IF           reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_ELSE         reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_WHILE        reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    INTEGER         reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    FLOAT           reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_CONST        reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    QUOTE           reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    $end            reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    RBRACE          reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
-    KW_RETURN       reduce using rule 130 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_PRINT        reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_LET          reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_FN           reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    VARIABLE        reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    LPAREN          reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    LBRACKET        reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_FOR          reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_IF           reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_ELSE         reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_WHILE        reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    INTEGER         reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    FLOAT           reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_CONST        reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    QUOTE           reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    $end            reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    RBRACE          reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
+    KW_RETURN       reduce using rule 131 (declare_data_type -> KW_LET VARIABLE COLON data_type SEMI .)
 
 
 state 179
@@ -4153,7 +4154,7 @@ state 185
 
 state 186
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND . KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND . KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     KW_MUT          shift and go to state 209
 
@@ -4263,9 +4264,9 @@ state 192
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -4289,7 +4290,7 @@ state 192
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -4427,9 +4428,9 @@ state 194
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -4453,7 +4454,7 @@ state 194
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -4635,7 +4636,7 @@ state 201
 
 state 202
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON . KW_STDIN LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON . KW_STDIN LPAREN RPAREN
 
     KW_STDIN        shift and go to state 225
 
@@ -4729,7 +4730,7 @@ state 208
 
 state 209
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT . VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT . VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     VARIABLE        shift and go to state 231
 
@@ -4814,9 +4815,9 @@ state 214
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -4840,7 +4841,7 @@ state 214
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -5007,7 +5008,7 @@ state 224
 
 state 225
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN . LPAREN RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN . LPAREN RPAREN
 
     LPAREN          shift and go to state 245
 
@@ -5051,7 +5052,7 @@ state 230
 
 state 231
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE . RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE . RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     RPAREN          shift and go to state 251
 
@@ -5265,7 +5266,7 @@ state 244
 
 state 245
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN . RPAREN
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN . RPAREN
 
     RPAREN          shift and go to state 259
 
@@ -5307,7 +5308,7 @@ state 250
 
 state 251
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN . DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN . DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     DOT             shift and go to state 265
 
@@ -5412,9 +5413,9 @@ state 258
 
 state 259
 
-    (127) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN .
+    (128) input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN .
 
-    SEMI            reduce using rule 127 (input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN .)
+    SEMI            reduce using rule 128 (input_init -> KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN .)
 
 
 state 260
@@ -5462,7 +5463,7 @@ state 264
 
 state 265
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT . KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT . KW_EXPECT LPAREN CADENA RPAREN SEMI
 
     KW_EXPECT       shift and go to state 275
 
@@ -5471,7 +5472,8 @@ state 266
 
     (122) function -> KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE . return RBRACE
     (125) return -> . main_rule
-    (126) return -> . main_rule KW_RETURN expression_var SEMI
+    (126) return -> . KW_RETURN expression_var SEMI
+    (127) return -> . main_rule KW_RETURN expression_var SEMI
     (1) main_rule -> . father_rule
     (2) main_rule -> . father_rule main_rule
     (3) father_rule -> . print
@@ -5521,9 +5523,9 @@ state 266
     (76) initialization -> . const_initialization SEMI
     (77) initialization -> . data_str SEMI
     (78) initialization -> . input_init SEMI
-    (128) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
-    (129) assignation -> . VARIABLE assign_operators number
-    (130) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
+    (129) input -> . VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI
+    (130) assignation -> . VARIABLE assign_operators number
+    (131) declare_data_type -> . KW_LET VARIABLE COLON data_type SEMI
     (93) for_str -> . KW_FOR VARIABLE KW_IN range LBRACE main_rule RBRACE
     (94) for_str -> . KW_FOR VARIABLE KW_IN VARIABLE LBRACE main_rule RBRACE
     (95) for_str_tagged -> . label COLON for_str
@@ -5547,7 +5549,7 @@ state 266
     (81) let_initialization -> . KW_LET KW_MUT VARIABLE EQUALS data
     (82) let_initialization -> . KW_LET KW_MUT VARIABLE COLON data_type EQUALS data
     (83) const_initialization -> . KW_CONST VARIABLE COLON data_type EQUALS data
-    (127) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
+    (128) input_init -> . KW_LET VARIABLE EQUALS KW_IO COLON COLON KW_STDIN LPAREN RPAREN
     (98) label -> . QUOTE VARIABLE
 
   ! shift/reduce conflict for KW_PRINT resolved as shift
@@ -5555,6 +5557,7 @@ state 266
   ! shift/reduce conflict for KW_FN resolved as shift
   ! shift/reduce conflict for VARIABLE resolved as shift
   ! shift/reduce conflict for LPAREN resolved as shift
+  ! shift/reduce conflict for KW_RETURN resolved as shift
   ! shift/reduce conflict for LBRACKET resolved as shift
   ! shift/reduce conflict for KW_FOR resolved as shift
   ! shift/reduce conflict for KW_IF resolved as shift
@@ -5564,12 +5567,12 @@ state 266
   ! shift/reduce conflict for FLOAT resolved as shift
   ! shift/reduce conflict for KW_CONST resolved as shift
   ! shift/reduce conflict for QUOTE resolved as shift
+    KW_RETURN       shift and go to state 278
     KW_PRINT        shift and go to state 18
     KW_LET          shift and go to state 20
     KW_FN           shift and go to state 22
     VARIABLE        shift and go to state 21
     LPAREN          shift and go to state 19
-    KW_RETURN       reduce using rule 110 (void -> .)
     RBRACE          reduce using rule 110 (void -> .)
     LBRACKET        shift and go to state 32
     KW_FOR          shift and go to state 36
@@ -5595,6 +5598,7 @@ state 266
   ! FLOAT           [ reduce using rule 110 (void -> .) ]
   ! KW_CONST        [ reduce using rule 110 (void -> .) ]
   ! QUOTE           [ reduce using rule 110 (void -> .) ]
+  ! KW_RETURN       [ reduce using rule 110 (void -> .) ]
 
     return                         shift and go to state 276
     main_rule                      shift and go to state 277
@@ -5632,7 +5636,7 @@ state 267
 
     (69) array -> KW_LET VARIABLE . EQUALS LBRACKET mdata RBRACKET
 
-    EQUALS          shift and go to state 278
+    EQUALS          shift and go to state 279
 
 
 state 268
@@ -5687,7 +5691,7 @@ state 270
 
     (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON . COLON KW_NEW LPAREN RPAREN
 
-    COLON           shift and go to state 279
+    COLON           shift and go to state 280
 
 
 state 271
@@ -5718,61 +5722,99 @@ state 272
 
     (105) hashmap -> KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array . RPAREN
 
-    RPAREN          shift and go to state 280
+    RPAREN          shift and go to state 281
 
 
 state 273
 
     (114) linkedlist -> KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array . RPAREN
 
-    RPAREN          shift and go to state 281
+    RPAREN          shift and go to state 282
 
 
 state 274
 
     (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST . COLON COLON KW_NEW LPAREN RPAREN
 
-    COLON           shift and go to state 282
+    COLON           shift and go to state 283
 
 
 state 275
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT . LPAREN CADENA RPAREN SEMI
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT . LPAREN CADENA RPAREN SEMI
 
-    LPAREN          shift and go to state 283
+    LPAREN          shift and go to state 284
 
 
 state 276
 
     (122) function -> KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE return . RBRACE
 
-    RBRACE          shift and go to state 284
+    RBRACE          shift and go to state 285
 
 
 state 277
 
     (125) return -> main_rule .
-    (126) return -> main_rule . KW_RETURN expression_var SEMI
+    (127) return -> main_rule . KW_RETURN expression_var SEMI
 
     RBRACE          reduce using rule 125 (return -> main_rule .)
-    KW_RETURN       shift and go to state 285
+    KW_RETURN       shift and go to state 286
 
 
 state 278
+
+    (126) return -> KW_RETURN . expression_var SEMI
+    (123) expression_var -> . expression
+    (124) expression_var -> . data
+    (18) expression -> . expression PLUS expression
+    (19) expression -> . expression MINUS expression
+    (20) expression -> . expression TIMES expression
+    (21) expression -> . expression DIVIDE expression
+    (22) expression -> . LPAREN expression RPAREN
+    (23) expression -> . number
+    (47) data -> . CADENA
+    (48) data -> . INTEGER
+    (49) data -> . CHAR
+    (50) data -> . FLOAT
+    (51) data -> . KW_FALSE
+    (52) data -> . KW_TRUE
+    (53) data -> . tuple
+    (24) number -> . INTEGER
+    (25) number -> . FLOAT
+    (26) number -> . VARIABLE
+    (74) tuple -> . LPAREN mdata RPAREN
+
+    LPAREN          shift and go to state 290
+    CADENA          shift and go to state 72
+    INTEGER         shift and go to state 291
+    CHAR            shift and go to state 74
+    FLOAT           shift and go to state 292
+    KW_FALSE        shift and go to state 76
+    KW_TRUE         shift and go to state 77
+    VARIABLE        shift and go to state 53
+
+    expression_var                 shift and go to state 287
+    expression                     shift and go to state 288
+    data                           shift and go to state 289
+    number                         shift and go to state 29
+    tuple                          shift and go to state 78
+
+state 279
 
     (69) array -> KW_LET VARIABLE EQUALS . LBRACKET mdata RBRACKET
 
     LBRACKET        shift and go to state 131
 
 
-state 279
+state 280
 
     (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON . KW_NEW LPAREN RPAREN
 
-    KW_NEW          shift and go to state 286
+    KW_NEW          shift and go to state 293
 
 
-state 280
+state 281
 
     (105) hashmap -> KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN .
 
@@ -5796,7 +5838,7 @@ state 280
     KW_RETURN       reduce using rule 105 (hashmap -> KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN .)
 
 
-state 281
+state 282
 
     (114) linkedlist -> KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN .
 
@@ -5820,21 +5862,21 @@ state 281
     KW_RETURN       reduce using rule 114 (linkedlist -> KW_LET KW_MUT VARIABLE EQUALS KW_LINKEDLIST COLON COLON KW_FROM LPAREN array RPAREN .)
 
 
-state 282
+state 283
 
     (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON . COLON KW_NEW LPAREN RPAREN
 
-    COLON           shift and go to state 287
-
-
-state 283
-
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN . CADENA RPAREN SEMI
-
-    CADENA          shift and go to state 288
+    COLON           shift and go to state 294
 
 
 state 284
+
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN . CADENA RPAREN SEMI
+
+    CADENA          shift and go to state 295
+
+
+state 285
 
     (122) function -> KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE return RBRACE .
 
@@ -5857,59 +5899,52 @@ state 284
     KW_RETURN       reduce using rule 122 (function -> KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT data_type LBRACE return RBRACE .)
 
 
-state 285
+state 286
 
-    (126) return -> main_rule KW_RETURN . expression_var SEMI
+    (127) return -> main_rule KW_RETURN . expression_var SEMI
     (123) expression_var -> . expression
-    (124) expression_var -> . VARIABLE
+    (124) expression_var -> . data
     (18) expression -> . expression PLUS expression
     (19) expression -> . expression MINUS expression
     (20) expression -> . expression TIMES expression
     (21) expression -> . expression DIVIDE expression
     (22) expression -> . LPAREN expression RPAREN
     (23) expression -> . number
+    (47) data -> . CADENA
+    (48) data -> . INTEGER
+    (49) data -> . CHAR
+    (50) data -> . FLOAT
+    (51) data -> . KW_FALSE
+    (52) data -> . KW_TRUE
+    (53) data -> . tuple
     (24) number -> . INTEGER
     (25) number -> . FLOAT
     (26) number -> . VARIABLE
+    (74) tuple -> . LPAREN mdata RPAREN
 
-    VARIABLE        shift and go to state 291
-    LPAREN          shift and go to state 19
-    INTEGER         shift and go to state 41
-    FLOAT           shift and go to state 42
+    LPAREN          shift and go to state 290
+    CADENA          shift and go to state 72
+    INTEGER         shift and go to state 291
+    CHAR            shift and go to state 74
+    FLOAT           shift and go to state 292
+    KW_FALSE        shift and go to state 76
+    KW_TRUE         shift and go to state 77
+    VARIABLE        shift and go to state 53
 
-    expression_var                 shift and go to state 289
-    expression                     shift and go to state 290
+    expression_var                 shift and go to state 296
+    expression                     shift and go to state 288
+    data                           shift and go to state 289
     number                         shift and go to state 29
-
-state 286
-
-    (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW . LPAREN RPAREN
-
-    LPAREN          shift and go to state 292
-
+    tuple                          shift and go to state 78
 
 state 287
 
-    (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON . KW_NEW LPAREN RPAREN
+    (126) return -> KW_RETURN expression_var . SEMI
 
-    KW_NEW          shift and go to state 293
+    SEMI            shift and go to state 297
 
 
 state 288
-
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA . RPAREN SEMI
-
-    RPAREN          shift and go to state 294
-
-
-state 289
-
-    (126) return -> main_rule KW_RETURN expression_var . SEMI
-
-    SEMI            shift and go to state 295
-
-
-state 290
 
     (123) expression_var -> expression .
     (18) expression -> expression . PLUS expression
@@ -5924,50 +5959,178 @@ state 290
     DIVIDE          shift and go to state 49
 
 
+state 289
+
+    (124) expression_var -> data .
+
+    SEMI            reduce using rule 124 (expression_var -> data .)
+
+
+state 290
+
+    (22) expression -> LPAREN . expression RPAREN
+    (74) tuple -> LPAREN . mdata RPAREN
+    (18) expression -> . expression PLUS expression
+    (19) expression -> . expression MINUS expression
+    (20) expression -> . expression TIMES expression
+    (21) expression -> . expression DIVIDE expression
+    (22) expression -> . LPAREN expression RPAREN
+    (23) expression -> . number
+    (65) mdata -> . data
+    (66) mdata -> . data COMMA mdata
+    (24) number -> . INTEGER
+    (25) number -> . FLOAT
+    (26) number -> . VARIABLE
+    (47) data -> . CADENA
+    (48) data -> . INTEGER
+    (49) data -> . CHAR
+    (50) data -> . FLOAT
+    (51) data -> . KW_FALSE
+    (52) data -> . KW_TRUE
+    (53) data -> . tuple
+    (74) tuple -> . LPAREN mdata RPAREN
+
+    LPAREN          shift and go to state 290
+    INTEGER         shift and go to state 298
+    FLOAT           shift and go to state 299
+    VARIABLE        shift and go to state 53
+    CADENA          shift and go to state 72
+    CHAR            shift and go to state 74
+    KW_FALSE        shift and go to state 76
+    KW_TRUE         shift and go to state 77
+
+    expression                     shift and go to state 52
+    mdata                          shift and go to state 113
+    number                         shift and go to state 29
+    data                           shift and go to state 71
+    tuple                          shift and go to state 78
+
 state 291
 
-    (124) expression_var -> VARIABLE .
-    (26) number -> VARIABLE .
+    (48) data -> INTEGER .
+    (24) number -> INTEGER .
 
-  ! reduce/reduce conflict for SEMI resolved using rule 26 (number -> VARIABLE .)
-    PLUS            reduce using rule 26 (number -> VARIABLE .)
-    MINUS           reduce using rule 26 (number -> VARIABLE .)
-    TIMES           reduce using rule 26 (number -> VARIABLE .)
-    DIVIDE          reduce using rule 26 (number -> VARIABLE .)
-    SEMI            reduce using rule 26 (number -> VARIABLE .)
+  ! reduce/reduce conflict for SEMI resolved using rule 24 (number -> INTEGER .)
+    PLUS            reduce using rule 24 (number -> INTEGER .)
+    MINUS           reduce using rule 24 (number -> INTEGER .)
+    TIMES           reduce using rule 24 (number -> INTEGER .)
+    DIVIDE          reduce using rule 24 (number -> INTEGER .)
+    SEMI            reduce using rule 24 (number -> INTEGER .)
 
-  ! SEMI            [ reduce using rule 124 (expression_var -> VARIABLE .) ]
+  ! SEMI            [ reduce using rule 48 (data -> INTEGER .) ]
 
 
 state 292
 
-    (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN . RPAREN
+    (50) data -> FLOAT .
+    (25) number -> FLOAT .
 
-    RPAREN          shift and go to state 296
+  ! reduce/reduce conflict for SEMI resolved using rule 25 (number -> FLOAT .)
+    PLUS            reduce using rule 25 (number -> FLOAT .)
+    MINUS           reduce using rule 25 (number -> FLOAT .)
+    TIMES           reduce using rule 25 (number -> FLOAT .)
+    DIVIDE          reduce using rule 25 (number -> FLOAT .)
+    SEMI            reduce using rule 25 (number -> FLOAT .)
+
+  ! SEMI            [ reduce using rule 50 (data -> FLOAT .) ]
 
 
 state 293
 
-    (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW . LPAREN RPAREN
+    (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW . LPAREN RPAREN
 
-    LPAREN          shift and go to state 297
+    LPAREN          shift and go to state 300
 
 
 state 294
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN . SEMI
+    (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON . KW_NEW LPAREN RPAREN
 
-    SEMI            shift and go to state 298
+    KW_NEW          shift and go to state 301
 
 
 state 295
 
-    (126) return -> main_rule KW_RETURN expression_var SEMI .
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA . RPAREN SEMI
 
-    RBRACE          reduce using rule 126 (return -> main_rule KW_RETURN expression_var SEMI .)
+    RPAREN          shift and go to state 302
 
 
 state 296
+
+    (127) return -> main_rule KW_RETURN expression_var . SEMI
+
+    SEMI            shift and go to state 303
+
+
+state 297
+
+    (126) return -> KW_RETURN expression_var SEMI .
+
+    RBRACE          reduce using rule 126 (return -> KW_RETURN expression_var SEMI .)
+
+
+state 298
+
+    (24) number -> INTEGER .
+    (48) data -> INTEGER .
+
+  ! reduce/reduce conflict for RPAREN resolved using rule 24 (number -> INTEGER .)
+    RPAREN          reduce using rule 24 (number -> INTEGER .)
+    PLUS            reduce using rule 24 (number -> INTEGER .)
+    MINUS           reduce using rule 24 (number -> INTEGER .)
+    TIMES           reduce using rule 24 (number -> INTEGER .)
+    DIVIDE          reduce using rule 24 (number -> INTEGER .)
+    COMMA           reduce using rule 48 (data -> INTEGER .)
+
+  ! RPAREN          [ reduce using rule 48 (data -> INTEGER .) ]
+
+
+state 299
+
+    (25) number -> FLOAT .
+    (50) data -> FLOAT .
+
+  ! reduce/reduce conflict for RPAREN resolved using rule 25 (number -> FLOAT .)
+    RPAREN          reduce using rule 25 (number -> FLOAT .)
+    PLUS            reduce using rule 25 (number -> FLOAT .)
+    MINUS           reduce using rule 25 (number -> FLOAT .)
+    TIMES           reduce using rule 25 (number -> FLOAT .)
+    DIVIDE          reduce using rule 25 (number -> FLOAT .)
+    COMMA           reduce using rule 50 (data -> FLOAT .)
+
+  ! RPAREN          [ reduce using rule 50 (data -> FLOAT .) ]
+
+
+state 300
+
+    (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN . RPAREN
+
+    RPAREN          shift and go to state 304
+
+
+state 301
+
+    (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW . LPAREN RPAREN
+
+    LPAREN          shift and go to state 305
+
+
+state 302
+
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN . SEMI
+
+    SEMI            shift and go to state 306
+
+
+state 303
+
+    (127) return -> main_rule KW_RETURN expression_var SEMI .
+
+    RBRACE          reduce using rule 127 (return -> main_rule KW_RETURN expression_var SEMI .)
+
+
+state 304
 
     (111) linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN .
 
@@ -5991,37 +6154,37 @@ state 296
     KW_RETURN       reduce using rule 111 (linkedlist -> KW_LET VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN .)
 
 
-state 297
+state 305
 
     (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN . RPAREN
 
-    RPAREN          shift and go to state 299
+    RPAREN          shift and go to state 307
 
 
-state 298
+state 306
 
-    (128) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .
+    (129) input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .
 
-    KW_PRINT        reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_LET          reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_FN           reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    VARIABLE        reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    LPAREN          reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    LBRACKET        reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_FOR          reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_IF           reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_ELSE         reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_WHILE        reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    INTEGER         reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    FLOAT           reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_CONST        reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    QUOTE           reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    $end            reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    RBRACE          reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
-    KW_RETURN       reduce using rule 128 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_PRINT        reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_LET          reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_FN           reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    VARIABLE        reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    LPAREN          reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    LBRACKET        reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_FOR          reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_IF           reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_ELSE         reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_WHILE        reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    INTEGER         reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    FLOAT           reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_CONST        reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    QUOTE           reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    $end            reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    RBRACE          reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
+    KW_RETURN       reduce using rule 129 (input -> VARIABLE DOT KW_READ_LINE LPAREN AND KW_MUT VARIABLE RPAREN DOT KW_EXPECT LPAREN CADENA RPAREN SEMI .)
 
 
-state 299
+state 307
 
     (112) linkedlist -> KW_LET KW_MUT VARIABLE COLON KW_LINKEDLIST LT data_type GT EQUALS KW_LINKEDLIST COLON COLON KW_NEW LPAREN RPAREN .
 
@@ -6180,6 +6343,7 @@ WARNING: shift/reduce conflict for KW_LET in state 266 resolved as shift
 WARNING: shift/reduce conflict for KW_FN in state 266 resolved as shift
 WARNING: shift/reduce conflict for VARIABLE in state 266 resolved as shift
 WARNING: shift/reduce conflict for LPAREN in state 266 resolved as shift
+WARNING: shift/reduce conflict for KW_RETURN in state 266 resolved as shift
 WARNING: shift/reduce conflict for LBRACKET in state 266 resolved as shift
 WARNING: shift/reduce conflict for KW_FOR in state 266 resolved as shift
 WARNING: shift/reduce conflict for KW_IF in state 266 resolved as shift
@@ -6195,6 +6359,11 @@ WARNING: reduce/reduce conflict in state 11 resolved using rule (father_rule -> 
 WARNING: rejected rule (data_str -> array) in state 11
 WARNING: reduce/reduce conflict in state 21 resolved using rule (number -> VARIABLE)
 WARNING: rejected rule (variables -> VARIABLE) in state 21
-WARNING: reduce/reduce conflict in state 291 resolved using rule (number -> VARIABLE)
-WARNING: rejected rule (expression_var -> VARIABLE) in state 291
-WARNING: Rule (expression_var -> VARIABLE) is never reduced
+WARNING: reduce/reduce conflict in state 291 resolved using rule (number -> INTEGER)
+WARNING: rejected rule (data -> INTEGER) in state 291
+WARNING: reduce/reduce conflict in state 292 resolved using rule (number -> FLOAT)
+WARNING: rejected rule (data -> FLOAT) in state 292
+WARNING: reduce/reduce conflict in state 298 resolved using rule (number -> INTEGER)
+WARNING: rejected rule (data -> INTEGER) in state 298
+WARNING: reduce/reduce conflict in state 299 resolved using rule (number -> FLOAT)
+WARNING: rejected rule (data -> FLOAT) in state 299
