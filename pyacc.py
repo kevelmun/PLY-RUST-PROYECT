@@ -59,7 +59,8 @@ def p_dataType(p):
                 | SIG_INT_128
                 | FLOAT_32
                 | FLOAT_64
-                | KW_BOOLEAN'''
+                | KW_BOOLEAN
+                | KW_STRING'''
 
 #DANIEL GUERRERO
 def p_data(p):
@@ -163,16 +164,34 @@ def p_push(p):
 def p_remove(p):
     'remove : VARIABLE DOT REMOVE LPAREN INTEGER RPAREN SEMI'
 
-## if 
+## if data structure
 
 def p_if(p):
-    'if : KW_IF conditional LBRACE father_rule RBRACE'
+    'if : KW_IF conditional LBRACE main_rule RBRACE'
 
 def p_else(p):
-    'else : KW_ELSE LBRACE father_rule RBRACE'
+    'else : KW_ELSE LBRACE main_rule RBRACE'
 
 def p_else_if(p):
-    'else_if : KW_ELSE KW_IF conditional LBRACE father_rule RBRACE'
+    'else_if : KW_ELSE KW_IF conditional LBRACE main_rule RBRACE'
+
+## Function with a return value
+
+def p_function_return(p):
+    '''function : KW_FN VARIABLE LPAREN arguments RPAREN MINUS GT dataType LBRACE return RBRACE'''
+
+def p_expression_var(p):
+    '''expression_var : expression
+                    | VARIABLE'''
+
+def p_return_statement(p):
+    '''return : main_rule
+              | main_rule KW_RETURN expression_var SEMI'''
+
+## Input of data
+
+def p_input(p):
+    ''
 
 # Error rule for syntax errors
 def p_error(p):

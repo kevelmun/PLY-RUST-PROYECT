@@ -82,6 +82,11 @@ reserved = {
     "from": 'KW_FROM',
     "push_back": 'PUSH',
     "remove": 'REMOVE',
+    "String": 'KW_STRING',
+    "stdin": 'KW_STDIN',
+    "read_line": 'KW_READ_LINE',
+    "expect": 'KW_EXPECT',
+
 
     #Daniel Guerrero
     "println": 'KW_PRINT',
