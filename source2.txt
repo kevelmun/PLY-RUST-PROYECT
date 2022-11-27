@@ -2,9 +2,13 @@ fn main() {
     let variable_ideal = 4;
 
     let array = [100, 27, 0.3, 4, 5];
-    
-    for item in array {
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
         println!("{}",item);
+    
     }
-
+    while (a && b) < 5{
+        println!("");
+    }
 }
