@@ -271,14 +271,6 @@ def t_newline(t):
 t_ignore  = ' \t'
 
 
-#Token de error
-def t_error(t):
-  print("Illegal character '%s'" % t.value[0])
-  t.lexer.skip(1)
-    
-
-#Construccion del lexer
-lexer = lex.lex()
 
 '''def getTokens(lexer):
   for tok in lexer:
@@ -297,4 +289,25 @@ for file in files:
 print("COMPLETED")'''
 
 
+def t_error(t):
+    global errores_lexico
+
+    print(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
+    errores_lexico.append(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
+    t.lexer.skip(1)
+  
+lex.lex()
+
+# List de errores
+errors = []
+
+def getTokens(lexer, lista):
+    while True:
+        tok = lexer.token()
+        if not tok:
+            break 
+        lista.append(tok)
+
+def get_lexer():
+    return lex.lex()
 ## KEVIN ELIHAN MUNOZ
