@@ -2,7 +2,9 @@ import ply.yacc as yacc
 import datetime
 
 from main import tokens
+
 filew = open("log.txt","a")
+error_number = 0
 filew.write("-------------------------------------------------------------------------------\n")
 
 
@@ -294,9 +296,10 @@ def p_declare_datat_type(p):
 # Error rule for syntax errors
 def p_error(p):
     if p is not None:
-        print ("Line %s, illegal token %s" % (p.lineno, p.value))
-        filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Syntax error in input!\n")
-        filew.write("Line %s, illegal token %s\n" % (p.lineno, p.value))
+        print ("File: %s >> Syntax error in line %s" % (file, p.lineno))
+        global error_number
+        error_number += 1
+        filew.write("DateTime: %s | File: %s >> Syntax error in line %s \n" % (str(timenow), file, p.lineno))
     else:
         print('Unexpected end of input')
         filew.write('Unexpected end of input\n')
@@ -324,7 +327,9 @@ for file in files:
   with open(file) as archivo:
     linea = archivo.read()
     result = parser.parse(linea)
-    print("File: " + file +" >> " + "Result:"+str(result), " ", str(timenow))
-
-    filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Result:"+str(result) + " "  + "\n")
+    if error_number != 0:
+      result = error_number
+      error_number = 0
+    print("File: %s >> Result: %s errors found. %s" %(file, str(result), str(timenow)))
+    filew.write("DateTime: %s | File: %s >> Result: %s errors found.\n" % (str(timenow), file, str(result)))
        

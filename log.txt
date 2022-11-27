@@ -143,3 +143,60 @@ DateTime: 2022-11-20 23:43:04.540482 | File: source.txt >> Result:None
 DateTime: 2022-11-20 23:43:04.540482 | File: source2.txt >> Result:None 
 DateTime: 2022-11-20 23:43:04.540482 | File: source3.txt >> Result:None 
 DateTime: 2022-11-20 23:43:04.540482 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 14:48:10.367009 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 14:48:10.367009 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 14:48:10.367009 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 14:48:10.367009 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 14:55:16.658116 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 14:55:16.658116 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 14:55:16.658116 | File: source3.txt >> Syntax error in line 60 
+DateTime: 2022-11-27 14:55:16.658116 | File: source3.txt >> Syntax error in line 62 
+DateTime: 2022-11-27 14:55:16.658116 | File: source3.txt >> Syntax error in line 67 
+DateTime: 2022-11-27 14:55:16.658116 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 14:55:16.658116 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 14:57:14.336534 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 14:57:14.336534 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 14:57:14.336534 | File: source3.txt >> Syntax error in line 60 
+DateTime: 2022-11-27 14:57:14.336534 | File: source3.txt >> Syntax error in line 62 
+DateTime: 2022-11-27 14:57:14.336534 | File: source3.txt >> Syntax error in line 67 
+DateTime: 2022-11-27 14:57:14.336534 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 14:57:14.336534 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:22:03.285179 | File: source.txt >> Result: None 
+DateTime: 2022-11-27 15:22:03.285179 | File: source2.txt >> Result: None 
+DateTime: 2022-11-27 15:22:03.285179 | File: source3.txt >> Syntax error in line 69 
+DateTime: 2022-11-27 15:22:03.285179 | File: source3.txt >> Result: 1 
+DateTime: 2022-11-27 15:22:03.285179 | File: source4.txt >> Result: 1 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:25:01.284172 | File: source.txt >> Result: None 
+DateTime: 2022-11-27 15:25:01.284172 | File: source2.txt >> Result: None 
+DateTime: 2022-11-27 15:25:01.284172 | File: source3.txt >> Syntax error in line 71 
+DateTime: 2022-11-27 15:25:01.284172 | File: source3.txt >> Result: 1 errors found.
+DateTime: 2022-11-27 15:25:01.284172 | File: source4.txt >> Result: None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:28:55.807147 | File: source.txt >> Result: None 
+DateTime: 2022-11-27 15:28:55.807147 | File: source2.txt >> Result: None 
+DateTime: 2022-11-27 15:28:55.807147 | File: source3.txt >> Syntax error in line 71 
+DateTime: 2022-11-27 15:28:55.807147 | File: source3.txt >> Result: 1 
+DateTime: 2022-11-27 15:28:55.807147 | File: source4.txt >> Result: None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:30:04.397287 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:30:04.397287 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:30:04.397287 | File: source3.txt >> Syntax error in line 71 
+DateTime: 2022-11-27 15:30:04.397287 | File: source3.txt >> Result: 1 errors found.
+DateTime: 2022-11-27 15:30:04.397287 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:30:53.282199 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:30:53.282199 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:30:53.282199 | File: source3.txt >> Syntax error in line 71 
+DateTime: 2022-11-27 15:30:53.282199 | File: source3.txt >> Result: 1 errors found.
+DateTime: 2022-11-27 15:30:53.282199 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 15:31:03.594568 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:31:03.594568 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Syntax error in line 71 
+DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Result: 1 errors found.
+DateTime: 2022-11-27 15:31:03.594568 | File: source4.txt >> Result: None errors found.
