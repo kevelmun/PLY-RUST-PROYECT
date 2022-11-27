@@ -46,3 +46,72 @@ DateTime: 2022-11-20 23:23:41.924460 | File: source.txt >> Result:None
 DateTime: 2022-11-20 23:23:41.924460 | File: source2.txt >> Result:None 
 DateTime: 2022-11-20 23:23:41.924460 | File: source3.txt >> Result:None 
 DateTime: 2022-11-20 23:23:41.924460 | File: source4.txt >> Result:None 
+DateTime: 2022-11-20 23:38:10.664328 | File: source.txt >> Result:None 
+DateTime: 2022-11-20 23:38:10.664328 | File: source2.txt >> Result:None 
+DateTime: 2022-11-20 23:38:10.664328 | File: source3.txt >> Result:None 
+DateTime: 2022-11-20 23:38:10.664328 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:07:27.792759 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:07:27.792759 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:07:27.792759 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:07:27.792759 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:11:51.517999 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:11:51.517999 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:11:51.517999 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:11:51.517999 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:12:36.780176 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:12:36.780176 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:12:36.780176 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:12:36.780176 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:12:36.780176 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:12:36.780176 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:14:11.139745 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:14:11.139745 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:14:11.139745 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:14:11.139745 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:14:11.139745 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:14:11.139745 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:14:59.746191 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:14:59.746191 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:14:59.746191 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:14:59.746191 | File: source3.txt >> Syntax error in input!
+DateTime: 2022-11-27 13:14:59.746191 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:14:59.746191 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:22:01.034173 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:22:01.034173 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:22:01.034173 | File: source3.txt >> Syntax error in input!
+Line 56, illegal token =
+DateTime: 2022-11-27 13:22:01.034173 | File: source3.txt >> Syntax error in input!
+Line 63, illegal token }
+DateTime: 2022-11-27 13:22:01.034173 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:22:01.034173 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:28:06.890904 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:28:06.890904 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:28:06.890904 | File: source3.txt >> Syntax error in input!
+Line 56, illegal token =
+DateTime: 2022-11-27 13:28:06.890904 | File: source3.txt >> Syntax error in input!
+Line 63, illegal token }
+DateTime: 2022-11-27 13:28:06.890904 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:28:06.890904 | File: source4.txt >> Result:None 
+DateTime: 2022-11-27 13:28:25.971219 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:28:25.971219 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:28:25.971219 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:28:25.971219 | File: source4.txt >> Result:None
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 13:31:06.275026 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:31:06.275026 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:31:06.275026 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:31:06.275026 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 13:31:32.918985 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:31:32.918985 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:31:32.918985 | File: source3.txt >> Syntax error in input!
+Line 56, illegal token mut
+DateTime: 2022-11-27 13:31:32.918985 | File: source3.txt >> Syntax error in input!
+Line 63, illegal token }
+DateTime: 2022-11-27 13:31:32.918985 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:31:32.918985 | File: source4.txt >> Result:None 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 13:32:04.374774 | File: source.txt >> Result:None 
+DateTime: 2022-11-27 13:32:04.374774 | File: source2.txt >> Result:None 
+DateTime: 2022-11-27 13:32:04.374774 | File: source3.txt >> Result:None 
+DateTime: 2022-11-27 13:32:04.374774 | File: source4.txt >> Result:None 

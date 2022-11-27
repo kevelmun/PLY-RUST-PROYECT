@@ -2,6 +2,8 @@ import ply.yacc as yacc
 import datetime
 
 from main import tokens
+filew = open("log.txt","a")
+filew.write("-------------------------------------------------------------------------------\n")
 
 
 #KEVIN MUÑOZ
@@ -293,22 +295,28 @@ def p_declare_datat_type(p):
 
 # Error rule for syntax errors
 def p_error(p):
-    print("Syntax error in input!")
+    if p is not None:
+        print ("Line %s, illegal token %s" % (p.lineno, p.value))
+        filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Syntax error in input!\n")
+        filew.write("Line %s, illegal token %s\n" % (p.lineno, p.value))
+    else:
+        print('Unexpected end of input')
+        filew.write('Unexpected end of input\n')
 
 
 # Build the parser
 parser = yacc.yacc()
  
-# while True:
-#     try:
-#         s = input('calc > ')
-#     except EOFError:
-#         break
-#     if not s: continue
-#     result = parser.parse(s)
-#     print(result)
+""" while True:
+    try:
+        s = input('calc > ')
+    except EOFError:
+        break
+    if not s: continue
+    result = parser.parse(s)
+    print(result) """
 
-filew = open("log.txt","a")
+
 
 
 timenow = datetime.datetime.now()
@@ -318,7 +326,7 @@ for file in files:
   with open(file) as archivo:
     linea = archivo.read()
     result = parser.parse(linea)
-    print(str(result), " ", str(timenow))
+    print("File: " + file +" >> " + "Result:"+str(result), " ", str(timenow))
 
     filew.write("DateTime: " + str(timenow) + " | File: " + file +" >> " + "Result:"+str(result) + " "  + "\n")
         
