@@ -200,3 +200,48 @@ DateTime: 2022-11-27 15:31:03.594568 | File: source2.txt >> Result: None errors 
 DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Syntax error in line 71 
 DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Result: 1 errors found.
 DateTime: 2022-11-27 15:31:03.594568 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 21:14:13.127888 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:14:13.127888 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:14:13.127888 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:14:13.127888 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 21:43:02.880392 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:43:02.880392 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:43:02.880392 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 21:43:02.880392 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 22:56:57.257851 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:56:57.257851 | File: source2.txt >> Syntax error in line 45 
+DateTime: 2022-11-27 22:56:57.257851 | File: source2.txt >> Syntax error in line 52 
+DateTime: 2022-11-27 22:56:57.257851 | File: source2.txt >> Result: 2 errors found.
+DateTime: 2022-11-27 22:56:57.257851 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:56:57.257851 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 22:57:25.443260 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:57:25.443260 | File: source2.txt >> Syntax error in line 45 
+DateTime: 2022-11-27 22:57:25.443260 | File: source2.txt >> Syntax error in line 50 
+DateTime: 2022-11-27 22:57:25.443260 | File: source2.txt >> Result: 2 errors found.
+DateTime: 2022-11-27 22:57:25.443260 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:57:25.443260 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 22:59:15.955132 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:59:15.955132 | File: source2.txt >> Syntax error in line 45 
+DateTime: 2022-11-27 22:59:15.955132 | File: source2.txt >> Syntax error in line 47 
+DateTime: 2022-11-27 22:59:15.955132 | File: source2.txt >> Syntax error in line 52 
+DateTime: 2022-11-27 22:59:15.955132 | File: source2.txt >> Result: 3 errors found.
+DateTime: 2022-11-27 22:59:15.955132 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 22:59:15.955132 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 23:00:05.804033 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:05.804033 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:05.804033 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:05.804033 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 23:00:38.027191 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:38.027191 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:38.027191 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 23:00:38.027191 | File: source4.txt >> Result: None errors found.
