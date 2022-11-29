@@ -21,7 +21,6 @@ def p_father_rule(p):
     | dvariable
     | function
     | control_str
-    | expression
     | void
     | data_str
     | array
@@ -289,7 +288,10 @@ def p_input(p):
 ## Assignation with operators
 
 def p_assignation(p):
-    'assignation : VARIABLE assign_operators number'
+    '''assignation : VARIABLE assign_operators number SEMI
+    | VARIABLE assign_operators expression SEMI
+    | VARIABLE assign_operators number
+    | VARIABLE assign_operators expression'''
 
 ## Declaration of variables 
 
