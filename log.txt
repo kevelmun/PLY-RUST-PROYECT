@@ -200,3 +200,259 @@ DateTime: 2022-11-27 15:31:03.594568 | File: source2.txt >> Result: None errors 
 DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Syntax error in line 71 
 DateTime: 2022-11-27 15:31:03.594568 | File: source3.txt >> Result: 1 errors found.
 DateTime: 2022-11-27 15:31:03.594568 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:02:12.521129 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:02:12.521129 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:02:12.521129 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:02:12.521129 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:02:26.603140 | File: source.txt >> Syntax error in line 19 
+DateTime: 2022-11-27 16:02:26.603140 | File: source.txt >> Syntax error in line 35 
+DateTime: 2022-11-27 16:02:26.603140 | File: source.txt >> Result: 2 errors found.
+DateTime: 2022-11-27 16:02:26.603140 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:02:26.603140 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:02:26.603140 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:03:24.481605 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:03:24.481605 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:03:24.481605 | File: source3.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:03:24.481605 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:03:38.649974 | File: source.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:03:38.649974 | File: source2.txt >> Result: None errors found.
+DateTime: 2022-11-27 16:03:38.649974 | File: source3.txt >> Syntax error in line 70 
+DateTime: 2022-11-27 16:03:38.649974 | File: source3.txt >> Result: 1 errors found.
+DateTime: 2022-11-27 16:03:38.649974 | File: source4.txt >> Result: None errors found.
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 1 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 2 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 7 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 11 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 15 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 19 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 23 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 27 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 31 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 35 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 39 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 43 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 47 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 51 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 55 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 59 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 63 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 67 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 71 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 75 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 79 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 83 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 87 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 91 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 95 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 99 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 103 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 107 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 111 
+DateTime: 2022-11-27 16:45:39.623114 |>> Syntax error in line 115 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 1 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 4 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 7 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 10 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 13 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 16 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 19 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 22 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 25 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 28 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 31 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 34 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 37 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 40 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 43 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 46 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 49 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 52 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 55 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 58 
+DateTime: 2022-11-27 16:47:53.728817 |>> Syntax error in line 61 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:48:21.270920 |>> Syntax error in line 1 
+DateTime: 2022-11-27 16:48:21.270920 |>> Syntax error in line 3 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:49:23.875504 |>> Syntax error in line 1 
+DateTime: 2022-11-27 16:49:23.875504 |>> Syntax error in line 2 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:50:27.695847 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:52:41.219845 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:53:12.425679 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 1 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 2 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 3 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 4 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 5 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 6 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 7 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 8 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 9 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 10 
+DateTime: 2022-11-27 16:56:10.645594 >> Syntax error in line 11 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:58:58.827049 >> Syntax error in line 1 
+DateTime: 2022-11-27 16:58:58.827049 >> Syntax error in line 5 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 16:59:39.906119 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-27 17:01:40.535095 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:02:30.333631 >> Syntax error in line 3 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:03:10.339791 >> Syntax error in line 1 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 1 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 2 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 3 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 4 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 5 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 6 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 7 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 8 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 9 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 10 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 11 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 12 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 13 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 14 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 15 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 16 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 17 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 18 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 19 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 20 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 21 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 22 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 23 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 24 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 29 
+DateTime: 2022-11-28 20:06:59.366671 >> Syntax error in line 29 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:08:35.986335 >> Syntax error in line 2 
+DateTime: 2022-11-28 20:08:35.986335 >> Syntax error in line 2 
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+-------------------------------------------------------------------------------
+Unexpected end of input
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 1 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 2 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 3 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 4 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 5 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 6 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 7 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 8 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 9 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 10 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 11 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 12 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 13 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 14 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 15 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 16 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 17 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 18 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 19 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 20 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 21 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 22 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 23 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 24 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 25 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 26 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 27 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 28 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 29 
+DateTime: 2022-11-28 20:15:21.665620 >> Syntax error in line 30 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 1 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 2 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 3 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 4 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 5 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 6 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 7 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 8 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 9 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 10 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 11 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 12 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 13 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 14 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 15 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 16 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 17 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 18 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 19 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 20 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 21 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 22 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 23 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 24 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 25 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 26 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 27 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 28 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 29 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 30 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 31 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 32 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 33 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 34 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 35 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 36 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 37 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 38 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 39 
+DateTime: 2022-11-28 20:17:14.347496 >> Syntax error in line 40 
+-------------------------------------------------------------------------------
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 1 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 2 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 3 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 4 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 5 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 6 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 7 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 8 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 9 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 10 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 11 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 12 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 13 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 14 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 15 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 16 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 17 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 18 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 19 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 20 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 21 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 22 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 23 
+DateTime: 2022-11-28 20:18:05.899624 >> Syntax error in line 24 

@@ -294,20 +294,27 @@ def p_declare_datat_type(p):
     'declare_data_type : KW_LET VARIABLE COLON data_type SEMI'
 
 # Error rule for syntax errors
+
+timenow = datetime.datetime.now()
+
 def p_error(p):
     if p is not None:
-        print ("File: %s >> Syntax error in line %s" % (file, p.lineno))
+        print ("DateTime: %s >> Syntax error in line %s" % (str(timenow), p.lineno))
         global error_number
+        global yacc_errors
+        yacc_errors.append("DateTime: %s >> Syntax error in line %s" % (str(timenow), p.lineno))
         error_number += 1
-        filew.write("DateTime: %s | File: %s >> Syntax error in line %s \n" % (str(timenow), file, p.lineno))
+        filew.write("DateTime: %s >> Syntax error in line %s \n" % (str(timenow), p.lineno))
+        
     else:
+        yacc_errors.append('Unexpected end of input')
         print('Unexpected end of input')
         filew.write('Unexpected end of input\n')
 
 
 # Build the parser
-parser = yacc.yacc()
- 
+parser = yacc.yacc(debug=True)
+yacc_errors = []
 """ while True:
     try:
         s = input('calc > ')
@@ -320,16 +327,26 @@ parser = yacc.yacc()
 
 
 
-timenow = datetime.datetime.now()
+# timenow = datetime.datetime.now()
 
-files = ["source.txt","source2.txt","source3.txt","source4.txt"]
-for file in files:
-  with open(file) as archivo:
-    linea = archivo.read()
-    result = parser.parse(linea)
-    if error_number != 0:
-      result = error_number
-      error_number = 0
-    print("File: %s >> Result: %s errors found. %s" %(file, str(result), str(timenow)))
-    filew.write("DateTime: %s | File: %s >> Result: %s errors found.\n" % (str(timenow), file, str(result)))
-       
+# files = ["source.txt","source2.txt","source3.txt","source4.txt"]
+# for file in files:
+#   with open(file) as archivo:
+#     linea = archivo.read()
+#     result = parser.parse(linea)
+#     if error_number != 0:
+#       result = error_number
+#       error_number = 0
+#       parser.restart()
+#     print("File: %s >> Result: %s errors found. %s" %(file, str(result), str(timenow)))
+#     filew.write("DateTime: %s | File: %s >> Result: %s errors found.\n" % (str(timenow), file, str(result)))
+
+
+def get_yacc():
+    return yacc.yacc(errorlog=yacc.NullLogger())
+
+def get_yacc_analisis(code):
+    result = parser.parse(code)
+    parser.restart()
+    return result
+   

@@ -290,23 +290,25 @@ print("COMPLETED")'''
 
 
 def t_error(t):
-    global errores_lexico
+    global lex_errors
 
     print(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
-    errores_lexico.append(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
+    lex_errors.append(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
     t.lexer.skip(1)
   
 lex.lex()
 
 # List de errores
-errors = []
+lex_errors = []
 
-def getTokens(lexer, lista):
+def getTokens(lexer):
+    l = []
     while True:
         tok = lexer.token()
         if not tok:
             break 
-        lista.append(tok)
+        l.append(tok)
+    return l
 
 def get_lexer():
     return lex.lex()
