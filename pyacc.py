@@ -41,9 +41,9 @@ def p_expression(p):
     '''expression : expression PLUS expression
     | expression MINUS expression
     | expression TIMES expression
-    | expression DIVIDE expression
     | LPAREN expression RPAREN
-    | number'''
+    | number
+    | division'''
 
 
 # Types of numbers
@@ -79,6 +79,10 @@ def p_assign_operators(p):
                         | MINUSEQUAL'''
 
 #DANIEL GUERRERO
+def p_semantic_division(p):
+    '''division : INTEGER DIVIDE INTEGER
+    | FLOAT DIVIDE FLOAT'''
+
 def p_data(p):
     '''data : CADENA
     | INTEGER
