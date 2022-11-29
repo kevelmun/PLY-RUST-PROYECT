@@ -20,7 +20,6 @@ def p_father_rule(p):
     '''father_rule : print
     | dvariable
     | function
-    | variables
     | control_str
     | expression
     | void
@@ -66,7 +65,8 @@ def p_data_type(p):
                 | FLOAT_32
                 | FLOAT_64
                 | KW_BOOLEAN
-                | KW_STRING'''
+                | KW_STRING
+                | KW_CHARACTER'''
 
 # Asignation
 def p_assign_operators(p):

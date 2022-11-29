@@ -2,60 +2,18 @@ import ply.lex as lex
 import datetime
 ## KEVIN ELIHAN MUNOZ
 reserved = {
-    "as": 'KW_AS',
-    "break": 'KW_BREAK',
     "const": 'KW_CONST',
-    "continue": 'KW_CONTINUE',
-    "crate": 'KW_CRATE',
     "else": 'KW_ELSE',
-    "enum": 'KW_ENUM',
-    "extern": 'KW_EXTERN',
     "false": 'KW_FALSE',
     "fn": 'KW_FN',
     "for": 'KW_FOR',
     "if": 'KW_IF',
-    "impl": 'KW_IMPL',
     "in": 'KW_IN',
     "let": 'KW_LET',
-    "loop": 'KW_LOOP',
-    "match" : 'KW_MATCH',
-    "mod" : 'KW_MOD',
-    "move" : 'KW_MOVE',
     "mut": 'KW_MUT',
-    "pub": 'KW_PUB',
-    "ref": 'KW_REF',
     "return": 'KW_RETURN',
-    "self": 'KW_SELFVALUE',
-    "Self" : 'KW_SELFTYPE',
-    "static" : 'KW_STATIC',
-    "struct": 'KW_STRUCT',
-    "super": 'KW_SUPER',
-    "trait" : 'KW_TRAIT',
     "true": 'KW_TRUE',
-    "type": 'KW_TYPE',
-    "unsafe": 'KW_UNSAFE',
-    "use": 'KW_USE',
-    "where": 'KW_WHERE',
     "while": 'KW_WHILE',
-
-    "async": 'KW_ASYNC',
-    "await": 'KW_AWAIT',
-    "dyn": 'KW_DYN',
-    "abstract": 'KW_ABSTRACT',
-    "become": 'KW_BECOME',
-    "box": 'KW_BOX',
-    "do": 'KW_DO',
-    "final": 'KW_FINAL',
-    "macro": 'KW_MACRO',
-    "override": 'KW_OVERRIDE',
-    "priv": 'KW_PRIV',
-    "typeof": 'KW_TYPEOF',
-    "unsized": 'KW_UNSIZED',
-    "virtual": 'KW_VIRTUAL',
-    "yield ": 'KW_YIELD',
-    "try": 'KW_TRY',
-    "union": 'KW_UNION',
-    "'static": 'KW_STATICLIFETIME',
 ## KEVIN ELIHAN MUNOZ
 
 ## LOBERLLY SALAZAR ASPIAZU
@@ -106,8 +64,6 @@ tokens = (
     'CHAR',
     
     # Símbolos
-    'HASH',
-    'QMARK',
     'AND',
 
     # Comentarios
@@ -120,7 +76,6 @@ tokens = (
     'MINUS', 
     'TIMES', 
     'DIVIDE', 
-    'MODULUS',
     'LOR', 
     'LAND', 
     'LNOT',
@@ -156,11 +111,6 @@ tokens = (
     'QUOTE',
     'DOT',
 
-    # Asignación
-    'ANDE',
-    'ORE',
-    'OREXE',
-
     # Datos
     'INTEGER',
     'CADENA',
@@ -178,7 +128,6 @@ t_PLUS              = r'\+'
 t_MINUS             = r'-'
 t_TIMES             = r'\*'
 t_DIVIDE            = r'/'
-t_MODULUS           = r'%'
 t_LOR               = r'\|\|'
 t_LAND              = r'&&'
 t_LNOT              = r'!'
@@ -215,14 +164,7 @@ t_COLON             = r':'
 t_QUOTE             = r'\''
 t_DOT               = r'\.'
 
-# Asignacion
-t_ANDE              = r'&='
-t_ORE               = r'\|='
-t_OREXE             = r'\^='
-
 ## LOBERLLY SALAZAR ASPIAZU
-t_HASH              = r'\#'
-t_QMARK             = r'\?'
 t_AND               = r'\&'
 
 
@@ -294,10 +236,10 @@ def t_error(t):
 
     print(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
     lex_errors.append(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
-    filew = open("log.txt","a", encoding="utf-8")
-    timenow = datetime.datetime.now()
-    filew.write("---------------------------------ANALISIS LEXICO----------------------------------------------\n")
-    filew.write(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno} [DateTime: %s]"% str(timenow))
+    #filew = open("log.txt","a", encoding="utf-8")
+    #timenow = datetime.datetime.now()
+    #filew.write("---------------------------------ANALISIS LEXICO----------------------------------------------\n")
+    #filew.write(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno} [DateTime: %s]"% str(timenow))
     t.lexer.skip(1)
   
 lex.lex()

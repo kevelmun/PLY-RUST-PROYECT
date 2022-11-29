@@ -856,17 +856,17 @@ Syntax error in line 1 [DateTime: 2022-11-28 21:32:58.997520]
 Syntax error in line 1 [DateTime: 2022-11-28 21:32:59.189416] 
 Syntax error in line 1 [DateTime: 2022-11-28 21:32:59.322025] 
 Syntax error in line 1 [DateTime: 2022-11-28 21:32:59.503545] 
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
-None [DateTime: 2022-11-28 21:44:59.683177]-----------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
------------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+None [DateTime: 2022-11-28 21:44:59.683177]-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
 -------------------------------------------------------------------------------
 Syntax error in line 1 [DateTime: 2022-11-28 21:47:22.327352] 
 Syntax error in line 1 [DateTime: 2022-11-28 21:47:23.866636] 
@@ -882,18 +882,18 @@ Syntax error in line 1 [DateTime: 2022-11-28 21:47:35.405606]
 Syntax error in line 1 [DateTime: 2022-11-28 21:47:35.578561] 
 -------------------------------------------------------------------------------
 Syntax error in line 1 [DateTime: 2022-11-28 21:47:48.268650] 
------------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
 -------------------------------------------------------------------------------
 Syntax error in line 1 [DateTime: 2022-11-28 21:48:47.045715] 
------------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
 -------------------------------------------------------------------------------
 Syntax error in line 1 [DateTime: 2022-11-28 21:49:00.219688] 
------------------------------AN�LISIS SINT�CTICO------------------------------------------
+-----------------------------AN�LISIS SINT�CTICO------------------------------------------
 -------------------------------------------------------------------------------
 Syntax error in line 1 [DateTime: 2022-11-28 21:49:35.737641] 
 -------------------------------------------------------------------------------
 ---------------------------------ANALISIS LEXICO----------------------------------------------
-Caracter no reconocido ` en la l�nea 1 [DateTime: 2022-11-28 21:54:22.709597]-------------------------------------------------------------------------------
+Caracter no reconocido ` en la l�nea 1 [DateTime: 2022-11-28 21:54:22.709597]-------------------------------------------------------------------------------
 ---------------------------------ANALISIS LEXICO----------------------------------------------
 Caracter no reconocido ` en la línea 1 [DateTime: 2022-11-28 21:55:50.955877]-------------------------------------------------------------------------------
 ---------------------------------ANALISIS LEXICO----------------------------------------------
@@ -932,3 +932,589 @@ Caracter no reconocido ` en la línea 1 [DateTime: 2022-11-28 21:57:05.750239]--
 None [DateTime: 2022-11-28 21:57:05.749234]---------------------------------ANALISIS LEXICO----------------------------------------------
 Caracter no reconocido ` en la línea 1 [DateTime: 2022-11-28 21:57:05.904357]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
 None [DateTime: 2022-11-28 21:57:05.903360]Syntax error in line 1 [DateTime: 2022-11-28 21:56:40.686436] 
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:01.695962]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:07.576697]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:08.864691]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:09.633523]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:21.347156]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:27.459415]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:08:31.011936]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:11:13.368722]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:31.818167]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:45.276602]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:46.476163]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:46.892614]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:50.165164]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:50.844595]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:53.333162]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:53.805167]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:12:54.013239]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:16:05.029088]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:16:13.686338]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:16:14.183327]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:16:14.550329]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:16:57.468164]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:17:08.189322]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:17:13.774259]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:17:20.239132]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:17:20.847108]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1nCaracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:18:14.021187]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:18:17.006163]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:18:18.054180]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:18:18.830167]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1n-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:09.789167]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:14.180842]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:15.149161]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:16.053885]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:20.006162]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:19:23.606022]-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:20:12.076756]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:20:45.209131]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Syntax error in line 1 [DateTime: 2022-11-28 22:21:06.555351]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:21:14.780711]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+None [DateTime: 2022-11-28 22:24:11.235097]
+Syntax error in line 1 [DateTime: 2022-11-28 22:21:06.555351] 
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+°
+
+None [DateTime: 2022-11-28 22:26:11.481556]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a
+
+None [DateTime: 2022-11-28 22:26:18.002582]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+°
+
+Output:
+None [DateTime: 2022-11-28 22:31:05.126938]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+°
+
+Output:
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+°
+
+Output:
+None [DateTime: 2022-11-28 22:31:19.497168]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+°
+
+Output:
+Caracter no reconocido ° en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+None [DateTime: 2022-11-28 22:43:53.471775]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+None [DateTime: 2022-11-28 22:45:48.342925]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+None [DateTime: 2022-11-28 22:46:22.002759]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+None [DateTime: 2022-11-28 22:47:08.640690]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output:
+LexToken(KW_FN,'fn',1,0)
+LexToken(VARIABLE,'main',1,3)
+LexToken(LPAREN,'(',1,7)
+LexToken(RPAREN,')',1,8)
+LexToken(LBRACE,'{',1,10)
+LexToken(KW_LET,'let',2,17)
+LexToken(VARIABLE,'variable_ideal',2,21)
+LexToken(EQUALS,'=',2,36)
+LexToken(INTEGER,4,2,38)
+LexToken(SEMI,';',2,39)
+LexToken(KW_LET,'let',4,46)
+LexToken(VARIABLE,'array',4,50)
+LexToken(EQUALS,'=',4,56)
+LexToken(LBRACKET,'[',4,58)
+LexToken(INTEGER,100,4,59)
+LexToken(COMMA,',',4,62)
+LexToken(INTEGER,27,4,64)
+LexToken(COMMA,',',4,66)
+LexToken(FLOAT,0.3,4,68)
+LexToken(COMMA,',',4,71)
+LexToken(INTEGER,4,4,73)
+LexToken(COMMA,',',4,74)
+LexToken(INTEGER,5,4,76)
+LexToken(RBRACKET,']',4,77)
+LexToken(SEMI,';',4,78)
+LexToken(KW_LET,'let',5,84)
+LexToken(KW_MUT,'mut',5,88)
+LexToken(VARIABLE,'array',5,92)
+LexToken(COLON,':',5,97)
+LexToken(LBRACKET,'[',5,99)
+LexToken(SIG_INT_32,'i32',5,100)
+LexToken(SEMI,';',5,103)
+LexToken(INTEGER,3,5,105)
+LexToken(RBRACKET,']',5,106)
+LexToken(EQUALS,'=',5,108)
+LexToken(LBRACKET,'[',5,110)
+LexToken(INTEGER,0,5,111)
+LexToken(SEMI,';',5,112)
+LexToken(INTEGER,3,5,114)
+LexToken(RBRACKET,']',5,115)
+LexToken(SEMI,';',5,116)
+LexToken(KW_LET,'let',6,122)
+LexToken(KW_MUT,'mut',6,126)
+LexToken(VARIABLE,'array',6,130)
+LexToken(COLON,':',6,135)
+LexToken(LBRACKET,'[',6,137)
+LexToken(SIG_INT_32,'i32',6,138)
+LexToken(SEMI,';',6,141)
+LexToken(INTEGER,3,6,143)
+LexToken(RBRACKET,']',6,144)
+LexToken(EQUALS,'=',6,146)
+LexToken(LBRACKET,'[',6,148)
+LexToken(INTEGER,100,6,149)
+LexToken(COMMA,',',6,152)
+LexToken(INTEGER,27,6,154)
+LexToken(COMMA,',',6,156)
+LexToken(FLOAT,0.3,6,158)
+LexToken(COMMA,',',6,161)
+LexToken(INTEGER,4,6,163)
+LexToken(COMMA,',',6,164)
+LexToken(INTEGER,5,6,166)
+LexToken(RBRACKET,']',6,167)
+LexToken(SEMI,';',6,168)
+LexToken(KW_WHILE,'while',7,174)
+LexToken(VARIABLE,'i',7,180)
+LexToken(LT,'<',7,182)
+LexToken(INTEGER,10,7,184)
+LexToken(LBRACE,'{',7,187)
+LexToken(KW_PRINT,'println',8,197)
+LexToken(LNOT,'!',8,204)
+LexToken(LPAREN,'(',8,205)
+LexToken(CADENA,'"{}"',8,206)
+LexToken(COMMA,',',8,210)
+LexToken(VARIABLE,'item',8,211)
+LexToken(RPAREN,')',8,215)
+LexToken(SEMI,';',8,216)
+LexToken(RBRACE,'}',10,227)
+LexToken(INTEGER,3,11,233)
+LexToken(DIVIDE,'/',11,234)
+LexToken(INTEGER,4,11,235)
+LexToken(FLOAT,6.2,12,241)
+LexToken(DIVIDE,'/',12,244)
+LexToken(FLOAT,5.3,12,245)
+LexToken(FLOAT,2.5,13,253)
+LexToken(TIMES,'*',13,257)
+LexToken(FLOAT,3.7,13,259)
+LexToken(PLUS,'+',13,263)
+LexToken(INTEGER,5,13,265)
+LexToken(PLUS,'+',13,267)
+LexToken(INTEGER,7,13,269)
+LexToken(KW_WHILE,'while',14,275)
+LexToken(LPAREN,'(',14,281)
+LexToken(VARIABLE,'a',14,282)
+LexToken(LAND,'&&',14,284)
+LexToken(VARIABLE,'b',14,287)
+LexToken(RPAREN,')',14,288)
+LexToken(LT,'<',14,290)
+LexToken(INTEGER,5,14,292)
+LexToken(LBRACE,'{',14,293)
+LexToken(KW_PRINT,'println',15,303)
+LexToken(LNOT,'!',15,310)
+LexToken(LPAREN,'(',15,311)
+LexToken(CADENA,'""',15,312)
+LexToken(RPAREN,')',15,314)
+LexToken(SEMI,';',15,315)
+LexToken(RBRACE,'}',16,321)
+LexToken(RBRACE,'}',17,323)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+fn main() { 
+    let variable_ideal = 4;
+
+    let array = [100, 27, 0.3, 4, 5];
+    let mut array: [i32; 3] = [0; 3];
+    let mut array: [i32; 3] = [100, 27, 0.3, 4, 5];
+    while i < 10 {
+        println!("{}",item);
+    
+    }
+    3/4
+    6.2/5.3
+    2.5 * 3.7 + 5 + 7
+    while (a && b) < 5{
+        println!("");
+    }
+}
+
+Output: [DateTime: 2022-11-28 22:49:16.393561]
+LexToken(KW_FN,'fn',1,0)
+LexToken(VARIABLE,'main',1,3)
+LexToken(LPAREN,'(',1,7)
+LexToken(RPAREN,')',1,8)
+LexToken(LBRACE,'{',1,10)
+LexToken(KW_LET,'let',2,17)
+LexToken(VARIABLE,'variable_ideal',2,21)
+LexToken(EQUALS,'=',2,36)
+LexToken(INTEGER,4,2,38)
+LexToken(SEMI,';',2,39)
+LexToken(KW_LET,'let',4,46)
+LexToken(VARIABLE,'array',4,50)
+LexToken(EQUALS,'=',4,56)
+LexToken(LBRACKET,'[',4,58)
+LexToken(INTEGER,100,4,59)
+LexToken(COMMA,',',4,62)
+LexToken(INTEGER,27,4,64)
+LexToken(COMMA,',',4,66)
+LexToken(FLOAT,0.3,4,68)
+LexToken(COMMA,',',4,71)
+LexToken(INTEGER,4,4,73)
+LexToken(COMMA,',',4,74)
+LexToken(INTEGER,5,4,76)
+LexToken(RBRACKET,']',4,77)
+LexToken(SEMI,';',4,78)
+LexToken(KW_LET,'let',5,84)
+LexToken(KW_MUT,'mut',5,88)
+LexToken(VARIABLE,'array',5,92)
+LexToken(COLON,':',5,97)
+LexToken(LBRACKET,'[',5,99)
+LexToken(SIG_INT_32,'i32',5,100)
+LexToken(SEMI,';',5,103)
+LexToken(INTEGER,3,5,105)
+LexToken(RBRACKET,']',5,106)
+LexToken(EQUALS,'=',5,108)
+LexToken(LBRACKET,'[',5,110)
+LexToken(INTEGER,0,5,111)
+LexToken(SEMI,';',5,112)
+LexToken(INTEGER,3,5,114)
+LexToken(RBRACKET,']',5,115)
+LexToken(SEMI,';',5,116)
+LexToken(KW_LET,'let',6,122)
+LexToken(KW_MUT,'mut',6,126)
+LexToken(VARIABLE,'array',6,130)
+LexToken(COLON,':',6,135)
+LexToken(LBRACKET,'[',6,137)
+LexToken(SIG_INT_32,'i32',6,138)
+LexToken(SEMI,';',6,141)
+LexToken(INTEGER,3,6,143)
+LexToken(RBRACKET,']',6,144)
+LexToken(EQUALS,'=',6,146)
+LexToken(LBRACKET,'[',6,148)
+LexToken(INTEGER,100,6,149)
+LexToken(COMMA,',',6,152)
+LexToken(INTEGER,27,6,154)
+LexToken(COMMA,',',6,156)
+LexToken(FLOAT,0.3,6,158)
+LexToken(COMMA,',',6,161)
+LexToken(INTEGER,4,6,163)
+LexToken(COMMA,',',6,164)
+LexToken(INTEGER,5,6,166)
+LexToken(RBRACKET,']',6,167)
+LexToken(SEMI,';',6,168)
+LexToken(KW_WHILE,'while',7,174)
+LexToken(VARIABLE,'i',7,180)
+LexToken(LT,'<',7,182)
+LexToken(INTEGER,10,7,184)
+LexToken(LBRACE,'{',7,187)
+LexToken(KW_PRINT,'println',8,197)
+LexToken(LNOT,'!',8,204)
+LexToken(LPAREN,'(',8,205)
+LexToken(CADENA,'"{}"',8,206)
+LexToken(COMMA,',',8,210)
+LexToken(VARIABLE,'item',8,211)
+LexToken(RPAREN,')',8,215)
+LexToken(SEMI,';',8,216)
+LexToken(RBRACE,'}',10,227)
+LexToken(INTEGER,3,11,233)
+LexToken(DIVIDE,'/',11,234)
+LexToken(INTEGER,4,11,235)
+LexToken(FLOAT,6.2,12,241)
+LexToken(DIVIDE,'/',12,244)
+LexToken(FLOAT,5.3,12,245)
+LexToken(FLOAT,2.5,13,253)
+LexToken(TIMES,'*',13,257)
+LexToken(FLOAT,3.7,13,259)
+LexToken(PLUS,'+',13,263)
+LexToken(INTEGER,5,13,265)
+LexToken(PLUS,'+',13,267)
+LexToken(INTEGER,7,13,269)
+LexToken(KW_WHILE,'while',14,275)
+LexToken(LPAREN,'(',14,281)
+LexToken(VARIABLE,'a',14,282)
+LexToken(LAND,'&&',14,284)
+LexToken(VARIABLE,'b',14,287)
+LexToken(RPAREN,')',14,288)
+LexToken(LT,'<',14,290)
+LexToken(INTEGER,5,14,292)
+LexToken(LBRACE,'{',14,293)
+LexToken(KW_PRINT,'println',15,303)
+LexToken(LNOT,'!',15,310)
+LexToken(LPAREN,'(',15,311)
+LexToken(CADENA,'""',15,312)
+LexToken(RPAREN,')',15,314)
+LexToken(SEMI,';',15,315)
+LexToken(RBRACE,'}',16,321)
+LexToken(RBRACE,'}',17,323)
+
