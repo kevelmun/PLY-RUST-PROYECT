@@ -1,5 +1,5 @@
 import ply.lex as lex
-
+import datetime
 ## KEVIN ELIHAN MUNOZ
 reserved = {
     "as": 'KW_AS',
@@ -294,6 +294,10 @@ def t_error(t):
 
     print(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
     lex_errors.append(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno}")
+    filew = open("log.txt","a", encoding="utf-8")
+    timenow = datetime.datetime.now()
+    filew.write("---------------------------------ANALISIS LEXICO----------------------------------------------\n")
+    filew.write(f"Caracter no reconocido {t.value[0]} en la línea {t.lineno} [DateTime: %s]"% str(timenow))
     t.lexer.skip(1)
   
 lex.lex()

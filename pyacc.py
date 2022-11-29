@@ -3,10 +3,9 @@ import datetime
 
 from main import tokens
 
-filew = open("log.txt","a")
-error_number = 0
-filew.write("-------------------------------------------------------------------------------\n")
+filew = open("log.txt","a", encoding="utf-8")
 
+error_number = 0
 
 #KEVIN MUÑOZ
 
@@ -299,20 +298,21 @@ def p_declare_datat_type(p):
 
 # Error rule for syntax errors
 
-timenow = datetime.datetime.now()
+
 
 def p_error(p):
+    timenow = datetime.datetime.now()
     if p is not None:
-        print ("DateTime: %s >> Syntax error in line %s" % (str(timenow), p.lineno))
-        global error_number
         global yacc_errors
-        yacc_errors.append("DateTime: %s >> Syntax error in line %s" % (str(timenow), p.lineno))
-        error_number += 1
-        filew.write("DateTime: %s >> Syntax error in line %s \n" % (str(timenow), p.lineno))
+        print ("Syntax error in line %s [DateTime: %s]" % (p.lineno, str(timenow)))
+        
+        yacc_errors.append("Syntax error in line %s [DateTime: %s]" % (p.lineno, str(timenow)))
+        
+        filew.write("Syntax error in line %s [DateTime: %s] \n" % (p.lineno, str(timenow)))
         
     else:
-        yacc_errors.append('Unexpected end of input')
         print('Unexpected end of input')
+        yacc_errors.append('Unexpected end of input')
         filew.write('Unexpected end of input\n')
 
 
@@ -341,7 +341,7 @@ yacc_errors = []
 #     if error_number != 0:
 #       result = error_number
 #       error_number = 0
-#       parser.restart()
+      
 #     print("File: %s >> Result: %s errors found. %s" %(file, str(result), str(timenow)))
 #     filew.write("DateTime: %s | File: %s >> Result: %s errors found.\n" % (str(timenow), file, str(result)))
 
@@ -349,8 +349,3 @@ yacc_errors = []
 def get_yacc():
     return yacc.yacc(errorlog=yacc.NullLogger())
 
-def get_yacc_analisis(code):
-    result = parser.parse(code)
-    parser.restart()
-    return result
-   

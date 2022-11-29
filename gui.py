@@ -1,7 +1,9 @@
 from tkinter import *
 import tkinter.scrolledtext as st
 from main import get_lexer, getTokens, lex_errors
-from pyacc import get_yacc, yacc_errors, get_yacc_analisis
+from pyacc import get_yacc, yacc_errors
+import datetime
+
 #------------------------------- FUNCION PARA EL ANALISIS LEXICO --------------------------------------
 lexer_analizer = get_lexer()
 
@@ -39,24 +41,34 @@ def lexer_analisis():
 sintactic_analizer = get_yacc()
 
 def sintactic_analisis():
+    
+    filew = open("log.txt","a", encoding="utf-8")
+
+    filew.write("-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------\n")
+    timenow = datetime.datetime.now()
+
     codigo = inputCode.get("1.0", END)
     outputCode.configure(state='normal')
-
     # Limpieza de el contenedor outputCode
     outputCode.delete("1.0", END)
-    sintactic_analizer.lineno = 1
-    result = get_yacc_analisis(codigo)
-
+    lexer_analizer.lineno = 1
+    
+    result = sintactic_analizer.parse(codigo)
+    print(codigo)
+    print(len(yacc_errors))
     print(yacc_errors)
     # Salida del output
+    if len(yacc_errors) == 0:
+        filew.write("%s [DateTime: %s]" % (repr(result), str(timenow)))
+        outputCode.insert("1.0", repr(result))
+
     if len(yacc_errors) > 0:
         errores = '\n'.join(yacc_errors) + '\n'
         
-        outputCode.insert("1.0", errores, 'warning')
+        outputCode.insert("1.0", errores)
         yacc_errors.clear() 
 
-    if len(yacc_errors) == 0:
-        outputCode.insert("1.0", repr(result))
+    filew.close()
     
     outputCode.configure(state='disabled')
 
@@ -83,14 +95,14 @@ Label(mainFrame, text="GRUPO #7").grid(row=0, column=0, padx=10, pady=10, column
 #-------------------------------SECCION DE ENTRADA--------------------------------------
 
 Label(mainFrame, text="Escribe tu codigo:", bg="white").grid(row=1, column=0, sticky="w", padx=10, pady=10)
-inputCode = st.ScrolledText(mainFrame, width=60, height=12, insertbackground="#149414")
+inputCode = st.ScrolledText(mainFrame, width=62, height=12, insertbackground="#149414")
 inputCode.grid(row=2, column=0, sticky="w", padx=10, pady=10, columnspan=60)
 inputCode.config(background="#000000", fg="#149414")
 
 #------------------------------- SECCION DE RESULTADO --------------------------------------
 
 Label(mainFrame, text="Resultado:", bg="white").grid(row=7, column=0, sticky="w", padx=10, pady=10)
-outputCode =  st.ScrolledText(mainFrame, width=60, height=12)
+outputCode =  st.ScrolledText(mainFrame, width=62, height=12)
 outputCode.grid(row=8, column=0, sticky="w", padx=10, pady=10, columnspan=60)
 outputCode.config(background="#000000", fg="#149414")
 
