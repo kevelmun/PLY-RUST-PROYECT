@@ -2126,3 +2126,2957 @@ print;
 
 Output:
 Syntax error in line 2 [DateTime: 2022-11-29 19:25:08.603176]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a;
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:51:50.724608]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+None [DateTime: 2022-11-29 20:51:55.987983]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println()
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:52:55.234965]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("sada")
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:00.501241]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("sada")
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:00.920994]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("sada")
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:01.374048]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("sada")
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:01.574953]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("sada");
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:06.080936]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("sada");
+
+Output:
+None [DateTime: 2022-11-29 20:53:13.459953]
+Syntax error in line 1 [DateTime: 2022-11-29 20:51:50.724608] 
+Unexpected end of input
+Syntax error in line 1 [DateTime: 2022-11-29 20:52:55.234965] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:00.501241] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:00.920994] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:01.374048] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:01.574953] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:53:06.080936] 
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print();
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:02.393944]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println();
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:21.382239]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("dasd");
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:26.713999]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("dasd");
+
+Output:
+None [DateTime: 2022-11-29 20:54:35.419739]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("dasd");
+
+Output:
+None [DateTime: 2022-11-29 20:54:36.639970]
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:02.393944] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:21.382239] 
+Syntax error in line 1 [DateTime: 2022-11-29 20:54:26.713999] 
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+None [DateTime: 2022-11-29 20:55:03.998022]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print();
+
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println();
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 20:57:00.961089]
+Syntax error in line 1 [DateTime: 2022-11-29 20:57:00.961089] 
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("das");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 20:59:58.710852]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 20:59:58.710852]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:00:53.964715]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:00:53.964715]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:17.934242]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:17.934242]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:32.945893]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:32.945893]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:50.130426]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:01:50.130426]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:00.207803]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:00.207803]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:38.724176]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:38.724176]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:56.224609]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:02:56.224609]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+print("as");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:03:09.371968]
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 21:03:09.371968]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::new()
+
+Output:
+None [DateTime: 2022-11-29 21:04:22.913187]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::new()
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::new();
+
+Output:
+None [DateTime: 2022-11-29 21:05:38.184113]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a =[]
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:07:36.926696]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a[]
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:07:38.454669]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[]
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:42.395354]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:46.922976]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:47.523697]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.240691]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.620788]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.891049]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.121382]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.365748]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[];
+
+Output:
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.638619]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=[1,2];
+
+Output:
+None [DateTime: 2022-11-29 21:09:04.380549]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:20.139771]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:33.989755]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:34.949968]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:35.640602]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.287303]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.483776]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.715175]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a::[i32;5] =[1,2];
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:09:46.192605]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:48.175652]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:48.893264]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.117455]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.359016]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] =[1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.666562]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] = [1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:10:30.875794]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] = [1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:10:31.411098]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] = [1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:11:16.552276]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] = [1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:11:17.050407]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let mut a:[i32;5] = [1,2];
+
+Output:
+None [DateTime: 2022-11-29 21:12:17.684318]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5] = [1,2];
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:12:35.731361]
+Unexpected end of input
+Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:07:36.926696]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:07:38.454669]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:42.395354]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:46.922976]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:47.523697]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.240691]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.620788]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:48.891049]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.121382]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.365748]Syntax error RBRACKET token in line 1 [DateTime: 2022-11-29 21:08:49.638619]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:20.139771]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:33.989755]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:34.949968]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:35.640602]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.287303]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.483776]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:40.715175]Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:09:46.192605]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:48.175652]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:48.893264]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.117455]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.359016]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:09:49.666562]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:10:30.875794]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:10:31.411098]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:11:16.552276]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:11:17.050407]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 21:12:35.731361]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5]=[1,2,3,4,5]
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:[i32;5]=[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:13:04.554620]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:19.330049]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:19.830075]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:20.086441]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:20.285308]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:20.466533]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:20.652083]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:20.834355]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:21.010090]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:21.185692]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:21.381588]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:21.601120]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:21.806060]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:22.043741]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:22.277005]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:22.496085]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:22.733071]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:22.943654]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:23.154096]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:23.368191]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:23.581203]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:23.794148]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:23.996003]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:24.202597]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:24.431555]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:24.663752]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:24.889092]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:25.131676]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:31.801033]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:32.159135]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:32.411656]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:32.728714]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:33.005088]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:33.315322]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:33.636082]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:39.035098]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:39.573652]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:40.015177]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:13:41.663564]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::from([1,2,3])
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::from([1,2,3])
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::from([1,2,3])
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = HashMap::from([1,2,3]);
+
+Output:
+None [DateTime: 2022-11-29 21:16:03.012735]
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3])
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:18:18.258079]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:18:18.258079]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:18:22.507089]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:18:22.507089]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:18:23.325559]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:18:23.326553]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3])
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:19:02.932091]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:19:02.933093]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3])
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:19:04.636576]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:19:04.636576]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:19:58.102667]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:19:58.103664]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3])
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:20:00.281245]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:20:00.282243]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);
+
+Output: [DateTime: 2022-11-29 21:20:17.471527]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(EQUALS,'=',1,6)
+LexToken(VARIABLE,'LikedList',1,8)
+LexToken(COLON,':',1,17)
+LexToken(COLON,':',1,18)
+LexToken(KW_FROM,'from',1,19)
+LexToken(LPAREN,'(',1,23)
+LexToken(LBRACKET,'[',1,24)
+LexToken(INTEGER,1,1,25)
+LexToken(COMMA,',',1,26)
+LexToken(INTEGER,2,1,27)
+LexToken(COMMA,',',1,28)
+LexToken(INTEGER,3,1,29)
+LexToken(RBRACKET,']',1,30)
+LexToken(RPAREN,')',1,31)
+LexToken(SEMI,';',1,32)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:20:20.909297]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:20:20.909297]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a = LikedList::from([1,2,3]);
+
+Output: [DateTime: 2022-11-29 21:20:29.394522]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(EQUALS,'=',1,6)
+LexToken(VARIABLE,'LikedList',1,8)
+LexToken(COLON,':',1,17)
+LexToken(COLON,':',1,18)
+LexToken(KW_FROM,'from',1,19)
+LexToken(LPAREN,'(',1,23)
+LexToken(LBRACKET,'[',1,24)
+LexToken(INTEGER,1,1,25)
+LexToken(COMMA,',',1,26)
+LexToken(INTEGER,2,1,27)
+LexToken(COMMA,',',1,28)
+LexToken(INTEGER,3,1,29)
+LexToken(RBRACKET,']',1,30)
+LexToken(RPAREN,')',1,31)
+LexToken(SEMI,';',1,32)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = Likedlist::from([1,2,3]);
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 21:20:41.516485]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:20:41.516485]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a = Likedlist::from([1,2,3]);
+
+Output: [DateTime: 2022-11-29 21:20:43.124063]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(EQUALS,'=',1,6)
+LexToken(VARIABLE,'Likedlist',1,8)
+LexToken(COLON,':',1,17)
+LexToken(COLON,':',1,18)
+LexToken(KW_FROM,'from',1,19)
+LexToken(LPAREN,'(',1,23)
+LexToken(LBRACKET,'[',1,24)
+LexToken(INTEGER,1,1,25)
+LexToken(COMMA,',',1,26)
+LexToken(INTEGER,2,1,27)
+LexToken(COMMA,',',1,28)
+LexToken(INTEGER,3,1,29)
+LexToken(RBRACKET,']',1,30)
+LexToken(RPAREN,')',1,31)
+LexToken(SEMI,';',1,32)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a = LinkedList::from([1,2,3]);
+
+Output: [DateTime: 2022-11-29 21:21:02.673633]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(EQUALS,'=',1,6)
+LexToken(KW_LINKEDLIST,'LinkedList',1,8)
+LexToken(COLON,':',1,18)
+LexToken(COLON,':',1,19)
+LexToken(KW_FROM,'from',1,20)
+LexToken(LPAREN,'(',1,24)
+LexToken(LBRACKET,'[',1,25)
+LexToken(INTEGER,1,1,26)
+LexToken(COMMA,',',1,27)
+LexToken(INTEGER,2,1,28)
+LexToken(COMMA,',',1,29)
+LexToken(INTEGER,3,1,30)
+LexToken(RBRACKET,']',1,31)
+LexToken(RPAREN,')',1,32)
+LexToken(SEMI,';',1,33)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LinkedList::from([1,2,3]);
+
+Output:
+None [DateTime: 2022-11-29 21:21:05.738570]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LinkedList::from([1,2,3]);
+
+Output:
+None [DateTime: 2022-11-29 21:21:12.770485]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LinkedList::from([1,2,3])
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = LinkedList::from([1,2,3]);
+
+Output:
+None [DateTime: 2022-11-29 21:21:24.960282]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:LinkedList<i32> = LinkedList::new()
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:LinkedList<i32> = LinkedList::new();
+
+Output:
+None [DateTime: 2022-11-29 21:22:41.900950]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:LinkedList<i32> = LinkedList::new);
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:22:45.079877]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4]
+
+Output:
+None [DateTime: 2022-11-29 21:38:03.572131]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+asdasdasd
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+asdasdasd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 21:38:59.728646]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let asdasdasd;
+
+Output:
+None [DateTime: 2022-11-29 21:39:04.045620]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:12.905062]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:13.855844]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:14.236556]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:14.415082]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:14.596261]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:14.768134]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:14.940345]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:15.132215]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:15.344085]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:15.552217]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:15.743653]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:15.918011]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:16.102116]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5]
+
+Output:
+None [DateTime: 2022-11-29 21:39:16.289552]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:20.615169]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:21.028088]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:21.201782]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:21.419937]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:21.632295]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:22.515094]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:22.725969]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:23.553674]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:23.777616]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:23.986927]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:24.228701]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+[1,2,3,4,5];
+
+Output:
+None [DateTime: 2022-11-29 21:39:24.459145]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove(1);
+
+Output:
+None [DateTime: 2022-11-29 21:41:39.092723]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove(1);
+
+Output:
+None [DateTime: 2022-11-29 21:41:39.795774]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove(1);
+
+Output:
+None [DateTime: 2022-11-29 21:41:39.983439]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove(1);
+
+Output:
+None [DateTime: 2022-11-29 21:41:40.166050]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:46.803327]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:47.682326]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:47.864326]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.039328]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.209326]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.374353]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.543353]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.710352]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove("dasd");
+
+Output:
+Syntax error CADENA token in line 1 [DateTime: 2022-11-29 21:41:48.892352]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.remove(&"dasd");
+
+Output:
+None [DateTime: 2022-11-29 21:43:34.771442]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sd")
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:23.223519]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:23.990968]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sd");
+
+Output:
+None [DateTime: 2022-11-29 21:48:31.191778]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sd")
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sd");
+
+Output:
+None [DateTime: 2022-11-29 21:48:36.138406]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("das","sd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:40.288715]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:23.223519]Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:23.990968]Unexpected end of input
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:48:40.288715]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:49:22.044707]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:49:26.003871]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:50:06.126526]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:19.703213]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:28.707945]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:29.295560]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:29.494676]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:29.671255]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:50:29.849254]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("s","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:50:35.211042]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s','sad');
+
+Output:
+Syntax error QUOTE token in line 1 [DateTime: 2022-11-29 21:50:49.951691]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:51:03.395620]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:10.080065]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert( "ssd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:17.749054]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:23.516081]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.044603]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.223634]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.395542]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.569725]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.726728]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:24.899558]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:25.062198]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd" , "sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:25.215748]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert( "ssd" , "sad" );
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:28.635879]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:51:36.268524]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(ssd,"sad");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 21:52:01.429556]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:52:07.896683]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad")
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:52:09.678772]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:52:15.217194]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("ssd","sad"));
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:52:22.384451]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sad","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:53:59.225370]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,1);
+
+Output:
+None [DateTime: 2022-11-29 21:54:23.699175]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:28.266126]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(1,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:28.769685]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:34.264536]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:34.454751]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert('s',"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:34.635721]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(true,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:38.665321]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert(false,"sad");
+
+Output:
+None [DateTime: 2022-11-29 21:54:42.749639]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:54:48.044392]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","sad"");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:54:55.838444]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","sad""");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:54:57.781658]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","sad"");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:54:58.982935]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","sad");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:54:59.593007]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd",11);
+
+Output:
+None [DateTime: 2022-11-29 21:55:03.577392]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:55:08.774818]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:56:46.391757]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:56:46.567735]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:57:13.465901]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:58:54.678631]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:58:54.870684]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:58:55.040087]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd","dsa";);
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 21:59:11.852237]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd";,"dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:18.997918]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd";,"dsa";);
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 21:59:22.647596]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd";"dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:26.956304]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sdasd""dsa");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:30.450152]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dasdasd""sadasd")
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:52.308715]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dasdasd""sadasd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:56.018749]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dasdasd" "sadasd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 22:00:00.570904]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dasdasd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 22:00:04.289890]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dasdasd" 1);
+
+Output:
+None [DateTime: 2022-11-29 22:00:08.006061]
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:52.308715]Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 21:59:56.018749]Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 22:00:00.570904]Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 22:00:04.289890]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dsa","dasd");
+
+Output:
+Syntax error RPAREN token in line 1 [DateTime: 2022-11-29 22:00:31.379273]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("dsa","dasd");
+
+Output: [DateTime: 2022-11-29 22:00:31.895001]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"dsa","dasd"',1,9)
+LexToken(RPAREN,')',1,21)
+LexToken(SEMI,';',1,22)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:02:01.296644]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output: [DateTime: 2022-11-29 22:02:05.023037]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'dsa',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'dsa',1,16)
+LexToken(RPAREN,')',1,20)
+LexToken(SEMI,';',1,21)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:02:18.039073]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output: [DateTime: 2022-11-29 22:02:26.600522]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'dsa',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'dsa',1,16)
+LexToken(RPAREN,')',1,20)
+LexToken(SEMI,';',1,21)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output: [DateTime: 2022-11-29 22:03:04.547288]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'dsa',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'dsa',1,16)
+LexToken(RPAREN,')',1,20)
+LexToken(SEMI,';',1,21)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:03:08.420580]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("dsa","dsa");
+
+Output: [DateTime: 2022-11-29 22:03:09.321741]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'dsa',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'dsa',1,16)
+LexToken(RPAREN,')',1,20)
+LexToken(SEMI,';',1,21)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("sad","das");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:03:38.830233]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("sad","das");
+
+Output: [DateTime: 2022-11-29 22:03:39.941801]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'sad',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'das',1,16)
+LexToken(RPAREN,')',1,20)
+LexToken(SEMI,';',1,21)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:03:38.830233]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("das","da");
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:06:32.585859]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("das","da");
+
+Output: [DateTime: 2022-11-29 22:06:33.541487]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(VARIABLE,'das',1,10)
+LexToken(COMMA,',',1,14)
+LexToken(VARIABLE,'da',1,16)
+LexToken(RPAREN,')',1,19)
+LexToken(SEMI,';',1,20)
+
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+Caracter no reconocido " en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:08:31.077244]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output: [DateTime: 2022-11-29 22:08:38.135559]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"da"',1,9)
+LexToken(COMMA,',',1,13)
+LexToken(CADENA,'"dsa"',1,14)
+LexToken(RPAREN,')',1,19)
+LexToken(SEMI,';',1,20)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:08:41.043032]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output: [DateTime: 2022-11-29 22:08:41.852328]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"da"',1,9)
+LexToken(COMMA,',',1,13)
+LexToken(CADENA,'"dsa"',1,14)
+LexToken(RPAREN,')',1,19)
+LexToken(SEMI,';',1,20)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:08:42.326249]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output: [DateTime: 2022-11-29 22:08:42.815262]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"da"',1,9)
+LexToken(COMMA,',',1,13)
+LexToken(CADENA,'"dsa"',1,14)
+LexToken(RPAREN,')',1,19)
+LexToken(SEMI,';',1,20)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:08:43.159231]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output: [DateTime: 2022-11-29 22:08:43.473297]
+LexToken(VARIABLE,'a',1,0)
+LexToken(DOT,'.',1,1)
+LexToken(KW_INSERT,'insert',1,2)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"da"',1,9)
+LexToken(COMMA,',',1,13)
+LexToken(CADENA,'"dsa"',1,14)
+LexToken(RPAREN,')',1,19)
+LexToken(SEMI,';',1,20)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+a.insert("da","dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:08:43.784740]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("dsa");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 22:09:01.740961]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:09:05.846772]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+println!("dsa");
+
+Output: [DateTime: 2022-11-29 22:09:07.260744]
+LexToken(KW_PRINT,'println',1,0)
+LexToken(LNOT,'!',1,7)
+LexToken(LPAREN,'(',1,8)
+LexToken(CADENA,'"dsa"',1,9)
+LexToken(RPAREN,')',1,14)
+LexToken(SEMI,';',1,15)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("dsa");
+
+Output:
+None [DateTime: 2022-11-29 22:09:14.002716]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 10;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:09:42.670385]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @varar;
+
+Output:
+None [DateTime: 2022-11-29 22:09:49.506659]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:10:03.890649]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %vasda;
+
+Output:
+None [DateTime: 2022-11-29 22:10:09.646139]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:10:14.675787]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:10:15.460377]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let if;
+
+Output:
+Syntax error KW_IF token in line 1 [DateTime: 2022-11-29 22:10:19.092534]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let .vasda;
+
+Output:
+Syntax error DOT token in line 1 [DateTime: 2022-11-29 22:10:22.962279]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let $assda;
+
+Output:
+None [DateTime: 2022-11-29 22:10:28.567888]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asda;
+
+Output:
+None [DateTime: 2022-11-29 22:10:34.192481]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asda;
+
+Output:
+None [DateTime: 2022-11-29 22:10:34.710985]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asda;
+
+Output:
+None [DateTime: 2022-11-29 22:10:34.901873]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let ;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:10:39.356695]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:10:42.999821]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:28.244776]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:28.759882]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:28.944691]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:29.119801]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:29.308815]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:11:29.488507]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let 10;
+
+Output: [DateTime: 2022-11-29 22:15:36.955334]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,10,1,4)
+LexToken(SEMI,';',1,6)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 10;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:15:37.687727]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asda;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:15:43.069724]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:15:48.180298]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asda;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:15:56.676981]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asdasd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:09.675445]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asdasd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:10.207641]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asdasd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:10.402933]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:16:18.195822]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:16:18.823285]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:16:19.012826]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:16:19.194346]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asda;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:25.032171]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:29.037477]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let if;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:32.425398]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let If;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:35.711130]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let .sada;
+
+Output:
+Syntax error DOT token in line 1 [DateTime: 2022-11-29 22:16:39.882712]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let $asd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:46.129261]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let %asd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:16:50.673299]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _12;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:16:55.326302]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _12;
+
+Output: [DateTime: 2022-11-29 22:17:26.890777]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,12,1,5)
+LexToken(SEMI,';',1,7)
+
+Caracter no reconocido _ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a12;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:18:01.733335]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a12;
+
+Output: [DateTime: 2022-11-29 22:18:05.168101]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,12,1,5)
+LexToken(SEMI,';',1,7)
+
+Caracter no reconocido a en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a12;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:18:05.714415]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 12asd;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:18:25.498991]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a12asd;
+
+Output: [DateTime: 2022-11-29 22:18:31.461088]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,12,1,5)
+LexToken(SEMI,';',1,10)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a12asd;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:18:32.026129]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a12asd;
+
+Output: [DateTime: 2022-11-29 22:18:33.674857]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,12,1,5)
+LexToken(SEMI,';',1,10)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a12;
+
+Output: [DateTime: 2022-11-29 22:23:53.334456]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,'12',1,5)
+LexToken(SEMI,';',1,7)
+
+Caracter no reconocido a en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:24:06.682716]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,5)
+
+Caracter no reconocido a en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let aasd;
+
+Output: [DateTime: 2022-11-29 22:24:27.581169]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:24:43.453532]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,5)
+
+Caracter no reconocido a en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let aasd;
+
+Output: [DateTime: 2022-11-29 22:24:48.557342]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _as;
+
+Output: [DateTime: 2022-11-29 22:25:02.932075]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,7)
+
+Caracter no reconocido _ en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _as;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:04.076217]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _as;
+
+Output: [DateTime: 2022-11-29 22:25:05.009733]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,7)
+
+Caracter no reconocido _ en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let .asda;
+
+Output:
+Syntax error DOT token in line 1 [DateTime: 2022-11-29 22:25:28.530404]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:34.531874]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:34.975132]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:35.166141]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:35.342095]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:25:35.516080]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:26:00.145758]
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:26:00.145758]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a12;
+
+Output:
+None [DateTime: 2022-11-29 22:26:32.936327]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a12;
+
+Output: [DateTime: 2022-11-29 22:26:33.949695]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a12',1,4)
+LexToken(SEMI,';',1,7)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _121;
+
+Output:
+None [DateTime: 2022-11-29 22:26:50.942190]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _121;
+
+Output: [DateTime: 2022-11-29 22:26:51.551061]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'_121',1,4)
+LexToken(SEMI,';',1,8)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let 22_121;
+
+Output: [DateTime: 2022-11-29 22:27:04.291384]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,22,1,4)
+LexToken(VARIABLE,'_121',1,6)
+LexToken(SEMI,';',1,10)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_121;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:27:05.602107]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let 22_121;
+
+Output: [DateTime: 2022-11-29 22:27:06.964900]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,22,1,4)
+LexToken(VARIABLE,'_121',1,6)
+LexToken(SEMI,';',1,10)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 22_a;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:27:12.008069]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let 22_a;
+
+Output: [DateTime: 2022-11-29 22:27:12.462346]
+LexToken(KW_LET,'let',1,0)
+LexToken(INTEGER,22,1,4)
+LexToken(VARIABLE,'_a',1,6)
+LexToken(SEMI,';',1,8)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let 10;
+
+Output:
+Syntax error INTEGER token in line 1 [DateTime: 2022-11-29 22:27:18.000081]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:27:22.800091]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+None [DateTime: 2022-11-29 22:27:28.665167]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+None [DateTime: 2022-11-29 22:28:08.279391]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:28:14.418303]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _a;
+
+Output: [DateTime: 2022-11-29 22:28:20.802254]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'_a',1,4)
+LexToken(SEMI,';',1,6)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _a;
+
+Output:
+None [DateTime: 2022-11-29 22:28:21.516288]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _a;
+
+Output: [DateTime: 2022-11-29 22:28:22.198864]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'_a',1,4)
+LexToken(SEMI,';',1,6)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _;
+
+Output: [DateTime: 2022-11-29 22:28:25.438098]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,5)
+
+Caracter no reconocido _ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:28:27.092137]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:28:34.223467]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:28:34.982356]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:28:36.507601]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:28:38.940083]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:29:11.744136]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:29:14.931169]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:31:55.250609]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:33:03.173899]
+LexToken(VARIABLE,'let @asd;\n',1,0)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:33:27.318856]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'@asd',1,4)
+LexToken(SEMI,';',1,8)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:33:54.121436]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'@asd',1,4)
+LexToken(SEMI,';',1,8)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asda;
+
+Output: [DateTime: 2022-11-29 22:34:17.953150]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asda',1,5)
+LexToken(SEMI,';',1,9)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let x;
+
+Output: [DateTime: 2022-11-29 22:34:42.611681]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,5)
+
+Caracter no reconocido x en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let x;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:34:43.543440]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let x;
+
+Output: [DateTime: 2022-11-29 22:34:44.775403]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,5)
+
+Caracter no reconocido x en la línea 1
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:35:05.665185]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+None [DateTime: 2022-11-29 22:35:06.741183]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:39:05.307160]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'a',1,4)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+None [DateTime: 2022-11-29 22:39:06.969117]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:39:13.017832]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:39:16.249570]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:39:18.021874]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:39:22.153351]
+LexToken(KW_LET,'let',1,0)
+LexToken(VARIABLE,'asd',1,5)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+None [DateTime: 2022-11-29 22:39:23.733361]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:40:19.987065]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:40:20.736065]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:40:23.181422]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:40:27.535088]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a=3;
+
+Output: [DateTime: 2022-11-29 22:40:41.739091]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(EQUALS,'=',1,5)
+LexToken(INTEGER,3,1,6)
+LexToken(SEMI,';',1,7)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=3;
+
+Output:
+None [DateTime: 2022-11-29 22:40:42.324369]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a=3;
+
+Output: [DateTime: 2022-11-29 22:40:43.163403]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(EQUALS,'=',1,5)
+LexToken(INTEGER,3,1,6)
+LexToken(SEMI,';',1,7)
+
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a=3;
+
+Output: [DateTime: 2022-11-29 22:40:48.071166]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(EQUALS,'=',1,5)
+LexToken(INTEGER,3,1,6)
+LexToken(SEMI,';',1,7)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a=3;
+
+Output:
+None [DateTime: 2022-11-29 22:40:48.590157]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:40:51.719255]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:40:52.431468]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:40:53.145199]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd;
+
+Output: [DateTime: 2022-11-29 22:41:03.260560]
+LexToken(KW_LET,'let',1,0)
+LexToken(SEMI,';',1,8)
+
+Caracter no reconocido @ en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:41:03.687049]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd=22;
+
+Output:
+Syntax error EQUALS token in line 1 [DateTime: 2022-11-29 22:41:10.185123]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd = 22;
+
+Output:
+Syntax error EQUALS token in line 1 [DateTime: 2022-11-29 22:41:14.302455]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let @asd = 22;
+
+Output: [DateTime: 2022-11-29 22:41:15.483528]
+LexToken(KW_LET,'let',1,0)
+LexToken(EQUALS,'=',1,9)
+LexToken(INTEGER,22,1,11)
+LexToken(SEMI,';',1,13)
+
+Caracter no reconocido @ en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido d en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let @asd = 22;
+
+Output:
+Syntax error EQUALS token in line 1 [DateTime: 2022-11-29 22:41:16.490473]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let asd = 22;
+
+Output:
+None [DateTime: 2022-11-29 22:41:20.729389]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let asd:i32 = 22;
+
+Output: [DateTime: 2022-11-29 22:41:28.888477]
+LexToken(VARIABLE,'let asd:i32',1,0)
+LexToken(EQUALS,'=',1,12)
+LexToken(INTEGER,22,1,14)
+LexToken(SEMI,';',1,16)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let asd:i32 = 22;
+
+Output:
+None [DateTime: 2022-11-29 22:41:29.881529]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if a=="sad"{}
+
+Output:
+Syntax error EQ token in line 1 [DateTime: 2022-11-29 22:46:17.022586]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if a =="sad"{}
+
+Output:
+Syntax error EQ token in line 1 [DateTime: 2022-11-29 22:46:34.500502]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:46:40.694093]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x=="das"{}
+
+Output:
+None [DateTime: 2022-11-29 22:47:08.527067]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x==t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:47:17.826986]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:09.268079]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.151751]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.470816]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.739802]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.950219]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.176518]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.386978]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.608374]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x>t{}
+
+Output:
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.850841]
+Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:47:17.826986]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:09.268079]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.151751]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.470816]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.739802]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:10.950219]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.176518]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.386978]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.608374]Syntax error VARIABLE token in line 1 [DateTime: 2022-11-29 22:50:11.850841]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:53:03.104971]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+None [DateTime: 2022-11-29 22:53:07.290150]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a;
+
+Output: [DateTime: 2022-11-29 22:55:32.621479]
+LexToken(VARIABLE,'let a',1,0)
+LexToken(SEMI,';',1,5)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:34.089850]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:38.820090]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let aasd:i32;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:46.366516]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _aasd:i32;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:55.005163]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let _aasd:i32;
+
+Output: [DateTime: 2022-11-29 22:55:55.942719]
+LexToken(VARIABLE,'let _aasd:i32',1,0)
+LexToken(SEMI,';',1,13)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let _aasd:i32;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:57.910314]
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:34.089850]Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:38.820090]Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:46.366516]Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:55.005163]Syntax error SEMI token in line 1 [DateTime: 2022-11-29 22:55:57.910314]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let as:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 22:56:38.831565]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let Aas:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 22:56:48.738563]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let Aas:i32;
+
+Output: [DateTime: 2022-11-29 22:56:49.450666]
+LexToken(KW_LET,'let',1,0)
+LexToken(COLON,':',1,7)
+LexToken(INTEGER,32,1,9)
+LexToken(SEMI,';',1,11)
+
+Caracter no reconocido A en la línea 1
+Caracter no reconocido a en la línea 1
+Caracter no reconocido s en la línea 1
+Caracter no reconocido i en la línea 1
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 22:56:38.831565]Syntax error COLON token in line 1 [DateTime: 2022-11-29 22:56:48.738563]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:14:38.542152]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a:i32;
+
+Output: [DateTime: 2022-11-29 23:14:40.942077]
+LexToken(KW_LET,'let',1,0)
+LexToken(COLON,':',1,5)
+LexToken(INTEGER,32,1,7)
+LexToken(SEMI,';',1,9)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido i en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:17:47.744145]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+let a:i32;
+
+Output: [DateTime: 2022-11-29 23:17:48.804391]
+LexToken(KW_LET,'let',1,0)
+LexToken(COLON,':',1,5)
+LexToken(INTEGER,32,1,7)
+LexToken(SEMI,';',1,9)
+
+Caracter no reconocido a en la línea 1
+Caracter no reconocido i en la línea 1
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:46.802922]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let Aa:i32;
+
+Output:
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:54.370680]
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:46.802922]Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:54.370680]

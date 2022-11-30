@@ -202,7 +202,7 @@ def t_INTEGER(t):
   return t
 
 def t_CADENA(t):
-  r'".*"'
+  r'\"([^\\\n]|(\\.))*?\"'
   return t
 
 #Conteo de lineas

@@ -108,21 +108,22 @@ mainFrame.config(bg="#252525")
 mainFrame.config(width="1200", height="600")
 
 #-------------------------------HEADER--------------------------------------
-Label(mainFrame, text="GRUPO #7").grid(row=0, column=0, padx=10, pady=10, columnspan=60)
+Label(mainFrame, text="GRUPO #7", font=('14')).grid(row=0, column=0, padx=10, pady=10, columnspan=80)
 
 #-------------------------------SECCION DE ENTRADA--------------------------------------
 
-Label(mainFrame, text="Escribe tu codigo:", bg="white").grid(row=1, column=0, sticky="w", padx=10, pady=10, columnspan=60)
-inputCode = st.ScrolledText(mainFrame, width=62, height=12, insertbackground="#149414")
-inputCode.grid(row=2, column=0, sticky="w", padx=10, pady=10, columnspan=60)
+Label(mainFrame, text="Escribe tu codigo:", bg="white", font=('12')).grid(row=1, column=0, sticky="w", padx=10, pady=10, columnspan=80)
+inputCode = st.ScrolledText(mainFrame, width=80, height=12, insertbackground="#149414", font=('Terminal 15'))
+inputCode.grid(row=2, column=0, sticky="w", padx=10, pady=10, columnspan=80)
 inputCode.config(background="#000000", fg="#149414")
 
 #------------------------------- SECCION DE RESULTADO --------------------------------------
 
-Label(mainFrame, text="Resultado:", bg="white").grid(row=7, column=0, sticky="w", padx=10, pady=10, columnspan=60)
-outputCode =  st.ScrolledText(mainFrame, width=62, height=12)
-outputCode.grid(row=8, column=0, sticky="w", padx=10, pady=10, columnspan=60)
+Label(mainFrame, text="Resultado:", bg="white", font=('12')).grid(row=7, column=0, sticky="w", padx=10, pady=10, columnspan=80)
+outputCode =  st.ScrolledText(mainFrame, width=80, height=12, font=('Terminal 15'))
+outputCode.grid(row=8, column=0, sticky="w", padx=10, pady=10, columnspan=80)
 outputCode.config(background="#000000", fg="#149414")
+outputCode.configure(state='disabled')
 
 
 
@@ -130,8 +131,8 @@ outputCode.config(background="#000000", fg="#149414")
 
 #------------------------------- SECCION DE OPCIONES --------------------------------------
 
-lexicButton = Button(mainFrame, text="Lexico", command=lexer_analisis).grid(row=9, column=0, sticky="w", padx=(10,0), pady=10)
+lexicButton = Button(mainFrame, text="Lexico", command=lexer_analisis, font=('10')).grid(row=9, column=0, sticky="w", padx=(10,0), pady=10)
 
-sintacticButton = Button(mainFrame, text="Sintactico", command=sintactic_analisis ).grid(row=9, column=1, sticky="w",  pady=10)
+sintacticButton = Button(mainFrame, text="Sintactico", command=sintactic_analisis, font=('10')).grid(row=9, column=1, sticky="w",  pady=10)
 #-------------------------------LOOP DE EJECUCION--------------------------------------
 root.mainloop()

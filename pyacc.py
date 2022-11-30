@@ -22,7 +22,6 @@ def p_father_rule(p):
     | function
     | control_str
     | void
-    | data_str
     | array
     | linkedlist_methods
     | hashmap_methods
@@ -148,12 +147,14 @@ def p_print(p):
     | KW_PRINT LNOT LPAREN CADENA COMMA VARIABLE RPAREN SEMI'''
 
 def p_declare_variable(p):
-    'dvariable : KW_LET VARIABLE SEMI'
+    'dvariable : KW_LET VARIABLE COLON data_type SEMI'
 
 def p_array(p):
     '''array : KW_LET VARIABLE EQUALS LBRACKET mdata RBRACKET SEMI
     | LBRACKET mdata RBRACKET
     | LBRACKET data SEMI data RBRACKET
+    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET mdata RBRACKET SEMI
+    | KW_LET VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET data SEMI data RBRACKET SEMI
     | KW_LET KW_MUT VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET mdata RBRACKET SEMI
     | KW_LET KW_MUT VARIABLE COLON LBRACKET data_type SEMI data RBRACKET EQUALS LBRACKET data SEMI data RBRACKET SEMI'''
 
@@ -237,9 +238,7 @@ def p_data_str(p):
 # HashMap structure
 def p_hashmap(p):
     '''hashmap : KW_LET VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
-    | KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN
-    | KW_LET VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN
-    | KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_FROM LPAREN array RPAREN'''
+    | KW_LET KW_MUT VARIABLE EQUALS KW_HASHMAP COLON COLON KW_NEW LPAREN RPAREN'''
 
 # HashMap methods
 def p_hashmap_methods(p):
@@ -248,7 +247,7 @@ def p_hashmap_methods(p):
 
 # HashMap insert
 def p_hashmap_insert(p):
-    'hashmap_insert : DOT KW_INSERT LPAREN mdata RPAREN SEMI'
+    'hashmap_insert : DOT KW_INSERT LPAREN data COMMA data RPAREN SEMI'
 
 # HashMap remove
 def p_hashmap_remove(p):
@@ -335,11 +334,10 @@ def p_error(p):
     timenow = datetime.datetime.now()
     if p is not None:
         global yacc_errors
-        print ("Syntax error in line %s [DateTime: %s]" % (p.lineno, str(timenow)))
+        print ("Syntax error %s token in line %s [DateTime: %s]" % (p.type, p.lineno, str(timenow)))
+        yacc_errors.append("Syntax error %s token in line %s [DateTime: %s]" % (p.type, p.lineno, str(timenow)))
         
-        yacc_errors.append("Syntax error in line %s [DateTime: %s]" % (p.lineno, str(timenow)))
-        
-        filew.write("Syntax error in line %s [DateTime: %s] \n" % (p.lineno, str(timenow)))
+        filew.write("Syntax error %s token in line %s [DateTime: %s]" % (p.type, p.lineno, str(timenow)))
         
     else:
         print('Unexpected end of input')
