@@ -49,6 +49,7 @@ reserved = {
 
     #Daniel Guerrero
     "println": 'KW_PRINT',
+    "as": 'KW_AS',
 
     #KEVIN ELIHAN MUNOZ
     "HashMap": 'KW_HASHMAP',

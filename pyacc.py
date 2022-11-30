@@ -40,14 +40,17 @@ def p_expression(p):
     | expression TIMES expression
     | LPAREN expression RPAREN
     | number
-    | division'''
+    | division
+    | variable'''
 
 
 # Types of numbers
 def p_number(p):
     '''number : INTEGER
-    | FLOAT
-    | VARIABLE'''
+    | FLOAT'''
+
+def p_variable(p):
+    'variable : VARIABLE'
 
 # LOBERLLY SALAZAR
 def p_data_type(p):
@@ -77,6 +80,31 @@ def p_assign_operators(p):
                         | MINUSEQUAL'''
 
 #DANIEL GUERRERO
+def p_semantic_cast_sigint(p):
+    '''sigint : SIG_INT_8
+    | SIG_INT_16
+    | SIG_INT_32
+    | SIG_INT_64
+    | SIG_INT_128'''
+
+def p_semantic_cast_unsigint(p):
+    '''unsigint : UNSIG_INT_8
+    | UNSIG_INT_16
+    | UNSIG_INT_32
+    | UNSIG_INT_64
+    | UNSIG_INT_128''' 
+
+def p_semantic_cast_float(p):
+    '''flotante : FLOAT_32
+    | FLOAT_64'''
+
+def p_semantic_casting(p):
+    ''''casting : flotante KW_AS sigint
+    | flotante KW_AS unsigint
+    | signit KW_AS flotante
+    | unsigint KW_AS flotante
+    | flotante KW_AS flotante'''
+
 def p_semantic_division(p):
     '''division : INTEGER DIVIDE INTEGER
     | FLOAT DIVIDE FLOAT'''

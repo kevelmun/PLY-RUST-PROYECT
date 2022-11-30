@@ -2075,3 +2075,54 @@ let asd = 4+y;
 
 Output:
 None [DateTime: 2022-11-29 11:44:07.387157]
+-----------------------------ANÁLISIS LÉXICO------------------------------------------
+Input:
+Daniel
+
+Output: [DateTime: 2022-11-29 19:24:38.083370]
+LexToken(VARIABLE,'Daniel',1,0)
+
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+Daniel
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+Daniel
+
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+Daniel;
+
+
+Output:
+Syntax error in line 1 [DateTime: 2022-11-29 19:24:55.139327]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+daniel
+print;
+
+
+Output:
+Syntax error in line 2 [DateTime: 2022-11-29 19:25:05.835131]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+daniel
+print;
+
+
+Output:
+Syntax error in line 2 [DateTime: 2022-11-29 19:25:08.011469]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+daniel
+print;
+
+
+Output:
+Syntax error in line 2 [DateTime: 2022-11-29 19:25:08.603176]
