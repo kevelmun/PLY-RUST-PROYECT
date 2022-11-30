@@ -29,7 +29,8 @@ def p_father_rule(p):
     | initialization
     | input
     | assignation
-    | declare_data_type'''
+    | declare_data_type
+    | casting'''
 
 #KEVIN MUÑOZ
 
@@ -99,9 +100,9 @@ def p_semantic_cast_float(p):
     | FLOAT_64'''
 
 def p_semantic_casting(p):
-    ''''casting : flotante KW_AS sigint
+    '''casting : flotante KW_AS sigint
     | flotante KW_AS unsigint
-    | signit KW_AS flotante
+    | sigint KW_AS flotante
     | unsigint KW_AS flotante
     | flotante KW_AS flotante'''
 
