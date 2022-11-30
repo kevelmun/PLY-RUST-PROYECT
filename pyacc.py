@@ -132,11 +132,18 @@ def p_logic(p):
     | LAND'''
 
 def p_logic_variable(p):
-    'lvariable : VARIABLE logic VARIABLE'
+    '''lvariable : conditional 
+    | VARIABLE
+    | KW_TRUE
+    | KW_FALSE
+    | VARIABLE logic lvariable
+    | conditional logic lvariable'''
 
 def p_conditional(p):
     '''conditional : VARIABLE comparator data
-    | LPAREN lvariable RPAREN comparator data'''
+    | data comparator VARIABLE
+    | VARIABLE comparator VARIABLE
+    | data comparator data'''
 
 def p_mdata(p):
     '''mdata : data
@@ -163,7 +170,7 @@ def p_variables(p):
     | VARIABLE COMMA variables'''
 
 def p_while(p):
-    'while : KW_WHILE conditional LBRACE main_rule RBRACE'
+    'while : KW_WHILE lvariable LBRACE main_rule RBRACE'
     
 # KEVIN MUÑOZ
 
@@ -223,7 +230,8 @@ def p_for_str_tagged(p):
 # Posible values to use a range 
 def p_range(p):
     '''range : INTEGER DOT DOT INTEGER
-    | VARIABLE DOT DOT VARIABLE'''
+    | VARIABLE DOT DOT VARIABLE
+    | LBRACKET mdata RBRACKET'''
 
 # Title tag to recognize a specific loop
 def p_label(p):
@@ -283,13 +291,13 @@ def p_linkedlist_remove(p):
 ## if data structure
 
 def p_if(p):
-    'if : KW_IF conditional LBRACE main_rule RBRACE'
+    'if : KW_IF lvariable LBRACE main_rule RBRACE'
 
 def p_else(p):
     'else : KW_ELSE LBRACE main_rule RBRACE'
 
 def p_else_if(p):
-    'else_if : KW_ELSE KW_IF conditional LBRACE main_rule RBRACE'
+    'else_if : KW_ELSE KW_IF lvariable LBRACE main_rule RBRACE'
 
 ## Function with a return value
 

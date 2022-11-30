@@ -5079,4 +5079,83 @@ let Aa:i32;
 
 Output:
 Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:54.370680]
-Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:46.802922]Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:54.370680]
+Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:46.802922]Syntax error COLON token in line 1 [DateTime: 2022-11-29 23:18:54.370680]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x == 0 {}
+
+Output:
+None [DateTime: 2022-11-29 23:28:07.777744]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+if x == 0 || x {}
+
+Output:
+None [DateTime: 2022-11-29 23:28:14.953833]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+while x == 0 || x {}
+
+Output:
+None [DateTime: 2022-11-29 23:28:19.362261]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+while "hola" || x {}
+
+Output:
+Syntax error LOR token in line 1 [DateTime: 2022-11-29 23:28:27.147938]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+while "hola" == "hola" {}
+
+Output:
+None [DateTime: 2022-11-29 23:28:42.861792]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in 3..10 {}
+
+Output:
+None [DateTime: 2022-11-29 23:29:01.383805]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in a {}
+
+Output:
+None [DateTime: 2022-11-29 23:29:17.017985]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in [1,5,3] {}
+
+Output:
+Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 23:29:39.797844]
+Syntax error LOR token in line 1 [DateTime: 2022-11-29 23:28:27.147938]Syntax error LBRACKET token in line 1 [DateTime: 2022-11-29 23:29:39.797844]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for i in [1,2,3]
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for i in [1,2,3]{}
+
+Output:
+None [DateTime: 2022-11-29 23:32:25.282537]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for i in [1,2,3]{}
+
+Output:
+None [DateTime: 2022-11-29 23:32:42.733492]
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for i in [1,2,6]
+
+Output:
+Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for i in [1,2,6]{}
+
+Output:
+None [DateTime: 2022-11-29 23:34:26.274672]
+Unexpected end of input
