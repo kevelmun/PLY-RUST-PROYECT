@@ -28,8 +28,7 @@ def p_father_rule(p):
     | initialization
     | input
     | assignation
-    | declare_data_type
-    | casting'''
+    | declare_data_type'''
 
 #KEVIN MUÑOZ
 
@@ -99,11 +98,9 @@ def p_semantic_cast_float(p):
     | FLOAT_64'''
 
 def p_semantic_casting(p):
-    '''casting : flotante KW_AS sigint
-    | flotante KW_AS unsigint
-    | sigint KW_AS flotante
-    | unsigint KW_AS flotante
-    | flotante KW_AS flotante'''
+    '''casting : VARIABLE KW_AS sigint
+    | VARIABLE KW_AS unsigint
+    | VARIABLE KW_AS flotante'''
 
 def p_semantic_division(p):
     '''division : INTEGER DIVIDE INTEGER
@@ -194,7 +191,9 @@ def p_let_initialization(p):
     | KW_LET VARIABLE EQUALS expression_var
     | KW_LET VARIABLE COLON data_type EQUALS expression_var
     | KW_LET KW_MUT VARIABLE EQUALS expression_var
-    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS expression_var'''
+    | KW_LET KW_MUT VARIABLE COLON data_type EQUALS expression_var
+    | KW_LET VARIABLE EQUALS casting
+    | KW_LET KW_MUT VARIABLE EQUALS casting'''
 
 # Const initialization possible options
 def p_const_initialization(p):

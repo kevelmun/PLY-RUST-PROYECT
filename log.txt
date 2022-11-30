@@ -5159,3 +5159,243 @@ for i in [1,2,6]{}
 Output:
 None [DateTime: 2022-11-29 23:34:26.274672]
 Unexpected end of input
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a;
+
+Output:
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 23:37:29.824863]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a:i32;
+
+Output:
+None [DateTime: 2022-11-29 23:37:34.614355]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in 1..3 {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:44.306062]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in 1..3 {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:44.926157]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in x {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:47.408190]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in x {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:48.066254]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in [1,2,34] {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:53.789269]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in [1,2,34] {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:54.044503]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+for x in [1,2,34] {}
+
+Output:
+None [DateTime: 2022-11-29 23:37:54.198743]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println("das");
+
+Output:
+Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 23:38:08.337742]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+println!("das");
+
+Output:
+None [DateTime: 2022-11-29 23:38:13.975110]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as u8;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:38:35.440443]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:00.756507]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.184441]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.361677]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.533756]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:03.514364]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:03.934009]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:04.109546]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:04.288362]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:13.805504]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.256342]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.444406]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.625288]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.814612]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:15.014516]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:22.815675]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:23.197166]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = decimal as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:23.485361]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let inteher = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:41.676749]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let integer = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:45.237232]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let integer = integer as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:47.460450]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+integer = integer as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:47.075371]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+intege = integer as i32;
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:49.134480]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+intege = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:51.445077]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+intege = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:51.966257]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+intege = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:52.161900]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+intege = integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:52.403648]
+-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+integer as i32
+
+Output:
+Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:41:02.189801]
+Syntax error SEMI token in line 1 [DateTime: 2022-11-29 23:37:29.824863]Syntax error LPAREN token in line 1 [DateTime: 2022-11-29 23:38:08.337742]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:38:35.440443]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:00.756507]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.184441]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.361677]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:01.533756]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:03.514364]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:03.934009]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:04.109546]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:04.288362]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:13.805504]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.256342]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.444406]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.625288]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:14.814612]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:15.014516]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:22.815675]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:23.197166]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:23.485361]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:41.676749]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:45.237232]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:39:47.460450]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:47.075371]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:49.134480]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:51.445077]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:51.966257]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:52.161900]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:40:52.403648]Syntax error KW_AS token in line 1 [DateTime: 2022-11-29 23:41:02.189801]-----------------------------ANÁLISIS SINTÁCTICO------------------------------------------
+Input:
+let a = x as i32;
+
+Output:
+None [DateTime: 2022-11-29 23:47:25.889975]
